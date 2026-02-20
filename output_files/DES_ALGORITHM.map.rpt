@@ -1,0 +1,440 @@
+Analysis & Synthesis report for DES_ALGORITHM
+Fri Feb 13 09:59:42 2026
+Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Port Connectivity Checks: "DES_CONTROL:control_unit"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++---------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                          ;
++---------------------------------+-----------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Fri Feb 13 09:59:42 2026               ;
+; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Standard Edition ;
+; Revision Name                   ; DES_ALGORITHM                                       ;
+; Top-level Entity Name           ; DES_ALGORITHM                                       ;
+; Family                          ; Cyclone V                                           ;
+; Logic utilization (in ALMs)     ; N/A                                                 ;
+; Total registers                 ; 126                                                 ;
+; Total pins                      ; 196                                                 ;
+; Total virtual pins              ; 0                                                   ;
+; Total block memory bits         ; 0                                                   ;
+; Total DSP Blocks                ; 0                                                   ;
+; Total HSSI RX PCSs              ; 0                                                   ;
+; Total HSSI PMA RX Deserializers ; 0                                                   ;
+; Total HSSI TX PCSs              ; 0                                                   ;
+; Total HSSI PMA TX Serializers   ; 0                                                   ;
+; Total PLLs                      ; 0                                                   ;
+; Total DLLs                      ; 0                                                   ;
++---------------------------------+-----------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CEBA7F27C7        ;                    ;
+; Top-level entity name                                                           ; DES_ALGORITHM      ; DES_ALGORITHM      ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 6           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-6         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                          ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                            ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------+---------+
+; S_BOX.v                          ; yes             ; User Verilog HDL File  ; D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/S_BOX.v         ;         ;
+; SHIFT_LEFT_2.v                   ; yes             ; User Verilog HDL File  ; D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/SHIFT_LEFT_2.v  ;         ;
+; SHIFT_LEFT_1.v                   ; yes             ; User Verilog HDL File  ; D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/SHIFT_LEFT_1.v  ;         ;
+; P_MATRIX.v                       ; yes             ; User Verilog HDL File  ; D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/P_MATRIX.v      ;         ;
+; PC_2.v                           ; yes             ; User Verilog HDL File  ; D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/PC_2.v          ;         ;
+; PC_1.v                           ; yes             ; User Verilog HDL File  ; D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/PC_1.v          ;         ;
+; IP_1.v                           ; yes             ; User Verilog HDL File  ; D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/IP_1.v          ;         ;
+; IP.v                             ; yes             ; User Verilog HDL File  ; D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/IP.v            ;         ;
+; F_FUNCTION.v                     ; yes             ; User Verilog HDL File  ; D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/F_FUNCTION.v    ;         ;
+; E_XOR_KEY.v                      ; yes             ; User Verilog HDL File  ; D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/E_XOR_KEY.v     ;         ;
+; E_MATRIX.v                       ; yes             ; User Verilog HDL File  ; D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/E_MATRIX.v      ;         ;
+; DES_ALGORITHM.v                  ; yes             ; User Verilog HDL File  ; D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v ;         ;
+; DES_CONTROL.v                    ; yes             ; User Verilog HDL File  ; D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_CONTROL.v   ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 156         ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 245         ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 34          ;
+;     -- 5 input functions                    ; 10          ;
+;     -- 4 input functions                    ; 51          ;
+;     -- <=3 input functions                  ; 150         ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 126         ;
+;                                             ;             ;
+; I/O pins                                    ; 196         ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; Reset~input ;
+; Maximum fan-out                             ; 191         ;
+; Total fan-out                               ; 1796        ;
+; Average fan-out                             ; 2.35        ;
++---------------------------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                           ;
++-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+---------------+--------------+
+; Compilation Hierarchy Node    ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Entity Name   ; Library Name ;
++-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+---------------+--------------+
+; |DES_ALGORITHM                ; 245 (89)            ; 126 (120)                 ; 0                 ; 0          ; 196  ; 0            ; |DES_ALGORITHM                                        ; DES_ALGORITHM ; work         ;
+;    |DES_CONTROL:control_unit| ; 12 (12)             ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |DES_ALGORITHM|DES_CONTROL:control_unit               ; DES_CONTROL   ; work         ;
+;    |F_FUNCTION:f_block|       ; 80 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block                     ; F_FUNCTION    ; work         ;
+;       |E_XOR_KEY:e_xor_key|   ; 48 (48)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block|E_XOR_KEY:e_xor_key ; E_XOR_KEY     ; work         ;
+;       |S_BOX:s_box|           ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block|S_BOX:s_box         ; S_BOX         ; work         ;
+;    |IP_1:final_perm|          ; 64 (64)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DES_ALGORITHM|IP_1:final_perm                        ; IP_1          ; work         ;
++-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+---------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                         ;
++----------------------------------------------------+-------------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal           ; Free of Timing Hazards ;
++----------------------------------------------------+-------------------------------+------------------------+
+; DES_CONTROL:control_unit|Next_state[1]             ; DES_CONTROL:control_unit|Mux2 ; yes                    ;
+; DES_CONTROL:control_unit|Next_state[0]             ; DES_CONTROL:control_unit|Mux2 ; yes                    ;
+; Number of user-specified and inferred latches = 2  ;                               ;                        ;
++----------------------------------------------------+-------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 126   ;
+; Number of registers using Synchronous Clear  ; 120   ;
+; Number of registers using Synchronous Load   ; 112   ;
+; Number of registers using Asynchronous Clear ; 126   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 4     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |DES_ALGORITHM|DES_CONTROL:control_unit|Counter[3] ;
+; 4:1                ; 112 bits  ; 224 LEs       ; 0 LEs                ; 224 LEs                ; Yes        ; |DES_ALGORITHM|L[9]                                ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |DES_ALGORITHM|C[19]                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DES_CONTROL:control_unit"                                                                                      ;
++------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                                                  ;
++------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Counter    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
+; Pre_state  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; Next_state ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 126                         ;
+;     CLR               ; 2                           ;
+;     CLR SCLR          ; 8                           ;
+;     CLR SCLR SLD      ; 112                         ;
+;     ENA CLR           ; 4                           ;
+; arriav_lcell_comb     ; 245                         ;
+;     normal            ; 245                         ;
+;         2 data inputs ; 99                          ;
+;         3 data inputs ; 51                          ;
+;         4 data inputs ; 51                          ;
+;         5 data inputs ; 10                          ;
+;         6 data inputs ; 34                          ;
+; boundary_port         ; 196                         ;
+;                       ;                             ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 1.98                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 24.1std.0 Build 1077 03/04/2025 SC Standard Edition
+    Info: Processing started: Fri Feb 13 09:59:31 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DES_ALGORITHM -c DES_ALGORITHM
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file xor_function.v
+    Info (12023): Found entity 1: XOR_FUNCTION File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/XOR_FUNCTION.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file test_state_machine.v
+    Info (12023): Found entity 1: Test_state_machine File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/Test_state_machine.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file test_roundkey.v
+    Info (12023): Found entity 1: Test_roundkey File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/Test_roundkey.v Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file test_register.v
+    Info (12023): Found entity 1: test_register File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/test_register.v Line: 26
+Info (12021): Found 1 design units, including 1 entities, in source file test_pc1.v
+    Info (12023): Found entity 1: test_pc1 File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/test_pc1.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file test_mux.v
+    Info (12023): Found entity 1: Test_mux File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/Test_mux.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file test_f_function.v
+    Info (12023): Found entity 1: test_f_function File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/test_f_function.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file s_box.v
+    Info (12023): Found entity 1: S_BOX File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/S_BOX.v Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file shift_left_2.v
+    Info (12023): Found entity 1: SHIFT_LEFT_2 File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/SHIFT_LEFT_2.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file shift_left_1.v
+    Info (12023): Found entity 1: SHIFT_LEFT_1 File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/SHIFT_LEFT_1.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file round_key.v
+    Info (12023): Found entity 1: ROUND_KEY File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/ROUND_KEY.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file register_top.v
+    Info (12023): Found entity 1: REGISTER_TOP File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/REGISTER_TOP.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file register_c0_d0.v
+    Info (12023): Found entity 1: REGISTER_C0_D0 File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/REGISTER_C0_D0.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file p_matrix.v
+    Info (12023): Found entity 1: P_MATRIX File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/P_MATRIX.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file pc_2.v
+    Info (12023): Found entity 1: PC_2 File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/PC_2.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file pc_1.v
+    Info (12023): Found entity 1: PC_1 File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/PC_1.v Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file mux2_1_top.v
+    Info (12023): Found entity 1: MUX2_1_TOP File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/MUX2_1_TOP.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file mux2_1.v
+    Info (12023): Found entity 1: MUX2_1 File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/MUX2_1.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file ip_1.v
+    Info (12023): Found entity 1: IP_1 File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/IP_1.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file ip.v
+    Info (12023): Found entity 1: IP File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/IP.v Line: 23
+Info (12021): Found 0 design units, including 0 entities, in source file f_xor_l0.v
+Info (12021): Found 1 design units, including 1 entities, in source file f_function.v
+    Info (12023): Found entity 1: F_FUNCTION File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/F_FUNCTION.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file e_xor_key.v
+    Info (12023): Found entity 1: E_XOR_KEY File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/E_XOR_KEY.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file e_matrix.v
+    Info (12023): Found entity 1: E_MATRIX File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/E_MATRIX.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file des_testbench.v
+    Info (12023): Found entity 1: DES_TESTBENCH File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_TESTBENCH.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file des_algorithm.v
+    Info (12023): Found entity 1: DES_ALGORITHM File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file clock_2.v
+    Info (12023): Found entity 1: clock_2 File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/clock_2.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file des_control.v
+    Info (12023): Found entity 1: DES_CONTROL File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_CONTROL.v Line: 23
+Info (12127): Elaborating entity "DES_ALGORITHM" for the top level hierarchy
+Info (12128): Elaborating entity "DES_CONTROL" for hierarchy "DES_CONTROL:control_unit" File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v Line: 51
+Warning (10270): Verilog HDL Case Statement warning at DES_CONTROL.v(50): incomplete case statement has no default case item File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_CONTROL.v Line: 50
+Warning (10240): Verilog HDL Always Construct warning at DES_CONTROL.v(50): inferring latch(es) for variable "Next_state", which holds its previous value in one or more paths through the always construct File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_CONTROL.v Line: 50
+Warning (10230): Verilog HDL assignment warning at DES_CONTROL.v(71): truncated value with size 32 to match size of target (4) File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_CONTROL.v Line: 71
+Warning (10270): Verilog HDL Case Statement warning at DES_CONTROL.v(80): incomplete case statement has no default case item File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_CONTROL.v Line: 80
+Info (10041): Inferred latch for "Next_state[0]" at DES_CONTROL.v(50) File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_CONTROL.v Line: 50
+Info (10041): Inferred latch for "Next_state[1]" at DES_CONTROL.v(50) File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_CONTROL.v Line: 50
+Info (12128): Elaborating entity "IP" for hierarchy "IP:ip_inst" File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v Line: 57
+Info (12128): Elaborating entity "PC_1" for hierarchy "PC_1:pc1_inst" File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v Line: 63
+Warning (10230): Verilog HDL assignment warning at PC_1.v(35): truncated value with size 32 to match size of target (28) File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/PC_1.v Line: 35
+Warning (10230): Verilog HDL assignment warning at PC_1.v(36): truncated value with size 32 to match size of target (28) File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/PC_1.v Line: 36
+Info (12128): Elaborating entity "SHIFT_LEFT_1" for hierarchy "SHIFT_LEFT_1:sl1_c" File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v Line: 64
+Info (12128): Elaborating entity "SHIFT_LEFT_2" for hierarchy "SHIFT_LEFT_2:sl2_c" File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v Line: 67
+Info (12128): Elaborating entity "PC_2" for hierarchy "PC_2:pc2_inst" File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v Line: 83
+Info (12128): Elaborating entity "F_FUNCTION" for hierarchy "F_FUNCTION:f_block" File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v Line: 88
+Info (12128): Elaborating entity "E_MATRIX" for hierarchy "F_FUNCTION:f_block|E_MATRIX:E" File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/F_FUNCTION.v Line: 32
+Info (12128): Elaborating entity "E_XOR_KEY" for hierarchy "F_FUNCTION:f_block|E_XOR_KEY:e_xor_key" File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/F_FUNCTION.v Line: 44
+Info (12128): Elaborating entity "S_BOX" for hierarchy "F_FUNCTION:f_block|S_BOX:s_box" File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/F_FUNCTION.v Line: 54
+Info (12128): Elaborating entity "P_MATRIX" for hierarchy "F_FUNCTION:f_block|P_MATRIX:p_matrix" File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/F_FUNCTION.v Line: 55
+Info (12128): Elaborating entity "IP_1" for hierarchy "IP_1:final_perm" File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v Line: 123
+Info (276014): Found 8 instances of uninferred RAM logic
+    Info (276004): RAM logic "F_FUNCTION:f_block|S_BOX:s_box|Ram0" is uninferred due to inappropriate RAM size File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/S_BOX.v Line: 27
+    Info (276004): RAM logic "F_FUNCTION:f_block|S_BOX:s_box|Ram1" is uninferred due to inappropriate RAM size File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/S_BOX.v Line: 52
+    Info (276004): RAM logic "F_FUNCTION:f_block|S_BOX:s_box|Ram2" is uninferred due to inappropriate RAM size File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/S_BOX.v Line: 77
+    Info (276004): RAM logic "F_FUNCTION:f_block|S_BOX:s_box|Ram3" is uninferred due to inappropriate RAM size File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/S_BOX.v Line: 102
+    Info (276004): RAM logic "F_FUNCTION:f_block|S_BOX:s_box|Ram4" is uninferred due to inappropriate RAM size File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/S_BOX.v Line: 127
+    Info (276004): RAM logic "F_FUNCTION:f_block|S_BOX:s_box|Ram5" is uninferred due to inappropriate RAM size File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/S_BOX.v Line: 152
+    Info (276004): RAM logic "F_FUNCTION:f_block|S_BOX:s_box|Ram6" is uninferred due to inappropriate RAM size File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/S_BOX.v Line: 177
+    Info (276004): RAM logic "F_FUNCTION:f_block|S_BOX:s_box|Ram7" is uninferred due to inappropriate RAM size File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/S_BOX.v Line: 202
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13012): Latch DES_CONTROL:control_unit|Next_state[1] has unsafe behavior File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_CONTROL.v Line: 50
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DES_CONTROL:control_unit|Pre_state[0] File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_CONTROL.v Line: 46
+Warning (13012): Latch DES_CONTROL:control_unit|Next_state[0] has unsafe behavior File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_CONTROL.v Line: 50
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal DES_CONTROL:control_unit|Pre_state[0] File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_CONTROL.v Line: 46
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 8 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Key_in[0]" File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v Line: 28
+    Warning (15610): No output dependent on input pin "Key_in[8]" File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v Line: 28
+    Warning (15610): No output dependent on input pin "Key_in[16]" File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v Line: 28
+    Warning (15610): No output dependent on input pin "Key_in[24]" File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v Line: 28
+    Warning (15610): No output dependent on input pin "Key_in[32]" File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v Line: 28
+    Warning (15610): No output dependent on input pin "Key_in[40]" File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v Line: 28
+    Warning (15610): No output dependent on input pin "Key_in[48]" File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v Line: 28
+    Warning (15610): No output dependent on input pin "Key_in[56]" File: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v Line: 28
+Info (21057): Implemented 475 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 131 input pins
+    Info (21059): Implemented 65 output pins
+    Info (21061): Implemented 279 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
+    Info: Peak virtual memory: 4881 megabytes
+    Info: Processing ended: Fri Feb 13 09:59:42 2026
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:13
+
+

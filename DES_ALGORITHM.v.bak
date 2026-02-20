@@ -1,0 +1,133 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 10/19/2025 01:59:02 PM
+// Design Name: 
+// Module Name: DES_ALGORITHM
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module DES_ALGORITHM(
+        Plaintext,   //                      DU LIEU CAN MA HOA 
+        Key_in,
+        Clk,//                               XUNG CLOCK 
+        Clk_machine,
+        Reset,//  
+        Ln, R_n, 
+        Counter_machine,         
+        Cirphertext,
+        Done);//                      DU LIEU DA MA HOA 
+      input [63:0] Plaintext; 
+      input [63:0] Key_in; 
+      input Clk, Clk_machine, Reset;
+      output [63:0] Cirphertext; 
+      output [31:0] Ln, R_n;   ///            CHECK L_n VA R_n
+      output [4:0] Counter_machine; //
+      // reg [4:0] Counter_machine; 
+      output reg Done;
+      wire [31:0] R0,L0; 
+      wire [31:0] Mux1_out, Mux2_out; 
+      wire [31:0] R0_REGISTER, L0_REGISTER; 
+      wire [47:0] Key_out; 
+      wire [31:0] F_out; 
+      wire [31:0] Xor_out; 
+      wire Select_control; 
+      wire [63:0]Cirphertext_temp; 
+      reg [4:0] Counter_cycle; 
+      
+      // ===================== DEM SO LUONG CHU KI ==================
+          always @(posedge Clk , posedge Reset) begin 
+          Done <=0;
+           if(Reset)  
+           begin      
+             Counter_cycle <=0; 
+             Done <=0;
+           end 
+           else if (Counter_cycle==17)
+            begin 
+             Counter_cycle <= 0; 
+             Done <=1;
+            end  
+           else 
+              Counter_cycle <= Counter_cycle + 1; 
+         end 
+     
+       //===================== MAY TRANG THAI ========================
+       
+       STATE_MACHINE state_machine(
+                     .Clk(Clk_machine), 
+                     .Reset(Reset),
+                     .Select_mux_pc_temp(Select_control),
+                     .Select_mux_shift_temp(),
+                     .Counter(),
+                     .Pre_state(),
+                     .Next_state(),.Done());
+      //====================== IP =============================================
+      IP ip(
+            .Data_in(Plaintext),
+            .Reset(Reset),
+            .R0(R0),
+            .L0(L0));
+   // =================== HAM CHON GIUA R0,L0 VA Rn, Ln===========================      
+       MUX2_1_TOP MUX1(
+                   .In_a(L0),
+                   .Select(Select_control),
+                   .In_b(R0_REGISTER),
+                   .Out(Mux1_out));
+       MUX2_1_TOP MUX2(
+                   .In_a(R0),
+                   .Select(Select_control),
+                   .In_b(Xor_out),
+                   .Out(Mux2_out));      
+    //==================== REGISTER LUU TRU GIA TRI  ============================
+    REGISTER_TOP register(
+                .C0(Mux1_out),
+                .Clk(Clk),
+                .Reset(Reset),
+                .D0(Mux2_out),
+                .C0_out(L0_REGISTER),
+                .D0_out(R0_REGISTER) );
+                
+    // ================== KEY ROUND TINH KHOA =================================== 
+    ROUND_KEY key(
+             .Key_in(Key_in),
+             .Clk(Clk),
+             .Clk2(Clk_machine),
+             .Reset(Reset),
+             .Key_out(Key_out),
+             .Done(),
+             .Counter(Counter_machine) );           
+     //================== ==========HAM F =========================================
+    F_FUNCTION F(
+             .R(R0_REGISTER),
+             .Key(Key_out),
+             .F_out(F_out));
+   // ================== HAM XOR ============================================
+    XOR_FUNCTION XOR_F_K(
+             .F_K(F_out),
+             .L0(L0_REGISTER),
+             .Out(Xor_out));
+             
+   // =================== KHOI DAO IP_1 =============================================
+   IP_1 ip_1(
+            .In({Xor_out,R0_REGISTER}),
+            .Reset(Reset),
+            .Cipertext(Cirphertext_temp)
+            );
+assign  Ln = R0_REGISTER; 
+assign R_n = Xor_out;
+assign Cirphertext = (Done) ? Cirphertext_temp : 64'b0; 
+endmodule

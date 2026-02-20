@@ -1,0 +1,206 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 win64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do DES_ALGORITHM_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work rtl_work 
+# Copying D:/altera_prime/24.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS {D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/S_BOX.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 11:48:15 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS" D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/S_BOX.v 
+# -- Compiling module S_BOX
+# 
+# Top level modules:
+# 	S_BOX
+# End time: 11:48:15 on Feb 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS {D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/SHIFT_LEFT_2.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 11:48:15 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS" D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/SHIFT_LEFT_2.v 
+# -- Compiling module SHIFT_LEFT_2
+# 
+# Top level modules:
+# 	SHIFT_LEFT_2
+# End time: 11:48:15 on Feb 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS {D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/SHIFT_LEFT_1.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 11:48:15 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS" D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/SHIFT_LEFT_1.v 
+# -- Compiling module SHIFT_LEFT_1
+# 
+# Top level modules:
+# 	SHIFT_LEFT_1
+# End time: 11:48:15 on Feb 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS {D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/P_MATRIX.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 11:48:16 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS" D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/P_MATRIX.v 
+# -- Compiling module P_MATRIX
+# 
+# Top level modules:
+# 	P_MATRIX
+# End time: 11:48:16 on Feb 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS {D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/PC_2.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 11:48:16 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS" D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/PC_2.v 
+# -- Compiling module PC_2
+# 
+# Top level modules:
+# 	PC_2
+# End time: 11:48:16 on Feb 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS {D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/PC_1.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 11:48:16 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS" D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/PC_1.v 
+# -- Compiling module PC_1
+# 
+# Top level modules:
+# 	PC_1
+# End time: 11:48:16 on Feb 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS {D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/IP_1.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 11:48:16 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS" D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/IP_1.v 
+# -- Compiling module IP_1
+# 
+# Top level modules:
+# 	IP_1
+# End time: 11:48:16 on Feb 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS {D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/IP.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 11:48:16 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS" D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/IP.v 
+# -- Compiling module IP
+# 
+# Top level modules:
+# 	IP
+# End time: 11:48:16 on Feb 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS {D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/F_FUNCTION.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 11:48:16 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS" D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/F_FUNCTION.v 
+# -- Compiling module F_FUNCTION
+# 
+# Top level modules:
+# 	F_FUNCTION
+# End time: 11:48:16 on Feb 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS {D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/E_XOR_KEY.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 11:48:17 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS" D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/E_XOR_KEY.v 
+# -- Compiling module E_XOR_KEY
+# 
+# Top level modules:
+# 	E_XOR_KEY
+# End time: 11:48:17 on Feb 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS {D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/E_MATRIX.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 11:48:17 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS" D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/E_MATRIX.v 
+# -- Compiling module E_MATRIX
+# 
+# Top level modules:
+# 	E_MATRIX
+# End time: 11:48:17 on Feb 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS {D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 11:48:17 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS" D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v 
+# -- Compiling module DES_ALGORITHM
+# 
+# Top level modules:
+# 	DES_ALGORITHM
+# End time: 11:48:17 on Feb 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS {D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_CONTROL.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 11:48:17 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS" D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_CONTROL.v 
+# -- Compiling module DES_CONTROL
+# 
+# Top level modules:
+# 	DES_CONTROL
+# End time: 11:48:17 on Feb 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS {D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_TESTBENCH.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 11:48:17 on Feb 20,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS" D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_TESTBENCH.v 
+# -- Compiling module DES_TESTBENCH
+# 
+# Top level modules:
+# 	DES_TESTBENCH
+# End time: 11:48:17 on Feb 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  DES_TESTBENCH
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" DES_TESTBENCH 
+# Start time: 11:48:18 on Feb 20,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Warning: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v(44): (vopt-2685) [TFMPC] - Too few port connections for 'control_unit'.  Expected 9, found 7.
+# ** Warning: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v(44): (vopt-2718) [TFMPC] - Missing connection for port 'Next_state'.
+# ** Warning: D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v(44): (vopt-2718) [TFMPC] - Missing connection for port 'Pre_state'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "DES_CONTROL(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=4.
+# Loading work.DES_TESTBENCH(fast)
+# Loading work.DES_ALGORITHM(fast)
+# Loading work.DES_CONTROL(fast)
+# Loading work.IP(fast)
+# Loading work.PC_1(fast)
+# Loading work.SHIFT_LEFT_1(fast)
+# Loading work.SHIFT_LEFT_2(fast)
+# Loading work.PC_2(fast)
+# Loading work.F_FUNCTION(fast)
+# Loading work.E_MATRIX(fast)
+# Loading work.E_XOR_KEY(fast)
+# Loading work.S_BOX(fast)
+# Loading work.P_MATRIX(fast)
+# Loading work.IP_1(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ---------------------------------------
+# Ciphertext: 1abff69d5a93e80b
+# KET QUA: DUNG (PASSED)
+# ---------------------------------------
+# ** Note: $stop    : D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_TESTBENCH.v(76)
+#    Time: 470 ns  Iteration: 0  Instance: /DES_TESTBENCH
+# Break in Module DES_TESTBENCH at D:/CE213/DOAN/Quartus_prime_DES/DES_ALGORITHM_64_QUATUS/DES_TESTBENCH.v line 76

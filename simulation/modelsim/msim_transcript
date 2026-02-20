@@ -1,0 +1,165 @@
+# Reading E:/QUATUS DESIGN/modelsim_ase/tcl/vsim/pref.tcl 
+# do DES_ALGORITHM_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying E:\QUATUS DESIGN\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied E:\QUATUS DESIGN\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS {E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS/XOR_FUNCTION.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module XOR_FUNCTION
+# 
+# Top level modules:
+# 	XOR_FUNCTION
+# vlog -vlog01compat -work work +incdir+E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS {E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS/S_BOX.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module S_BOX
+# 
+# Top level modules:
+# 	S_BOX
+# vlog -vlog01compat -work work +incdir+E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS {E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS/STATE_MACHINE.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module STATE_MACHINE
+# 
+# Top level modules:
+# 	STATE_MACHINE
+# vlog -vlog01compat -work work +incdir+E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS {E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS/SHIFT_LEFT_2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SHIFT_LEFT_2
+# 
+# Top level modules:
+# 	SHIFT_LEFT_2
+# vlog -vlog01compat -work work +incdir+E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS {E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS/SHIFT_LEFT_1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SHIFT_LEFT_1
+# 
+# Top level modules:
+# 	SHIFT_LEFT_1
+# vlog -vlog01compat -work work +incdir+E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS {E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS/ROUND_KEY.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ROUND_KEY
+# 
+# Top level modules:
+# 	ROUND_KEY
+# vlog -vlog01compat -work work +incdir+E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS {E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS/REGISTER_TOP.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module REGISTER_TOP
+# 
+# Top level modules:
+# 	REGISTER_TOP
+# vlog -vlog01compat -work work +incdir+E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS {E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS/REGISTER_C0_D0.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module REGISTER_C0_D0
+# 
+# Top level modules:
+# 	REGISTER_C0_D0
+# vlog -vlog01compat -work work +incdir+E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS {E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS/P_MATRIX.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module P_MATRIX
+# 
+# Top level modules:
+# 	P_MATRIX
+# vlog -vlog01compat -work work +incdir+E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS {E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS/PC_2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PC_2
+# 
+# Top level modules:
+# 	PC_2
+# vlog -vlog01compat -work work +incdir+E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS {E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS/PC_1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PC_1
+# 
+# Top level modules:
+# 	PC_1
+# vlog -vlog01compat -work work +incdir+E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS {E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS/MUX2_1_TOP.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MUX2_1_TOP
+# 
+# Top level modules:
+# 	MUX2_1_TOP
+# vlog -vlog01compat -work work +incdir+E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS {E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS/MUX2_1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MUX2_1
+# 
+# Top level modules:
+# 	MUX2_1
+# vlog -vlog01compat -work work +incdir+E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS {E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS/IP_1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IP_1
+# 
+# Top level modules:
+# 	IP_1
+# vlog -vlog01compat -work work +incdir+E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS {E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS/IP.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IP
+# 
+# Top level modules:
+# 	IP
+# vlog -vlog01compat -work work +incdir+E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS {E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS/F_FUNCTION.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module F_FUNCTION
+# 
+# Top level modules:
+# 	F_FUNCTION
+# vlog -vlog01compat -work work +incdir+E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS {E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS/E_XOR_KEY.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module E_XOR_KEY
+# 
+# Top level modules:
+# 	E_XOR_KEY
+# vlog -vlog01compat -work work +incdir+E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS {E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS/E_MATRIX.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module E_MATRIX
+# 
+# Top level modules:
+# 	E_MATRIX
+# vlog -vlog01compat -work work +incdir+E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS {E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS/DES_ALGORITHM.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DES_ALGORITHM
+# 
+# Top level modules:
+# 	DES_ALGORITHM
+# 
+# vlog -vlog01compat -work work +incdir+E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS {E:/HE_THONG_SO_HDL/DO_AN/DES_ALGORITHM_64_QUATUS/DES_TESTBENCH.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DES_TESTBENCH
+# 
+# Top level modules:
+# 	DES_TESTBENCH
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  DES_TESTBENCH
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps DES_TESTBENCH 
+# Loading work.DES_TESTBENCH
+# Loading work.DES_ALGORITHM
+# Loading work.STATE_MACHINE
+# Loading work.IP
+# Loading work.MUX2_1_TOP
+# Loading work.REGISTER_TOP
+# Loading work.ROUND_KEY
+# Loading work.PC_1
+# Loading work.MUX2_1
+# Loading work.REGISTER_C0_D0
+# Loading work.SHIFT_LEFT_1
+# Loading work.SHIFT_LEFT_2
+# Loading work.PC_2
+# Loading work.F_FUNCTION
+# Loading work.E_MATRIX
+# Loading work.E_XOR_KEY
+# Loading work.S_BOX
+# Loading work.P_MATRIX
+# Loading work.XOR_FUNCTION
+# Loading work.IP_1
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit 
+# Simulation stop requested.

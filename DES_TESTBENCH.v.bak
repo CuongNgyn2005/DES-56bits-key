@@ -1,0 +1,72 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 10/19/2025 04:55:24 PM
+// Design Name: 
+// Module Name: DES_TESTBENCH
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+/*
+DES_ALGORITHM(
+        Plaintext,   //                      DU LIEU CAN MA HOA 
+        Key_in,
+        Clk,//                               XUNG CLOCK 
+        Clk_machine,
+        Reset,//                        
+        Cirphertext);
+       input [63:0] Plaintext; 
+      input [63:0] Key_in; 
+      input Clk, Clk_machine, Reset;
+      output [63:0] Cirphertext;
+      */ 
+
+module DES_TESTBENCH();
+     reg [63:0]  Plaintext;
+     reg [63:0] Key_in;
+     reg Clk, Clk_machine, Reset;
+     wire [63:0] Cirphertext;
+     wire [31:0]Ln, R_n; 
+     wire [4:0] Counter_machine; 
+     wire Done; 
+     DES_ALGORITHM des(
+        .Plaintext(Plaintext),   //                      DU LIEU CAN MA HOA 
+        .Key_in(Key_in),
+        .Clk(Clk),//                               XUNG CLOCK 
+        .Clk_machine(Clk_machine),
+        .Reset(Reset),// 
+        .Ln(Ln),
+        .R_n(R_n),   
+        .Counter_machine(Counter_machine),                     
+        .Cirphertext(Cirphertext),
+        .Done(Done));
+        
+       initial begin
+        Clk = 0; 
+        #15; 
+        forever #30 Clk = ~Clk; 
+       end 
+       initial begin
+        Clk_machine = 0; 
+        forever #30 Clk_machine = ~Clk_machine; 
+       end 
+       initial begin
+          Reset = 1'b1; 
+           Plaintext =  64'h00123456789abcde; 
+           Key_in = 64'h0133457799bbcdff; 
+          @(posedge Clk); 
+          Reset = 1'b0; 
+       end 
+     
+endmodule
