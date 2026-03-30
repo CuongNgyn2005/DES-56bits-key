@@ -57,6 +57,3 @@ You can verify the cryptographic logic before hardware implementation using the 
 4. Click **Compile Design** to run Analysis & Synthesis, Fitter, and Timing Analysis.
 5. Check the `output_files/` directory for the resulting `.sof` or `.pof` programming files.
 
-## 📊 Timing and Verification
-
-Ensure you review the `TIMING.sdc` constraints before final compilation if you intend to run this at a specific clock frequency on physical hardware. The repository includes native link simulation reports (`DES_ALGORITHM_nativelink_simulation.rpt`) for reference.
