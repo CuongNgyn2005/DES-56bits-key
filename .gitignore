@@ -1,0 +1,12 @@
+#ignore test file
+Test_state_machine.v
+Test_roundkey.v
+Test_register.v
+test_pc1.v
+Test_mux.v
+test_f_function.v
+DES_TESTBENCH.v
+clock_2.v
+ROUND_KEY.v
+REGISTER_TOP.v
+REGISTER_C0_D0.v

@@ -1,20 +1,16 @@
-Fitter Status : Successful - Fri Feb 13 10:00:58 2026
-Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Standard Edition
+Fitter Status : Successful - Tue Apr 07 10:49:40 2026
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : DES_ALGORITHM
-Top-level Entity Name : DES_ALGORITHM
-Family : Cyclone V
-Device : 5CEBA7F27C7
+Top-level Entity Name : DE2_TOP
+Family : Cyclone II
+Device : EP2C35F672C6
 Timing Models : Final
-Logic utilization (in ALMs) : 156 / 56,480 ( < 1 % )
-Total registers : 128
-Total pins : 196 / 336 ( 58 % )
+Total logic elements : 2,243 / 33,216 ( 7 % )
+    Total combinational functions : 2,009 / 33,216 ( 6 % )
+    Dedicated logic registers : 1,177 / 33,216 ( 4 % )
+Total registers : 1177
+Total pins : 2 / 475 ( < 1 % )
 Total virtual pins : 0
-Total block memory bits : 0 / 7,024,640 ( 0 % )
-Total RAM Blocks : 0 / 686 ( 0 % )
-Total DSP Blocks : 0 / 156 ( 0 % )
-Total HSSI RX PCSs : 0
-Total HSSI PMA RX Deserializers : 0
-Total HSSI TX PCSs : 0
-Total HSSI PMA TX Serializers : 0
-Total PLLs : 0 / 7 ( 0 % )
-Total DLLs : 0 / 4 ( 0 % )
+Total memory bits : 273,408 / 483,840 ( 57 % )
+Embedded Multiplier 9-bit elements : 0 / 70 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
