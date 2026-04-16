@@ -1,11 +1,10 @@
 Info: Start Nativelink Simulation process
-Info: NativeLink has detected Verilog design -- Verilog simulation models will be used
 
 ========= EDA Simulation Settings =====================
 
 Sim Mode              :  RTL
 Family                :  cycloneii
-Quartus root          :  c:/altera/13.0sp1/quartus/bin/
+Quartus root          :  c:/altera/13.0sp1/quartus/bin64/
 Quartus sim root      :  c:/altera/13.0sp1/quartus/eda/sim_lib
 Simulation Tool       :  modelsim-altera
 Simulation Language   :  verilog

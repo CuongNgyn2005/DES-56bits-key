@@ -20,9 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module DES_ALGORITHM(Clk, Reset, Start, Plaintext, Key_in, Ciphertext, Done);
+module DES_ALGORITHM(Clk, Reset_n, Start, Plaintext, Key_in, Ciphertext, Done);
     input Clk;
-    input Reset;
+    input Reset_n;
     input Start;
     input [63:0] Plaintext;
     input [63:0] Key_in;
@@ -42,7 +42,7 @@ module DES_ALGORITHM(Clk, Reset, Start, Plaintext, Key_in, Ciphertext, Done);
 	 wire [31:0] f_result;
     //====================CONTROL UNIT=================
 	 DES_CONTROL control_unit(.Clk(Clk), 
-        .Reset(Reset), 
+        .Reset_n(Reset_n), 
         .Start(Start), 
         .Counter(Counter), 
         .Shift_sel(shift_sel), 
@@ -51,13 +51,11 @@ module DES_ALGORITHM(Clk, Reset, Start, Plaintext, Key_in, Ciphertext, Done);
     );
 	 //====================DATAPATH===================
 	 IP ip_inst(.Data_in(Plaintext), 
-        .Reset(Reset), 
         .R0(R0), 
         .L0(L0)
     );
 	 PC_1 pc1_inst (
-        .Des_key_in(Key_in), 
-        .Reset(Reset), 
+        .Des_key_in(Key_in),  
         .C0(C0), 
         .D0(D0)
     );
@@ -87,38 +85,36 @@ module DES_ALGORITHM(Clk, Reset, Start, Plaintext, Key_in, Ciphertext, Done);
         .F_out(f_result)
     );
 	 // UPDATE REGISTER
-	 always @(posedge Clk or posedge Reset) begin
-        if (Reset) begin
-            L <= 32'b0; 
+	always @(posedge Clk or negedge Reset_n) begin
+        if (!Reset_n) begin
+            L <= 32'b0;
             R <= 32'b0;
             C <= 28'b0; 
             D <= 28'b0;
         end
         else begin
-            if (mux_sel == 1'b0) begin 
-                // Trang thai IDLE: Lien tuc nap du lieu moi tu IP/PC1
-                L <= L0; 
+            if (Start == 1'b1) begin 
+                // LOAD STATE: Chỉ nạp dữ liệu mới khi có xung Start
+                L <= L0;
                 R <= R0;
                 C <= C0; 
                 D <= D0;
             end
-            else if (!Done) begin
-                // Trang thai PROCESSING: Cap nhat theo vong lap DES
-                // L(n) = R(n-1)
-                // R(n) = L(n-1) XOR f(R(n-1), K(n))
+            else if (mux_sel==1 &&!Done) begin
+                // PROCESSING STATE: Cập nhật theo vòng lặp DES
                 L <= R;
-                R <= L ^ f_result; 
-                
-                // Cap nhat Key C, D cho vong sau
+                R <= L ^ f_result;
                 C <= C_next;
                 D <= D_next;
             end
+            // HOLD STATE: 
+            // Nếu không Start và không Processing, các thanh ghi L, R, C, D 
+            // sẽ tự động giữ nguyên giá trị
         end
     end
 	 //FINAL PERMUTATION
 	 IP_1 final_perm (
-        .In({R, L}), 
-        .Reset(Reset), 
+        .In({R, L}),  
         .Cipertext(Ciphertext)
     );
 endmodule

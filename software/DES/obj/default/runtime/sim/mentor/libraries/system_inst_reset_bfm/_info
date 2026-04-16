@@ -1,0 +1,28 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\CE433\DES-56bits-key\software\DES\obj\default\runtime\sim\mentor
+valtera_avalon_reset_source
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+DXx26 altera_avalon_vip_pkgs_lib 13 verbosity_pkg 0 22 cXU68NiZ`A;DT[In2:S_m1
+!i10b 1
+!s100 k[YBzR1Bo9PPnen<?iG6F0
+Ic^Og3UW]@RI^]P_>gA5Ed1
+Vk1]bU7T^0F5>e8jlRd2OT1
+!s105 altera_avalon_reset_source_sv_unit
+S1
+Z2 dD:\CE433\DES-56bits-key\software\DES\obj\default\runtime\sim\mentor
+Z3 w1775987630
+8D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/altera_avalon_reset_source.sv
+FD:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/altera_avalon_reset_source.sv
+L0 23
+Z4 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1775987714.340000
+!s107 D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/altera_avalon_reset_source.sv|
+!s90 -reportprogress|300|-sv|D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/altera_avalon_reset_source.sv|-L|altera_avalon_vip_pkgs_lib|-work|system_inst_reset_bfm|
+!s101 -O0
+o-sv -L altera_avalon_vip_pkgs_lib -work system_inst_reset_bfm -O0

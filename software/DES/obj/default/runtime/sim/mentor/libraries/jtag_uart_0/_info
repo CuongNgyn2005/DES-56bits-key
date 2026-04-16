@@ -1,0 +1,100 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\CE433\DES-56bits-key\software\DES\obj\default\runtime\sim\mentor
+vsystem_jtag_uart_0
+!i10b 1
+!s100 fi0QkPfiboCF0PmDfaFnT2
+IPd5ETiTOIki`jHLW[G8jJ2
+V7M^eRL@W]>i<;co?kQ]=X3
+Z1 dD:\CE433\DES-56bits-key\software\DES\obj\default\runtime\sim\mentor
+Z2 w1775987633
+Z3 8D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_jtag_uart_0.v
+Z4 FD:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_jtag_uart_0.v
+L0 327
+Z5 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z6 !s108 1775987713.515000
+Z7 !s107 D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_jtag_uart_0.v|
+Z8 !s90 -reportprogress|300|D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_jtag_uart_0.v|-work|jtag_uart_0|
+!s101 -O0
+Z9 o-work jtag_uart_0 -O0
+vsystem_jtag_uart_0_scfifo_r
+!i10b 1
+!s100 fQ@8Aj[c1m9do7`KG23V>0
+I<KG60Q``JTW@e3Q=di=[f3
+VMb_3@cNcRCX2n4`1d_MkS2
+R1
+R2
+R3
+R4
+L0 240
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+vsystem_jtag_uart_0_scfifo_w
+!i10b 1
+!s100 cJ]ob]ca8Bj2VeX9H1X>d3
+I6HR<AXcV6bX75Rc4eKP2G1
+V0X6LI[ccEz<j]Ii`:;7]f0
+R1
+R2
+R3
+R4
+L0 77
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+vsystem_jtag_uart_0_sim_scfifo_r
+!i10b 1
+!s100 UB?V1RODI;i47BPlZKQa32
+I?4UzM?4>G]HY4c<3Ao8Bh3
+VmGNPXP4UiCG<z=CLY1g;n1
+R1
+R2
+R3
+R4
+L0 162
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+vsystem_jtag_uart_0_sim_scfifo_w
+!i10b 1
+!s100 a<5N^D9mhmjChkoCKJZ9f0
+InG[Tn8l7zQ7a7Q>;J[A4U1
+V14XTETa?9jGdTjT9VFCHn2
+R1
+R2
+R3
+R4
+L0 21
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9

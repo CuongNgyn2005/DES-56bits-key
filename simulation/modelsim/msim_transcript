@@ -1,4 +1,5 @@
 # Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
 # do DES_ALGORITHM_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -10,106 +11,327 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+D:/CE433/DES-56bits-key {D:/CE433/DES-56bits-key/S_BOX.v}
+# vlib system
+# ** Warning: (vlib-34) Library already exists at "system".
+# 
+# vmap system system
+# Modifying modelsim.ini
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis {D:/CE433/DES-56bits-key/system/synthesis/system.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module S_BOX
+# -- Compiling module system
 # 
 # Top level modules:
-# 	S_BOX
-# vlog -vlog01compat -work work +incdir+D:/CE433/DES-56bits-key {D:/CE433/DES-56bits-key/SHIFT_LEFT_2.v}
+# 	system
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/altera_reset_controller.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module SHIFT_LEFT_2
+# -- Compiling module altera_reset_controller
 # 
 # Top level modules:
-# 	SHIFT_LEFT_2
-# vlog -vlog01compat -work work +incdir+D:/CE433/DES-56bits-key {D:/CE433/DES-56bits-key/SHIFT_LEFT_1.v}
+# 	altera_reset_controller
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/altera_reset_synchronizer.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module SHIFT_LEFT_1
+# -- Compiling module altera_reset_synchronizer
 # 
 # Top level modules:
-# 	SHIFT_LEFT_1
-# vlog -vlog01compat -work work +incdir+D:/CE433/DES-56bits-key {D:/CE433/DES-56bits-key/P_MATRIX.v}
+# 	altera_reset_synchronizer
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/altera_avalon_sc_fifo.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module P_MATRIX
+# -- Compiling module altera_avalon_sc_fifo
 # 
 # Top level modules:
-# 	P_MATRIX
-# vlog -vlog01compat -work work +incdir+D:/CE433/DES-56bits-key {D:/CE433/DES-56bits-key/PC_2.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module PC_2
-# 
-# Top level modules:
-# 	PC_2
-# vlog -vlog01compat -work work +incdir+D:/CE433/DES-56bits-key {D:/CE433/DES-56bits-key/PC_1.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module PC_1
-# 
-# Top level modules:
-# 	PC_1
-# vlog -vlog01compat -work work +incdir+D:/CE433/DES-56bits-key {D:/CE433/DES-56bits-key/IP_1.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module IP_1
-# 
-# Top level modules:
-# 	IP_1
-# vlog -vlog01compat -work work +incdir+D:/CE433/DES-56bits-key {D:/CE433/DES-56bits-key/IP.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module IP
-# 
-# Top level modules:
-# 	IP
-# vlog -vlog01compat -work work +incdir+D:/CE433/DES-56bits-key {D:/CE433/DES-56bits-key/F_FUNCTION.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module F_FUNCTION
-# 
-# Top level modules:
-# 	F_FUNCTION
-# vlog -vlog01compat -work work +incdir+D:/CE433/DES-56bits-key {D:/CE433/DES-56bits-key/E_XOR_KEY.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module E_XOR_KEY
-# 
-# Top level modules:
-# 	E_XOR_KEY
-# vlog -vlog01compat -work work +incdir+D:/CE433/DES-56bits-key {D:/CE433/DES-56bits-key/E_MATRIX.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module E_MATRIX
-# 
-# Top level modules:
-# 	E_MATRIX
-# vlog -vlog01compat -work work +incdir+D:/CE433/DES-56bits-key {D:/CE433/DES-56bits-key/DES_ALGORITHM.v}
+# 	altera_avalon_sc_fifo
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/DES_ALGORITHM.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module DES_ALGORITHM
 # 
 # Top level modules:
 # 	DES_ALGORITHM
-# vlog -vlog01compat -work work +incdir+D:/CE433/DES-56bits-key {D:/CE433/DES-56bits-key/DES_CONTROL.v}
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/DES_CONTROL.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module DES_CONTROL
 # 
 # Top level modules:
 # 	DES_CONTROL
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/E_MATRIX.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module E_MATRIX
 # 
-vsim -voptargs=+acc work.DES_ALGORITHM
-# vsim -voptargs=+acc work.DES_ALGORITHM 
-# Loading work.DES_ALGORITHM
-# Loading work.DES_CONTROL
-# Loading work.IP
-# Loading work.PC_1
-# Loading work.SHIFT_LEFT_1
-# Loading work.SHIFT_LEFT_2
-# Loading work.PC_2
-# Loading work.F_FUNCTION
-# Loading work.E_MATRIX
-# Loading work.E_XOR_KEY
-# Loading work.S_BOX
-# Loading work.P_MATRIX
-# Loading work.IP_1
-# ** Warning: (vsim-3017) D:/CE433/DES-56bits-key/DES_ALGORITHM.v(51): [TFMPC] - Too few port connections. Expected 9, found 7.
+# Top level modules:
+# 	E_MATRIX
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/E_XOR_KEY.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module E_XOR_KEY
 # 
-#         Region: /DES_ALGORITHM/control_unit
-# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/DES_ALGORITHM.v(51): [TFMPC] - Missing connection for port 'Pre_state'.
+# Top level modules:
+# 	E_XOR_KEY
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/F_FUNCTION.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module F_FUNCTION
 # 
-# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/DES_ALGORITHM.v(51): [TFMPC] - Missing connection for port 'Next_state'.
+# Top level modules:
+# 	F_FUNCTION
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/IP.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IP
 # 
-add wave -position insertpoint sim:/DES_ALGORITHM/*
-run -all
+# Top level modules:
+# 	IP
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/IP_1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IP_1
+# 
+# Top level modules:
+# 	IP_1
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/P_MATRIX.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module P_MATRIX
+# 
+# Top level modules:
+# 	P_MATRIX
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/PC_1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PC_1
+# 
+# Top level modules:
+# 	PC_1
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/PC_2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PC_2
+# 
+# Top level modules:
+# 	PC_2
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/S_BOX.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module S_BOX
+# 
+# Top level modules:
+# 	S_BOX
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/SHIFT_LEFT_1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SHIFT_LEFT_1
+# 
+# Top level modules:
+# 	SHIFT_LEFT_1
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/SHIFT_LEFT_2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SHIFT_LEFT_2
+# 
+# Top level modules:
+# 	SHIFT_LEFT_2
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/DES_AVALON_WRAPPER.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DES_AVALON_WRAPPER
+# 
+# Top level modules:
+# 	DES_AVALON_WRAPPER
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/system_jtag_uart_0.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_jtag_uart_0_sim_scfifo_w
+# -- Compiling module system_jtag_uart_0_scfifo_w
+# -- Compiling module system_jtag_uart_0_sim_scfifo_r
+# -- Compiling module system_jtag_uart_0_scfifo_r
+# -- Compiling module system_jtag_uart_0
+# 
+# Top level modules:
+# 	system_jtag_uart_0
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/system_onchip_memory2_0.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_onchip_memory2_0
+# 
+# Top level modules:
+# 	system_onchip_memory2_0
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/system_nios2_qsys_0.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_nios2_qsys_0_register_bank_a_module
+# -- Compiling module system_nios2_qsys_0_register_bank_b_module
+# -- Compiling module system_nios2_qsys_0_nios2_oci_debug
+# -- Compiling module system_nios2_qsys_0_ociram_sp_ram_module
+# -- Compiling module system_nios2_qsys_0_nios2_ocimem
+# -- Compiling module system_nios2_qsys_0_nios2_avalon_reg
+# -- Compiling module system_nios2_qsys_0_nios2_oci_break
+# -- Compiling module system_nios2_qsys_0_nios2_oci_xbrk
+# -- Compiling module system_nios2_qsys_0_nios2_oci_dbrk
+# -- Compiling module system_nios2_qsys_0_nios2_oci_itrace
+# -- Compiling module system_nios2_qsys_0_nios2_oci_td_mode
+# -- Compiling module system_nios2_qsys_0_nios2_oci_dtrace
+# -- Compiling module system_nios2_qsys_0_nios2_oci_compute_tm_count
+# -- Compiling module system_nios2_qsys_0_nios2_oci_fifowp_inc
+# -- Compiling module system_nios2_qsys_0_nios2_oci_fifocount_inc
+# -- Compiling module system_nios2_qsys_0_nios2_oci_fifo
+# -- Compiling module system_nios2_qsys_0_nios2_oci_pib
+# -- Compiling module system_nios2_qsys_0_nios2_oci_im
+# -- Compiling module system_nios2_qsys_0_nios2_performance_monitors
+# -- Compiling module system_nios2_qsys_0_nios2_oci
+# -- Compiling module system_nios2_qsys_0
+# 
+# Top level modules:
+# 	system_nios2_qsys_0_nios2_performance_monitors
+# 	system_nios2_qsys_0
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/system_nios2_qsys_0_jtag_debug_module_sysclk.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_nios2_qsys_0_jtag_debug_module_sysclk
+# 
+# Top level modules:
+# 	system_nios2_qsys_0_jtag_debug_module_sysclk
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/system_nios2_qsys_0_jtag_debug_module_tck.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_nios2_qsys_0_jtag_debug_module_tck
+# 
+# Top level modules:
+# 	system_nios2_qsys_0_jtag_debug_module_tck
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/system_nios2_qsys_0_jtag_debug_module_wrapper.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_nios2_qsys_0_jtag_debug_module_wrapper
+# 
+# Top level modules:
+# 	system_nios2_qsys_0_jtag_debug_module_wrapper
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/system_nios2_qsys_0_oci_test_bench.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_nios2_qsys_0_oci_test_bench
+# 
+# Top level modules:
+# 	system_nios2_qsys_0_oci_test_bench
+# vlog -vlog01compat -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/system_nios2_qsys_0_test_bench.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_nios2_qsys_0_test_bench
+# 
+# Top level modules:
+# 	system_nios2_qsys_0_test_bench
+# vlog -vlog01compat -work work +incdir+D:/CE433/DES-56bits-key {D:/CE433/DES-56bits-key/DE2_TOP.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE2_TOP
+# 
+# Top level modules:
+# 	DE2_TOP
+# vlog -sv -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/system_irq_mapper.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_irq_mapper
+# 
+# Top level modules:
+# 	system_irq_mapper
+# vlog -sv -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/altera_merlin_arbitrator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# vlog -sv -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/system_rsp_xbar_mux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_rsp_xbar_mux_001
+# 
+# Top level modules:
+# 	system_rsp_xbar_mux_001
+# vlog -sv -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/system_rsp_xbar_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_rsp_xbar_mux
+# 
+# Top level modules:
+# 	system_rsp_xbar_mux
+# vlog -sv -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/system_rsp_xbar_demux_003.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_rsp_xbar_demux_003
+# 
+# Top level modules:
+# 	system_rsp_xbar_demux_003
+# vlog -sv -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/system_rsp_xbar_demux.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_rsp_xbar_demux
+# 
+# Top level modules:
+# 	system_rsp_xbar_demux
+# vlog -sv -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/system_cmd_xbar_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_cmd_xbar_mux
+# 
+# Top level modules:
+# 	system_cmd_xbar_mux
+# vlog -sv -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/system_cmd_xbar_demux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_cmd_xbar_demux_001
+# 
+# Top level modules:
+# 	system_cmd_xbar_demux_001
+# vlog -sv -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/system_cmd_xbar_demux.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_cmd_xbar_demux
+# 
+# Top level modules:
+# 	system_cmd_xbar_demux
+# vlog -sv -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/system_id_router_003.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_id_router_003_default_decode
+# -- Compiling module system_id_router_003
+# 
+# Top level modules:
+# 	system_id_router_003
+# vlog -sv -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/system_id_router.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_id_router_default_decode
+# -- Compiling module system_id_router
+# 
+# Top level modules:
+# 	system_id_router
+# vlog -sv -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/system_addr_router_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_addr_router_001_default_decode
+# -- Compiling module system_addr_router_001
+# 
+# Top level modules:
+# 	system_addr_router_001
+# vlog -sv -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/system_addr_router.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_addr_router_default_decode
+# -- Compiling module system_addr_router
+# 
+# Top level modules:
+# 	system_addr_router
+# vlog -sv -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/altera_merlin_slave_agent.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_slave_agent
+# ** Warning: D:/CE433/DES-56bits-key/system/synthesis/submodules/altera_merlin_slave_agent.sv(584): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# ** Warning: D:/CE433/DES-56bits-key/system/synthesis/submodules/altera_merlin_slave_agent.sv(469): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: D:/CE433/DES-56bits-key/system/synthesis/submodules/altera_merlin_slave_agent.sv(470): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: D:/CE433/DES-56bits-key/system/synthesis/submodules/altera_merlin_slave_agent.sv(471): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: D:/CE433/DES-56bits-key/system/synthesis/submodules/altera_merlin_slave_agent.sv(34): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# 
+# Top level modules:
+# 	altera_merlin_slave_agent
+# vlog -sv -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/altera_merlin_burst_uncompressor.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_burst_uncompressor
+# 
+# Top level modules:
+# 	altera_merlin_burst_uncompressor
+# vlog -sv -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/altera_merlin_master_agent.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_master_agent
+# 
+# Top level modules:
+# 	altera_merlin_master_agent
+# vlog -sv -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/altera_merlin_slave_translator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_slave_translator
+# 
+# Top level modules:
+# 	altera_merlin_slave_translator
+# vlog -sv -work system +incdir+D:/CE433/DES-56bits-key/system/synthesis/submodules {D:/CE433/DES-56bits-key/system/synthesis/submodules/altera_merlin_master_translator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_master_translator
+# 
+# Top level modules:
+# 	altera_merlin_master_translator
+# 

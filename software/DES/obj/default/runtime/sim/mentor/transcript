@@ -1,0 +1,686 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do msim_setup.tcl 
+# system_tb
+# ./../
+# C:/altera/13.0sp1/quartus/
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# [exec] file_copy 
+# List Of Command Line Aliases 
+# 
+# file_copy                     -- Copy ROM/RAM files to simulation directory 
+# 
+# dev_com                       -- Compile device library files 
+# 
+# com                           -- Compile the design files in correct order 
+# 
+# elab                          -- Elaborate top level design 
+# 
+# elab_debug                    -- Elaborate the top level design with novopt option 
+# 
+# ld                            -- Compile all the design files and elaborate the top level design 
+# 
+# ld_debug                      -- Compile all the design files and elaborate the top level design with -novopt 
+# 
+# 
+# 
+# List Of Variables 
+# 
+# TOP_LEVEL_NAME                -- Top level module name. 
+# 
+# SYSTEM_INSTANCE_NAME          -- Instantiated system module name inside top level module. 
+# 
+# QSYS_SIMDIR                   -- Qsys base simulation directory. 
+# 
+# QUARTUS_INSTALL_DIR           -- Quartus installation directory. 
+#  ld 
+# [exec] dev_com 
+# [exec] com 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package verbosity_pkg
+# 
+# Top level modules:
+# 	--none--
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_irq_mapper
+# 
+# Top level modules:
+# 	system_irq_mapper
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_rsp_xbar_mux_001
+# 
+# Top level modules:
+# 	system_rsp_xbar_mux_001
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_rsp_xbar_mux
+# 
+# Top level modules:
+# 	system_rsp_xbar_mux
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_rsp_xbar_demux_003
+# 
+# Top level modules:
+# 	system_rsp_xbar_demux_003
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_rsp_xbar_demux
+# 
+# Top level modules:
+# 	system_rsp_xbar_demux
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_cmd_xbar_mux
+# 
+# Top level modules:
+# 	system_cmd_xbar_mux
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_cmd_xbar_demux_001
+# 
+# Top level modules:
+# 	system_cmd_xbar_demux_001
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_cmd_xbar_demux
+# 
+# Top level modules:
+# 	system_cmd_xbar_demux
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_reset_controller
+# 
+# Top level modules:
+# 	altera_reset_controller
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_reset_synchronizer
+# 
+# Top level modules:
+# 	altera_reset_synchronizer
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_id_router_003_default_decode
+# -- Compiling module system_id_router_003
+# 
+# Top level modules:
+# 	system_id_router_003
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_id_router_default_decode
+# -- Compiling module system_id_router
+# 
+# Top level modules:
+# 	system_id_router
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_addr_router_001_default_decode
+# -- Compiling module system_addr_router_001
+# 
+# Top level modules:
+# 	system_addr_router_001
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_addr_router_default_decode
+# -- Compiling module system_addr_router
+# 
+# Top level modules:
+# 	system_addr_router
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_slave_agent
+# ** Warning: D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/altera_merlin_slave_agent.sv(584): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# ** Warning: D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/altera_merlin_slave_agent.sv(469): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/altera_merlin_slave_agent.sv(470): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/altera_merlin_slave_agent.sv(471): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/altera_merlin_slave_agent.sv(34): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# 
+# Top level modules:
+# 	altera_merlin_slave_agent
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_burst_uncompressor
+# 
+# Top level modules:
+# 	altera_merlin_burst_uncompressor
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_master_agent
+# 
+# Top level modules:
+# 	altera_merlin_master_agent
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_slave_translator
+# 
+# Top level modules:
+# 	altera_merlin_slave_translator
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_merlin_master_translator
+# 
+# Top level modules:
+# 	altera_merlin_master_translator
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DES_ALGORITHM
+# 
+# Top level modules:
+# 	DES_ALGORITHM
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DES_CONTROL
+# 
+# Top level modules:
+# 	DES_CONTROL
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module E_MATRIX
+# 
+# Top level modules:
+# 	E_MATRIX
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module E_XOR_KEY
+# 
+# Top level modules:
+# 	E_XOR_KEY
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module F_FUNCTION
+# 
+# Top level modules:
+# 	F_FUNCTION
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IP
+# 
+# Top level modules:
+# 	IP
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IP_1
+# 
+# Top level modules:
+# 	IP_1
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MUX2_1_TOP
+# 
+# Top level modules:
+# 	MUX2_1_TOP
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module P_MATRIX
+# 
+# Top level modules:
+# 	P_MATRIX
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PC_1
+# 
+# Top level modules:
+# 	PC_1
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PC_2
+# 
+# Top level modules:
+# 	PC_2
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module S_BOX
+# 
+# Top level modules:
+# 	S_BOX
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SHIFT_LEFT_1
+# 
+# Top level modules:
+# 	SHIFT_LEFT_1
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SHIFT_LEFT_2
+# 
+# Top level modules:
+# 	SHIFT_LEFT_2
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DES_AVALON_WRAPPER
+# 
+# Top level modules:
+# 	DES_AVALON_WRAPPER
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_jtag_uart_0_sim_scfifo_w
+# -- Compiling module system_jtag_uart_0_scfifo_w
+# -- Compiling module system_jtag_uart_0_sim_scfifo_r
+# -- Compiling module system_jtag_uart_0_scfifo_r
+# -- Compiling module system_jtag_uart_0
+# 
+# Top level modules:
+# 	system_jtag_uart_0
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_onchip_memory2_0
+# 
+# Top level modules:
+# 	system_onchip_memory2_0
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_nios2_qsys_0_register_bank_a_module
+# -- Compiling module system_nios2_qsys_0_register_bank_b_module
+# -- Compiling module system_nios2_qsys_0_nios2_oci_debug
+# -- Compiling module system_nios2_qsys_0_ociram_sp_ram_module
+# -- Compiling module system_nios2_qsys_0_nios2_ocimem
+# -- Compiling module system_nios2_qsys_0_nios2_avalon_reg
+# -- Compiling module system_nios2_qsys_0_nios2_oci_break
+# -- Compiling module system_nios2_qsys_0_nios2_oci_xbrk
+# -- Compiling module system_nios2_qsys_0_nios2_oci_dbrk
+# -- Compiling module system_nios2_qsys_0_nios2_oci_itrace
+# -- Compiling module system_nios2_qsys_0_nios2_oci_td_mode
+# -- Compiling module system_nios2_qsys_0_nios2_oci_dtrace
+# -- Compiling module system_nios2_qsys_0_nios2_oci_compute_tm_count
+# -- Compiling module system_nios2_qsys_0_nios2_oci_fifowp_inc
+# -- Compiling module system_nios2_qsys_0_nios2_oci_fifocount_inc
+# -- Compiling module system_nios2_qsys_0_nios2_oci_fifo
+# -- Compiling module system_nios2_qsys_0_nios2_oci_pib
+# -- Compiling module system_nios2_qsys_0_nios2_oci_im
+# -- Compiling module system_nios2_qsys_0_nios2_performance_monitors
+# -- Compiling module system_nios2_qsys_0_nios2_oci
+# -- Compiling module system_nios2_qsys_0
+# 
+# Top level modules:
+# 	system_nios2_qsys_0_nios2_performance_monitors
+# 	system_nios2_qsys_0
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_nios2_qsys_0_jtag_debug_module_sysclk
+# 
+# Top level modules:
+# 	system_nios2_qsys_0_jtag_debug_module_sysclk
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_nios2_qsys_0_jtag_debug_module_tck
+# 
+# Top level modules:
+# 	system_nios2_qsys_0_jtag_debug_module_tck
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_nios2_qsys_0_jtag_debug_module_wrapper
+# 
+# Top level modules:
+# 	system_nios2_qsys_0_jtag_debug_module_wrapper
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_nios2_qsys_0_oci_test_bench
+# 
+# Top level modules:
+# 	system_nios2_qsys_0_oci_test_bench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_nios2_qsys_0_test_bench
+# 
+# Top level modules:
+# 	system_nios2_qsys_0_test_bench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_avalon_reset_source
+# -- Importing package altera_avalon_vip_pkgs_lib.verbosity_pkg
+# 
+# Top level modules:
+# 	altera_avalon_reset_source
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altera_avalon_clock_source
+# -- Importing package altera_avalon_vip_pkgs_lib.verbosity_pkg
+# 
+# Top level modules:
+# 	altera_avalon_clock_source
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system
+# 
+# Top level modules:
+# 	system
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_tb
+# 
+# Top level modules:
+# 	system_tb
+# [exec] elab 
+# vsim -L work -L work_lib -L altera_avalon_vip_pkgs_lib -L irq_mapper -L rsp_xbar_mux_001 -L rsp_xbar_mux -L rsp_xbar_demux_003 -L rsp_xbar_demux -L cmd_xbar_mux -L cmd_xbar_demux_001 -L cmd_xbar_demux -L rst_controller -L id_router_003 -L id_router -L addr_router_001 -L addr_router -L nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo -L nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent -L nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent -L nios2_qsys_0_jtag_debug_module_translator -L nios2_qsys_0_instruction_master_translator -L DES_0 -L jtag_uart_0 -L onchip_memory2_0 -L nios2_qsys_0 -L system_inst_reset_bfm -L system_inst_clk_bfm -L system_inst -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -t ps -G/system_tb/system_inst/onchip_memory2_0/INIT_FILE=\"system_onchip_memory2_0.hex\" system_tb 
+# Loading work.system_tb
+# Loading system_inst.system
+# Loading nios2_qsys_0.system_nios2_qsys_0
+# Loading nios2_qsys_0.system_nios2_qsys_0_test_bench
+# Loading nios2_qsys_0.system_nios2_qsys_0_register_bank_a_module
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading nios2_qsys_0.system_nios2_qsys_0_register_bank_b_module
+# Loading nios2_qsys_0.system_nios2_qsys_0_nios2_oci
+# Loading nios2_qsys_0.system_nios2_qsys_0_nios2_oci_debug
+# Loading altera_mf_ver.altera_std_synchronizer
+# Loading nios2_qsys_0.system_nios2_qsys_0_nios2_ocimem
+# Loading nios2_qsys_0.system_nios2_qsys_0_ociram_sp_ram_module
+# Loading nios2_qsys_0.system_nios2_qsys_0_nios2_avalon_reg
+# Loading nios2_qsys_0.system_nios2_qsys_0_nios2_oci_break
+# Loading nios2_qsys_0.system_nios2_qsys_0_nios2_oci_xbrk
+# Loading nios2_qsys_0.system_nios2_qsys_0_nios2_oci_dbrk
+# Loading nios2_qsys_0.system_nios2_qsys_0_nios2_oci_itrace
+# Loading nios2_qsys_0.system_nios2_qsys_0_nios2_oci_dtrace
+# Loading nios2_qsys_0.system_nios2_qsys_0_nios2_oci_td_mode
+# Loading nios2_qsys_0.system_nios2_qsys_0_nios2_oci_fifo
+# Loading nios2_qsys_0.system_nios2_qsys_0_nios2_oci_compute_tm_count
+# Loading nios2_qsys_0.system_nios2_qsys_0_nios2_oci_fifowp_inc
+# Loading nios2_qsys_0.system_nios2_qsys_0_nios2_oci_fifocount_inc
+# Loading nios2_qsys_0.system_nios2_qsys_0_oci_test_bench
+# Loading nios2_qsys_0.system_nios2_qsys_0_nios2_oci_pib
+# Loading nios2_qsys_0.system_nios2_qsys_0_nios2_oci_im
+# Loading nios2_qsys_0.system_nios2_qsys_0_jtag_debug_module_wrapper
+# Loading nios2_qsys_0.system_nios2_qsys_0_jtag_debug_module_tck
+# Loading nios2_qsys_0.system_nios2_qsys_0_jtag_debug_module_sysclk
+# Loading onchip_memory2_0.system_onchip_memory2_0
+# Loading jtag_uart_0.system_jtag_uart_0
+# Loading jtag_uart_0.system_jtag_uart_0_scfifo_w
+# Loading jtag_uart_0.system_jtag_uart_0_sim_scfifo_w
+# Loading jtag_uart_0.system_jtag_uart_0_scfifo_r
+# Loading jtag_uart_0.system_jtag_uart_0_sim_scfifo_r
+# Loading DES_0.DES_AVALON_WRAPPER
+# Loading DES_0.DES_ALGORITHM
+# Loading DES_0.DES_CONTROL
+# Loading DES_0.IP
+# Loading DES_0.PC_1
+# Loading DES_0.SHIFT_LEFT_1
+# Loading DES_0.SHIFT_LEFT_2
+# Loading DES_0.PC_2
+# Loading DES_0.F_FUNCTION
+# Loading DES_0.E_MATRIX
+# Loading DES_0.E_XOR_KEY
+# Loading DES_0.S_BOX
+# Loading DES_0.P_MATRIX
+# Loading DES_0.IP_1
+# Loading sv_std.std
+# Loading nios2_qsys_0_instruction_master_translator.altera_merlin_master_translator
+# Loading nios2_qsys_0_jtag_debug_module_translator.altera_merlin_slave_translator
+# Loading nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent.altera_merlin_master_agent
+# Loading nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent.altera_merlin_slave_agent
+# Loading nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent.altera_merlin_burst_uncompressor
+# Loading nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo.altera_avalon_sc_fifo
+# Loading addr_router.system_addr_router
+# Loading addr_router.system_addr_router_default_decode
+# Loading addr_router_001.system_addr_router_001
+# Loading addr_router_001.system_addr_router_001_default_decode
+# Loading id_router.system_id_router
+# Loading id_router.system_id_router_default_decode
+# Loading id_router_003.system_id_router_003
+# Loading id_router_003.system_id_router_003_default_decode
+# Loading rst_controller.altera_reset_controller
+# Loading cmd_xbar_demux.system_cmd_xbar_demux
+# Loading cmd_xbar_demux_001.system_cmd_xbar_demux_001
+# Loading cmd_xbar_mux.system_cmd_xbar_mux
+# Loading cmd_xbar_mux.altera_merlin_arbitrator
+# Loading cmd_xbar_mux.altera_merlin_arb_adder
+# Loading rsp_xbar_demux.system_rsp_xbar_demux
+# Loading rsp_xbar_demux_003.system_rsp_xbar_demux_003
+# Loading rsp_xbar_mux.system_rsp_xbar_mux
+# Loading rsp_xbar_mux.altera_merlin_arbitrator
+# Loading rsp_xbar_mux.altera_merlin_arb_adder
+# Loading rsp_xbar_mux_001.system_rsp_xbar_mux_001
+# Loading rsp_xbar_mux_001.altera_merlin_arbitrator
+# Loading rsp_xbar_mux_001.altera_merlin_arb_adder
+# Loading irq_mapper.system_irq_mapper
+# Loading altera_avalon_vip_pkgs_lib.verbosity_pkg
+# Loading system_inst_clk_bfm.altera_avalon_clock_source
+# Loading system_inst_reset_bfm.altera_avalon_reset_source
+# Loading rst_controller.altera_reset_synchronizer
+# ** Warning: (vsim-8311) System Verilog assertions are supported only in Questasim.
+# 
+# ** Warning: (vsim-3017) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(55): [TFMPC] - Too few port connections. Expected 23, found 6.
+# 
+#         Region: /system_tb/system_inst/nios2_qsys_0/system_nios2_qsys_0_register_bank_a/the_altsyncram
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'wren_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'rden_a'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'rden_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'data_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'clock1'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'clocken0'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'clocken1'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'clocken2'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'clocken3'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'aclr0'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'aclr1'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'byteena_a'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'byteena_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'addressstall_a'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'addressstall_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'q_a'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(55): [TFMPC] - Missing connection for port 'eccstatus'.
+# 
+# ** Warning: (vsim-3017) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(118): [TFMPC] - Too few port connections. Expected 23, found 6.
+# 
+#         Region: /system_tb/system_inst/nios2_qsys_0/system_nios2_qsys_0_register_bank_b/the_altsyncram
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'wren_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'rden_a'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'rden_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'data_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'clock1'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'clocken0'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'clocken1'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'clocken2'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'clocken3'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'aclr0'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'aclr1'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'byteena_a'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'byteena_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'addressstall_a'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'addressstall_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'q_a'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(118): [TFMPC] - Missing connection for port 'eccstatus'.
+# 
+# ** Warning: (vsim-3017) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(322): [TFMPC] - Too few port connections. Expected 23, found 6.
+# 
+#         Region: /system_tb/system_inst/nios2_qsys_0/the_system_nios2_qsys_0_nios2_oci/the_system_nios2_qsys_0_nios2_ocimem/system_nios2_qsys_0_ociram_sp_ram/the_altsyncram
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'wren_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'rden_a'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'rden_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'data_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'address_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'clock1'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'clocken0'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'clocken1'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'clocken2'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'clocken3'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'aclr0'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'aclr1'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'byteena_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'addressstall_a'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'addressstall_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'q_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(322): [TFMPC] - Missing connection for port 'eccstatus'.
+# 
+# ** Warning: (vsim-3015) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(2937): [PCDPC] - Port size (16 or 16) does not match connection size (38) for port 'jdo'. The port definition is at: D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v(1307).
+# 
+#         Region: /system_tb/system_inst/nios2_qsys_0/the_system_nios2_qsys_0_nios2_oci/the_system_nios2_qsys_0_nios2_oci_itrace
+# ** Warning: (vsim-3017) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v(66): [TFMPC] - Too few port connections. Expected 23, found 7.
+# 
+#         Region: /system_tb/system_inst/onchip_memory2_0/the_altsyncram
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'wren_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'rden_a'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'rden_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'data_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'address_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'clock1'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'clocken1'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'clocken2'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'clocken3'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'aclr0'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'aclr1'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'byteena_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'addressstall_a'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'addressstall_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'q_b'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v(66): [TFMPC] - Missing connection for port 'eccstatus'.
+# 
+# ** Warning: (vsim-3017) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system.v(407): [TFMPC] - Too few port connections. Expected 12, found 10.
+# 
+#         Region: /system_tb/system_inst/jtag_uart_0
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system.v(407): [TFMPC] - Missing connection for port 'dataavailable'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/system.v(407): [TFMPC] - Missing connection for port 'readyfordata'.
+# 
+# ** Warning: (vsim-3017) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/DES_ALGORITHM.v(51): [TFMPC] - Too few port connections. Expected 9, found 7.
+# 
+#         Region: /system_tb/system_inst/des_0/des_inst/control_unit
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/DES_ALGORITHM.v(51): [TFMPC] - Missing connection for port 'Pre_state'.
+# 
+# ** Warning: (vsim-3722) D:/CE433/DES-56bits-key/system/testbench/system_tb/simulation/submodules/DES_ALGORITHM.v(51): [TFMPC] - Missing connection for port 'Next_state'.
+# 
+# ** Warning: Design size of 80 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
+#   
+add wave -position insertpoint  \
+sim:/system_tb/system_inst/des_0/clk \
+sim:/system_tb/system_inst/des_0/reset_n \
+sim:/system_tb/system_inst/des_0/address \
+sim:/system_tb/system_inst/des_0/read \
+sim:/system_tb/system_inst/des_0/readdata \
+sim:/system_tb/system_inst/des_0/write \
+sim:/system_tb/system_inst/des_0/writedata \
+sim:/system_tb/system_inst/des_0/plaintext_reg \
+sim:/system_tb/system_inst/des_0/key_reg \
+sim:/system_tb/system_inst/des_0/start_reg \
+sim:/system_tb/system_inst/des_0/ciphertext_wire \
+sim:/system_tb/system_inst/des_0/done_wire
+add wave -position insertpoint  \
+sim:/system_tb/system_inst/des_0/des_inst/Clk \
+sim:/system_tb/system_inst/des_0/des_inst/Reset_n \
+sim:/system_tb/system_inst/des_0/des_inst/Start \
+sim:/system_tb/system_inst/des_0/des_inst/Plaintext \
+sim:/system_tb/system_inst/des_0/des_inst/Key_in \
+sim:/system_tb/system_inst/des_0/des_inst/Ciphertext \
+sim:/system_tb/system_inst/des_0/des_inst/Done \
+sim:/system_tb/system_inst/des_0/des_inst/Counter \
+sim:/system_tb/system_inst/des_0/des_inst/shift_sel \
+sim:/system_tb/system_inst/des_0/des_inst/mux_sel \
+sim:/system_tb/system_inst/des_0/des_inst/L \
+sim:/system_tb/system_inst/des_0/des_inst/R \
+sim:/system_tb/system_inst/des_0/des_inst/C \
+sim:/system_tb/system_inst/des_0/des_inst/D \
+sim:/system_tb/system_inst/des_0/des_inst/L0 \
+sim:/system_tb/system_inst/des_0/des_inst/R0 \
+sim:/system_tb/system_inst/des_0/des_inst/C0 \
+sim:/system_tb/system_inst/des_0/des_inst/D0 \
+sim:/system_tb/system_inst/des_0/des_inst/C_shifted_1 \
+sim:/system_tb/system_inst/des_0/des_inst/D_shifted_1 \
+sim:/system_tb/system_inst/des_0/des_inst/C_shifted_2 \
+sim:/system_tb/system_inst/des_0/des_inst/D_shifted_2 \
+sim:/system_tb/system_inst/des_0/des_inst/C_next \
+sim:/system_tb/system_inst/des_0/des_inst/D_next \
+sim:/system_tb/system_inst/des_0/des_inst/SubKey \
+sim:/system_tb/system_inst/des_0/des_inst/f_result
+run 3ms
+#                    0: INFO: system_tb.system_inst_clk_bfm.__hello: - Hello from altera_clock_source.
+#                    0: INFO: system_tb.system_inst_clk_bfm.__hello: -   $Revision: #1 $
+#                    0: INFO: system_tb.system_inst_clk_bfm.__hello: -   $Date: 2013/03/07 $
+#                    0: INFO: system_tb.system_inst_clk_bfm.__hello: -   CLOCK_RATE = 50000000 Hz
+#                    0: INFO: ------------------------------------------------------------
+#                    0: INFO: system_tb.system_inst_reset_bfm.__hello: - Hello from altera_reset_source
+#                    0: INFO: system_tb.system_inst_reset_bfm.__hello: -   $Revision: #1 $
+#                    0: INFO: system_tb.system_inst_reset_bfm.__hello: -   $Date: 2013/03/07 $
+#                    0: INFO: system_tb.system_inst_reset_bfm.__hello: -   ASSERT_HIGH_RESET = 0
+#                    0: INFO: system_tb.system_inst_reset_bfm.__hello: -   INITIAL_RESET_CYCLES = 50
+#                    0: INFO: ------------------------------------------------------------
+#                    0: INFO: system_tb.system_inst_reset_bfm.reset_assert: Reset asserted
+#               990000: INFO: system_tb.system_inst_reset_bfm.reset_deassert: Reset deasserted
+# Loading Plaintext and Key into hardware...

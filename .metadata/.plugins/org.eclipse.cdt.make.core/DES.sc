@@ -2,7 +2,7 @@
 <?scdStore version="2"?>
 
 <scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
-<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.213995299;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.213995299.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.404445638;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.1863628715">
+<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1766576723;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1766576723.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.515061964;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.289257513">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="D:/CE433/DES-56bits-key/software/DES_bsp/HAL/inc"/>
 <includePath path="D:/CE433/DES-56bits-key/software/DES_bsp/"/>
@@ -232,7 +232,7 @@
 <definedSymbol symbol="ALT_SINGLE_THREADED=1"/>
 </collector>
 </instance>
-<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.213995299;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.213995299.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.925862773;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1476783571">
+<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1766576723;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1766576723.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.891203896;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1264044971">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="D:/CE433/DES-56bits-key/software/DES_bsp/HAL/inc"/>
 <includePath path="D:/CE433/DES-56bits-key/software/DES_bsp/"/>

@@ -21,7 +21,7 @@
 
 
 module DES_CONTROL(Clk, 
-                     Reset,
+                     Reset_n,
 							Start,
                      Mux_sel,
 							Shift_sel,
@@ -29,7 +29,7 @@ module DES_CONTROL(Clk,
                      Pre_state,
                      Next_state, Done);
 
-  input Clk, Reset;
+  input Clk, Reset_n;
   input Start; 
   output reg Mux_sel,Shift_sel; 
   output reg [3:0] Counter;
@@ -39,8 +39,8 @@ module DES_CONTROL(Clk,
   localparam S_DONE = 2'b10; 
   output   reg[1:0] Pre_state , Next_state;
 	//==============================Chuyển trạng thái tuân theo Clock===============
-	always@(posedge Clk or posedge Reset) begin
-		if(Reset)
+	always@(posedge Clk or negedge Reset_n) begin
+		if(!Reset_n)
 		Pre_state <= S_IDLE;
 		else
 		Pre_state <= Next_state;
@@ -62,8 +62,8 @@ module DES_CONTROL(Clk,
 		endcase
 	end
 	//===========================Bộ đếm vòng=======================
-	always@(posedge Clk or posedge Reset) begin
-		if (Reset) 
+	always@(posedge Clk or negedge Reset_n) begin
+		if (!Reset_n) 
             Counter <= 0;
         else if (Pre_state == S_IDLE)
             Counter <= 0;

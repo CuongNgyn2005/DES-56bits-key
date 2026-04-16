@@ -2,12 +2,52 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 97.778
+Type  : Slow Model Setup 'Clk'
+Slack : -4.810
+TNS   : -295.293
+
+Type  : Slow Model Setup 'DES_CONTROL:control_unit|Pre_state[0]'
+Slack : -1.584
+TNS   : -2.809
+
+Type  : Slow Model Hold 'DES_CONTROL:control_unit|Pre_state[0]'
+Slack : -2.363
+TNS   : -4.007
+
+Type  : Slow Model Hold 'Clk'
+Slack : -1.856
+TNS   : -49.275
+
+Type  : Slow Model Minimum Pulse Width 'Clk'
+Slack : -1.380
+TNS   : -127.380
+
+Type  : Slow Model Minimum Pulse Width 'DES_CONTROL:control_unit|Pre_state[0]'
+Slack : 0.500
 TNS   : 0.000
 
-Type  : Fast Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 97.778
+Type  : Fast Model Setup 'Clk'
+Slack : -1.560
+TNS   : -71.208
+
+Type  : Fast Model Setup 'DES_CONTROL:control_unit|Pre_state[0]'
+Slack : -0.247
+TNS   : -0.418
+
+Type  : Fast Model Hold 'DES_CONTROL:control_unit|Pre_state[0]'
+Slack : -1.354
+TNS   : -2.395
+
+Type  : Fast Model Hold 'Clk'
+Slack : -1.310
+TNS   : -73.693
+
+Type  : Fast Model Minimum Pulse Width 'Clk'
+Slack : -1.380
+TNS   : -127.380
+
+Type  : Fast Model Minimum Pulse Width 'DES_CONTROL:control_unit|Pre_state[0]'
+Slack : 0.500
 TNS   : 0.000
 
 ------------------------------------------------------------
