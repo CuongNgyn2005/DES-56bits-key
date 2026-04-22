@@ -21,7 +21,7 @@
 module DES_TESTBENCH();
      // Inputs (Reg vi nam trong khoi initial/always)
     reg Clk;
-    reg Reset;
+    reg Reset_n;
     reg Start;
     reg [63:0] Plaintext;
     reg [63:0] Key_in;
@@ -31,7 +31,7 @@ module DES_TESTBENCH();
     wire Done;
     DES_ALGORITHM uut (
         .Clk(Clk), 
-        .Reset(Reset), 
+        .Reset_n(Reset_n), 
         .Start(Start),           
         .Plaintext(Plaintext), 
         .Key_in(Key_in), 
@@ -47,13 +47,13 @@ module DES_TESTBENCH();
       // 4. Kịch bản chạy (Stimulus)
     initial begin
         // Reset hệ thống
-        Reset = 1; 
+        Reset_n = 0; 
         Start = 0;
         Plaintext = 64'h00123456789abcde; 
         Key_in    = 64'h0133457799bbcdff; 
         #100; // Chờ 100ns
 
-        Reset = 0;
+        Reset_n = 1;
         #20;
 
         // Kích hoạt Start (BẮT BUỘC)

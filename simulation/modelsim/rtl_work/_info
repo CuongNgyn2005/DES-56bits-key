@@ -3,24 +3,276 @@ K3
 13
 cModel Technology
 Z0 dD:\CE433\DES-56bits-key\simulation\modelsim
-vDE2_TOP
-!i10b 1
-!s100 9QD]dL@mzfj<UOS0G?^il3
-II2bahGE??zm@hN2zMIO4F3
-VXeb=L04eDnFh:V`<alW]92
+vDES_ALGORITHM
+I26;PBl4FRk=?dHAajBHJ?2
+VU6z2SQm0ahYUk1g?F:ZLU0
 Z1 dD:\CE433\DES-56bits-key\simulation\modelsim
-w1775533758
-8D:/CE433/DES-56bits-key/DE2_TOP.v
-FD:/CE433/DES-56bits-key/DE2_TOP.v
-L0 1
-OV;L;10.1d;51
+w1776354101
+8D:/CE433/DES-56bits-key/DES_ALGORITHM.v
+FD:/CE433/DES-56bits-key/DES_ALGORITHM.v
+L0 2
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/CE433/DES-56bits-key -O0
+n@d@e@s_@a@l@g@o@r@i@t@h@m
+!i10b 1
+!s100 F5[NLP1OnTMgHe2HaU]cL0
+!s85 0
+!s108 1776424982.895000
+!s107 D:/CE433/DES-56bits-key/DES_ALGORITHM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CE433/DES-56bits-key|D:/CE433/DES-56bits-key/DES_ALGORITHM.v|
+!s101 -O0
+vDES_TESTBENCH
+!i10b 1
+!s100 1587e95eW^nZTcJjMN6<z2
+IGfJd8bS5TDU:QAaJLG3^?3
+V7_?f2^_[Rfo??RfnH[gze2
+R1
+w1776424917
+8D:/CE433/DES-56bits-key/DES_TESTBENCH.v
+FD:/CE433/DES-56bits-key/DES_TESTBENCH.v
+L0 21
+R2
 r1
 !s85 0
 31
-!s108 1775967512.087000
-!s107 D:/CE433/DES-56bits-key/DE2_TOP.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CE433/DES-56bits-key|D:/CE433/DES-56bits-key/DE2_TOP.v|
+!s108 1776424983.064000
+!s107 D:/CE433/DES-56bits-key/DES_TESTBENCH.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CE433/DES-56bits-key|D:/CE433/DES-56bits-key/DES_TESTBENCH.v|
 !s101 -O0
-o-vlog01compat -work work -O0
-!s92 -vlog01compat -work work +incdir+D:/CE433/DES-56bits-key -O0
-n@d@e2_@t@o@p
+R3
+R4
+n@d@e@s_@t@e@s@t@b@e@n@c@h
+vE_MATRIX
+IR;bUdoo[B5hD;of5kReGz1
+V9F]iK]OEMTKE@B1no]e4[1
+R1
+Z5 w1776345634
+8D:/CE433/DES-56bits-key/E_MATRIX.v
+FD:/CE433/DES-56bits-key/E_MATRIX.v
+L0 23
+R2
+r1
+31
+R3
+R4
+n@e_@m@a@t@r@i@x
+!i10b 1
+!s100 zfnEIj0dddWc7QEL`8a<Q2
+!s85 0
+!s108 1776424982.801000
+!s107 D:/CE433/DES-56bits-key/E_MATRIX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CE433/DES-56bits-key|D:/CE433/DES-56bits-key/E_MATRIX.v|
+!s101 -O0
+vE_XOR_KEY
+I1bk=W_Pa`_U?jTnB5Fib20
+V6m:B]_Z_=bOEZXWz]jeDZ3
+R1
+R5
+8D:/CE433/DES-56bits-key/E_XOR_KEY.v
+FD:/CE433/DES-56bits-key/E_XOR_KEY.v
+L0 23
+R2
+r1
+31
+R3
+R4
+n@e_@x@o@r_@k@e@y
+!i10b 1
+!s100 U2P[SIR:W[;1C4Fg6Nimo2
+!s85 0
+!s108 1776424982.713000
+!s107 D:/CE433/DES-56bits-key/E_XOR_KEY.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CE433/DES-56bits-key|D:/CE433/DES-56bits-key/E_XOR_KEY.v|
+!s101 -O0
+vF_FUNCTION
+IMA3mh_ECS`02eREa0^LGX2
+VGkJUo7AZ^nFEg_]@Sn_2h1
+R1
+R5
+8D:/CE433/DES-56bits-key/F_FUNCTION.v
+FD:/CE433/DES-56bits-key/F_FUNCTION.v
+L0 23
+R2
+r1
+31
+R3
+R4
+n@f_@f@u@n@c@t@i@o@n
+!i10b 1
+!s100 2PE38?XiUNYOfbm03n7id2
+!s85 0
+!s108 1776424982.628000
+!s107 D:/CE433/DES-56bits-key/F_FUNCTION.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CE433/DES-56bits-key|D:/CE433/DES-56bits-key/F_FUNCTION.v|
+!s101 -O0
+vIP
+IZfE?[MH_cNH_b3_8C<ZNJ0
+ViS00OXIU[P=b9_]Z2gdBo3
+R1
+R5
+8D:/CE433/DES-56bits-key/IP.v
+FD:/CE433/DES-56bits-key/IP.v
+L0 23
+R2
+r1
+31
+R3
+R4
+n@i@p
+!i10b 1
+!s100 AFKZ:G?i9M30Cm=1lQ_^00
+!s85 0
+!s108 1776424982.546000
+!s107 D:/CE433/DES-56bits-key/IP.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CE433/DES-56bits-key|D:/CE433/DES-56bits-key/IP.v|
+!s101 -O0
+vIP_1
+I<Kh8Z:2MaYnH>KFHIR1XY1
+V92Woggal_RYlY_032MZnQ2
+R1
+R5
+8D:/CE433/DES-56bits-key/IP_1.v
+FD:/CE433/DES-56bits-key/IP_1.v
+L0 21
+R2
+r1
+31
+R3
+R4
+n@i@p_1
+!i10b 1
+!s100 b1NzEK_b343TFR4I^hz[T3
+!s85 0
+!s108 1776424982.455000
+!s107 D:/CE433/DES-56bits-key/IP_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CE433/DES-56bits-key|D:/CE433/DES-56bits-key/IP_1.v|
+!s101 -O0
+vP_MATRIX
+Ijz_j?@o]FlE:9;Mhf<e]C3
+V88EP;01SnV^zEdbY>;XHL1
+R1
+R5
+8D:/CE433/DES-56bits-key/P_MATRIX.v
+FD:/CE433/DES-56bits-key/P_MATRIX.v
+L0 23
+R2
+r1
+31
+R3
+R4
+n@p_@m@a@t@r@i@x
+!i10b 1
+!s100 <1B;dBZPGQ>;9Ceh?]0WD3
+!s85 0
+!s108 1776424982.044000
+!s107 D:/CE433/DES-56bits-key/P_MATRIX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CE433/DES-56bits-key|D:/CE433/DES-56bits-key/P_MATRIX.v|
+!s101 -O0
+vPC_1
+IH^1?7kY2cgPC<lz9[kLfT3
+VE2A9U4iIVO2G_V?a_okiP2
+R1
+R5
+8D:/CE433/DES-56bits-key/PC_1.v
+FD:/CE433/DES-56bits-key/PC_1.v
+L0 24
+R2
+r1
+31
+R3
+R4
+n@p@c_1
+!i10b 1
+!s100 i8FmLM]8_D?<ncaiPm>@Q0
+!s85 0
+!s108 1776424982.369000
+!s107 D:/CE433/DES-56bits-key/PC_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CE433/DES-56bits-key|D:/CE433/DES-56bits-key/PC_1.v|
+!s101 -O0
+vPC_2
+IeBCmVZ5dE[0h5f^Q]kX2e0
+V`5HMYGj7B23]1Y1cRDzLm1
+R1
+R5
+8D:/CE433/DES-56bits-key/PC_2.v
+FD:/CE433/DES-56bits-key/PC_2.v
+L0 23
+R2
+r1
+31
+R3
+R4
+n@p@c_2
+!i10b 1
+!s100 fIda3?NA9TCnK;ObPKM]k2
+!s85 0
+!s108 1776424982.279000
+!s107 D:/CE433/DES-56bits-key/PC_2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CE433/DES-56bits-key|D:/CE433/DES-56bits-key/PC_2.v|
+!s101 -O0
+vS_BOX
+IZV9AfM<`<UnT?Dj[oo`0_1
+V>EIZde[d5_k98j^]Q3igZ1
+R1
+R5
+8D:/CE433/DES-56bits-key/S_BOX.v
+FD:/CE433/DES-56bits-key/S_BOX.v
+L0 7
+R2
+r1
+31
+R3
+n@s_@b@o@x
+R4
+!i10b 1
+!s100 5?E<Fg5Ek62L764jTQbVE0
+!s85 0
+!s108 1776424981.662000
+!s107 D:/CE433/DES-56bits-key/S_BOX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CE433/DES-56bits-key|D:/CE433/DES-56bits-key/S_BOX.v|
+!s101 -O0
+vSHIFT_LEFT_1
+I3HoKnE4VVDfMFlKPkzGh]3
+VZKZM6EZj]MIUQKmfiDE880
+R1
+R5
+8D:/CE433/DES-56bits-key/SHIFT_LEFT_1.v
+FD:/CE433/DES-56bits-key/SHIFT_LEFT_1.v
+L0 23
+R2
+r1
+31
+R3
+R4
+n@s@h@i@f@t_@l@e@f@t_1
+!i10b 1
+!s100 FmKkY_n@V?QdI:Udn2Cl43
+!s85 0
+!s108 1776424981.919000
+!s107 D:/CE433/DES-56bits-key/SHIFT_LEFT_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CE433/DES-56bits-key|D:/CE433/DES-56bits-key/SHIFT_LEFT_1.v|
+!s101 -O0
+vSHIFT_LEFT_2
+IAYnACL6[aiA`7Hm8k;59Y2
+Vk>HIW86mlbcF3?[Rmbz?F1
+R1
+R5
+8D:/CE433/DES-56bits-key/SHIFT_LEFT_2.v
+FD:/CE433/DES-56bits-key/SHIFT_LEFT_2.v
+L0 23
+R2
+r1
+31
+R3
+R4
+n@s@h@i@f@t_@l@e@f@t_2
+!i10b 1
+!s100 IbFY8z2JI7nCjOjbl:[Td1
+!s85 0
+!s108 1776424981.771000
+!s107 D:/CE433/DES-56bits-key/SHIFT_LEFT_2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CE433/DES-56bits-key|D:/CE433/DES-56bits-key/SHIFT_LEFT_2.v|
+!s101 -O0

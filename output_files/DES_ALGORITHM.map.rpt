@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DES_ALGORITHM
-Thu Apr 16 12:50:22 2026
+Fri Apr 17 18:22:25 2026
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,12 +13,9 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Port Connectivity Checks: "DES_CONTROL:control_unit"
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Elapsed Time Per Partition
+ 10. Analysis & Synthesis Messages
 
 
 
@@ -44,15 +41,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 16 12:50:22 2026           ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 17 18:22:25 2026           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; DES_ALGORITHM                                   ;
 ; Top-level Entity Name              ; DES_ALGORITHM                                   ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 390                                             ;
-;     Total combinational functions  ; 390                                             ;
-;     Dedicated logic registers      ; 126                                             ;
-; Total registers                    ; 126                                             ;
+; Total logic elements               ; 5,337                                           ;
+;     Total combinational functions  ; 3,856                                           ;
+;     Dedicated logic registers      ; 1,993                                           ;
+; Total registers                    ; 1993                                            ;
 ; Total pins                         ; 196                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -151,15 +148,15 @@ applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
+;     Processors 2-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -180,7 +177,6 @@ applicable agreement for further details.
 ; E_XOR_KEY.v                      ; yes             ; User Verilog HDL File  ; D:/CE433/DES-56bits-key/E_XOR_KEY.v     ;         ;
 ; E_MATRIX.v                       ; yes             ; User Verilog HDL File  ; D:/CE433/DES-56bits-key/E_MATRIX.v      ;         ;
 ; DES_ALGORITHM.v                  ; yes             ; User Verilog HDL File  ; D:/CE433/DES-56bits-key/DES_ALGORITHM.v ;         ;
-; DES_CONTROL.v                    ; yes             ; User Verilog HDL File  ; D:/CE433/DES-56bits-key/DES_CONTROL.v   ;         ;
 +----------------------------------+-----------------+------------------------+-----------------------------------------+---------+
 
 
@@ -189,55 +185,87 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 390   ;
+; Estimated Total logic elements              ; 5,337 ;
 ;                                             ;       ;
-; Total combinational functions               ; 390   ;
+; Total combinational functions               ; 3856  ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 238   ;
-;     -- 3 input functions                    ; 93    ;
-;     -- <=2 input functions                  ; 59    ;
+;     -- 4 input functions                    ; 2971  ;
+;     -- 3 input functions                    ; 23    ;
+;     -- <=2 input functions                  ; 862   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 390   ;
+;     -- normal mode                          ; 3856  ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 126   ;
-;     -- Dedicated logic registers            ; 126   ;
+; Total registers                             ; 1993  ;
+;     -- Dedicated logic registers            ; 1993  ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 196   ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; Clk   ;
-; Maximum fan-out                             ; 126   ;
-; Total fan-out                               ; 2092  ;
-; Average fan-out                             ; 2.94  ;
+; Maximum fan-out                             ; 1993  ;
+; Total fan-out                               ; 19721 ;
+; Average fan-out                             ; 3.26  ;
 +---------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                              ;
-+-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+--------------+
-; Compilation Hierarchy Node    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Library Name ;
-+-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+--------------+
-; |DES_ALGORITHM                ; 390 (297)         ; 126 (120)    ; 0           ; 0            ; 0       ; 0         ; 196  ; 0            ; |DES_ALGORITHM                                        ; work         ;
-;    |DES_CONTROL:control_unit| ; 15 (15)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|DES_CONTROL:control_unit               ; work         ;
-;    |F_FUNCTION:f_block|       ; 78 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block                     ; work         ;
-;       |E_XOR_KEY:e_xor_key|   ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block|E_XOR_KEY:e_xor_key ; work         ;
-;       |S_BOX:s_box|           ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block|S_BOX:s_box         ; work         ;
-+-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                               ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
+; Compilation Hierarchy Node  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                      ; Library Name ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
+; |DES_ALGORITHM              ; 3856 (2524)       ; 1993 (1993)  ; 0           ; 0            ; 0       ; 0         ; 196  ; 0            ; |DES_ALGORITHM                                           ; work         ;
+;    |F_FUNCTION:f_block_10|  ; 84 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_10                     ; work         ;
+;       |E_XOR_KEY:e_xor_key| ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_10|E_XOR_KEY:e_xor_key ; work         ;
+;       |S_BOX:s_box|         ; 36 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_10|S_BOX:s_box         ; work         ;
+;    |F_FUNCTION:f_block_11|  ; 84 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_11                     ; work         ;
+;       |E_XOR_KEY:e_xor_key| ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_11|E_XOR_KEY:e_xor_key ; work         ;
+;       |S_BOX:s_box|         ; 36 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_11|S_BOX:s_box         ; work         ;
+;    |F_FUNCTION:f_block_12|  ; 78 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_12                     ; work         ;
+;       |E_XOR_KEY:e_xor_key| ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_12|E_XOR_KEY:e_xor_key ; work         ;
+;       |S_BOX:s_box|         ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_12|S_BOX:s_box         ; work         ;
+;    |F_FUNCTION:f_block_13|  ; 84 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_13                     ; work         ;
+;       |E_XOR_KEY:e_xor_key| ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_13|E_XOR_KEY:e_xor_key ; work         ;
+;       |S_BOX:s_box|         ; 36 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_13|S_BOX:s_box         ; work         ;
+;    |F_FUNCTION:f_block_14|  ; 78 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_14                     ; work         ;
+;       |E_XOR_KEY:e_xor_key| ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_14|E_XOR_KEY:e_xor_key ; work         ;
+;       |S_BOX:s_box|         ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_14|S_BOX:s_box         ; work         ;
+;    |F_FUNCTION:f_block_15|  ; 84 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_15                     ; work         ;
+;       |E_XOR_KEY:e_xor_key| ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_15|E_XOR_KEY:e_xor_key ; work         ;
+;       |S_BOX:s_box|         ; 36 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_15|S_BOX:s_box         ; work         ;
+;    |F_FUNCTION:f_block_16|  ; 84 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_16                     ; work         ;
+;       |E_XOR_KEY:e_xor_key| ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_16|E_XOR_KEY:e_xor_key ; work         ;
+;       |S_BOX:s_box|         ; 36 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_16|S_BOX:s_box         ; work         ;
+;    |F_FUNCTION:f_block_1|   ; 84 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_1                      ; work         ;
+;       |E_XOR_KEY:e_xor_key| ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_1|E_XOR_KEY:e_xor_key  ; work         ;
+;       |S_BOX:s_box|         ; 36 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_1|S_BOX:s_box          ; work         ;
+;    |F_FUNCTION:f_block_2|   ; 84 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_2                      ; work         ;
+;       |E_XOR_KEY:e_xor_key| ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_2|E_XOR_KEY:e_xor_key  ; work         ;
+;       |S_BOX:s_box|         ; 36 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_2|S_BOX:s_box          ; work         ;
+;    |F_FUNCTION:f_block_3|   ; 84 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_3                      ; work         ;
+;       |E_XOR_KEY:e_xor_key| ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_3|E_XOR_KEY:e_xor_key  ; work         ;
+;       |S_BOX:s_box|         ; 36 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_3|S_BOX:s_box          ; work         ;
+;    |F_FUNCTION:f_block_4|   ; 84 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_4                      ; work         ;
+;       |E_XOR_KEY:e_xor_key| ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_4|E_XOR_KEY:e_xor_key  ; work         ;
+;       |S_BOX:s_box|         ; 36 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_4|S_BOX:s_box          ; work         ;
+;    |F_FUNCTION:f_block_5|   ; 84 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_5                      ; work         ;
+;       |E_XOR_KEY:e_xor_key| ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_5|E_XOR_KEY:e_xor_key  ; work         ;
+;       |S_BOX:s_box|         ; 36 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_5|S_BOX:s_box          ; work         ;
+;    |F_FUNCTION:f_block_6|   ; 84 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_6                      ; work         ;
+;       |E_XOR_KEY:e_xor_key| ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_6|E_XOR_KEY:e_xor_key  ; work         ;
+;       |S_BOX:s_box|         ; 36 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_6|S_BOX:s_box          ; work         ;
+;    |F_FUNCTION:f_block_7|   ; 84 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_7                      ; work         ;
+;       |E_XOR_KEY:e_xor_key| ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_7|E_XOR_KEY:e_xor_key  ; work         ;
+;       |S_BOX:s_box|         ; 36 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_7|S_BOX:s_box          ; work         ;
+;    |F_FUNCTION:f_block_8|   ; 84 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_8                      ; work         ;
+;       |E_XOR_KEY:e_xor_key| ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_8|E_XOR_KEY:e_xor_key  ; work         ;
+;       |S_BOX:s_box|         ; 36 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_8|S_BOX:s_box          ; work         ;
+;    |F_FUNCTION:f_block_9|   ; 84 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_9                      ; work         ;
+;       |E_XOR_KEY:e_xor_key| ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_9|E_XOR_KEY:e_xor_key  ; work         ;
+;       |S_BOX:s_box|         ; 36 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DES_ALGORITHM|F_FUNCTION:f_block_9|S_BOX:s_box          ; work         ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                         ;
-+----------------------------------------------------+-------------------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal           ; Free of Timing Hazards ;
-+----------------------------------------------------+-------------------------------+------------------------+
-; DES_CONTROL:control_unit|Next_state[1]             ; DES_CONTROL:control_unit|Mux2 ; yes                    ;
-; DES_CONTROL:control_unit|Next_state[0]             ; DES_CONTROL:control_unit|Mux2 ; yes                    ;
-; Number of user-specified and inferred latches = 2  ;                               ;                        ;
-+----------------------------------------------------+-------------------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -245,36 +273,14 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 126   ;
+; Total registers                              ; 1993  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 88    ;
-; Number of registers using Asynchronous Clear ; 126   ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 1993  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 124   ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; 3:1                ; 112 bits  ; 224 LEs       ; 112 LEs              ; 112 LEs                ; Yes        ; |DES_ALGORITHM|R[7]                                ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |DES_ALGORITHM|DES_CONTROL:control_unit|Counter[3] ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |DES_ALGORITHM|D[2]                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DES_CONTROL:control_unit"                                                                                      ;
-+------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port       ; Type   ; Severity ; Details                                                                                                  ;
-+------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Counter    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; Pre_state  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; Next_state ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+------------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -282,7 +288,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:24     ;
 +----------------+--------------+
 
 
@@ -292,23 +298,17 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Apr 16 12:50:18 2026
+    Info: Processing started: Fri Apr 17 18:21:58 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DES_ALGORITHM -c DES_ALGORITHM
-Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (11104): Parallel Compilation has detected 12 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 6 of the 6 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file xor_function.v
     Info (12023): Found entity 1: XOR_FUNCTION
-Info (12021): Found 1 design units, including 1 entities, in source file test_state_machine.v
-    Info (12023): Found entity 1: Test_state_machine
-Info (12021): Found 1 design units, including 1 entities, in source file test_roundkey.v
-    Info (12023): Found entity 1: Test_roundkey
-Info (12021): Found 1 design units, including 1 entities, in source file test_register.v
-    Info (12023): Found entity 1: test_register
-Info (12021): Found 1 design units, including 1 entities, in source file test_pc1.v
-    Info (12023): Found entity 1: test_pc1
-Info (12021): Found 1 design units, including 1 entities, in source file test_mux.v
-    Info (12023): Found entity 1: Test_mux
-Info (12021): Found 1 design units, including 1 entities, in source file test_f_function.v
-    Info (12023): Found entity 1: test_f_function
+Warning (12019): Can't analyze file -- file Test_state_machine.v is missing
+Warning (12019): Can't analyze file -- file Test_roundkey.v is missing
+Warning (12019): Can't analyze file -- file test_register.v is missing
+Warning (12019): Can't analyze file -- file test_pc1.v is missing
+Warning (12019): Can't analyze file -- file Test_mux.v is missing
+Warning (12019): Can't analyze file -- file test_f_function.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file s_box.v
     Info (12023): Found entity 1: S_BOX
 Info (12021): Found 1 design units, including 1 entities, in source file shift_left_2.v
@@ -347,38 +347,146 @@ Info (12021): Found 1 design units, including 1 entities, in source file des_ava
 Info (12021): Found 1 design units, including 1 entities, in source file de2_top.v
     Info (12023): Found entity 1: DE2_TOP
 Info (12127): Elaborating entity "DES_ALGORITHM" for the top level hierarchy
-Info (12128): Elaborating entity "DES_CONTROL" for hierarchy "DES_CONTROL:control_unit"
-Warning (10270): Verilog HDL Case Statement warning at DES_CONTROL.v(50): incomplete case statement has no default case item
-Warning (10240): Verilog HDL Always Construct warning at DES_CONTROL.v(50): inferring latch(es) for variable "Next_state", which holds its previous value in one or more paths through the always construct
-Warning (10230): Verilog HDL assignment warning at DES_CONTROL.v(71): truncated value with size 32 to match size of target (4)
-Warning (10270): Verilog HDL Case Statement warning at DES_CONTROL.v(80): incomplete case statement has no default case item
-Info (10041): Inferred latch for "Next_state[0]" at DES_CONTROL.v(50)
-Info (10041): Inferred latch for "Next_state[1]" at DES_CONTROL.v(50)
 Info (12128): Elaborating entity "IP" for hierarchy "IP:ip_inst"
 Info (12128): Elaborating entity "PC_1" for hierarchy "PC_1:pc1_inst"
-Info (12128): Elaborating entity "SHIFT_LEFT_1" for hierarchy "SHIFT_LEFT_1:sl1_c"
-Info (12128): Elaborating entity "SHIFT_LEFT_2" for hierarchy "SHIFT_LEFT_2:sl2_c"
-Info (12128): Elaborating entity "PC_2" for hierarchy "PC_2:pc2_inst"
-Info (12128): Elaborating entity "F_FUNCTION" for hierarchy "F_FUNCTION:f_block"
-Info (12128): Elaborating entity "E_MATRIX" for hierarchy "F_FUNCTION:f_block|E_MATRIX:E"
-Info (12128): Elaborating entity "E_XOR_KEY" for hierarchy "F_FUNCTION:f_block|E_XOR_KEY:e_xor_key"
-Info (12128): Elaborating entity "S_BOX" for hierarchy "F_FUNCTION:f_block|S_BOX:s_box"
-Info (12128): Elaborating entity "P_MATRIX" for hierarchy "F_FUNCTION:f_block|P_MATRIX:p_matrix"
+Info (12128): Elaborating entity "SHIFT_LEFT_1" for hierarchy "SHIFT_LEFT_1:sl1_c_1"
+Info (12128): Elaborating entity "PC_2" for hierarchy "PC_2:pc2_inst_1"
+Info (12128): Elaborating entity "F_FUNCTION" for hierarchy "F_FUNCTION:f_block_1"
+Info (12128): Elaborating entity "E_MATRIX" for hierarchy "F_FUNCTION:f_block_1|E_MATRIX:E"
+Info (12128): Elaborating entity "E_XOR_KEY" for hierarchy "F_FUNCTION:f_block_1|E_XOR_KEY:e_xor_key"
+Info (12128): Elaborating entity "S_BOX" for hierarchy "F_FUNCTION:f_block_1|S_BOX:s_box"
+Info (12128): Elaborating entity "P_MATRIX" for hierarchy "F_FUNCTION:f_block_1|P_MATRIX:p_matrix"
+Info (12128): Elaborating entity "SHIFT_LEFT_2" for hierarchy "SHIFT_LEFT_2:sl2_c_3"
 Info (12128): Elaborating entity "IP_1" for hierarchy "IP_1:final_perm"
-Info (276014): Found 8 instances of uninferred RAM logic
-    Info (276004): RAM logic "F_FUNCTION:f_block|S_BOX:s_box|Ram4" is uninferred due to inappropriate RAM size
-    Info (276004): RAM logic "F_FUNCTION:f_block|S_BOX:s_box|Ram0" is uninferred due to inappropriate RAM size
-    Info (276004): RAM logic "F_FUNCTION:f_block|S_BOX:s_box|Ram3" is uninferred due to inappropriate RAM size
-    Info (276004): RAM logic "F_FUNCTION:f_block|S_BOX:s_box|Ram1" is uninferred due to inappropriate RAM size
-    Info (276004): RAM logic "F_FUNCTION:f_block|S_BOX:s_box|Ram7" is uninferred due to inappropriate RAM size
-    Info (276004): RAM logic "F_FUNCTION:f_block|S_BOX:s_box|Ram5" is uninferred due to inappropriate RAM size
-    Info (276004): RAM logic "F_FUNCTION:f_block|S_BOX:s_box|Ram6" is uninferred due to inappropriate RAM size
-    Info (276004): RAM logic "F_FUNCTION:f_block|S_BOX:s_box|Ram2" is uninferred due to inappropriate RAM size
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13012): Latch DES_CONTROL:control_unit|Next_state[1] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal DES_CONTROL:control_unit|Pre_state[0]
-Warning (13012): Latch DES_CONTROL:control_unit|Next_state[0] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal DES_CONTROL:control_unit|Pre_state[0]
+Info (276014): Found 128 instances of uninferred RAM logic
+    Info (276004): RAM logic "F_FUNCTION:f_block_16|S_BOX:s_box|Ram4" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_16|S_BOX:s_box|Ram0" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_16|S_BOX:s_box|Ram3" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_16|S_BOX:s_box|Ram1" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_16|S_BOX:s_box|Ram7" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_16|S_BOX:s_box|Ram5" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_16|S_BOX:s_box|Ram6" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_16|S_BOX:s_box|Ram2" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_15|S_BOX:s_box|Ram4" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_15|S_BOX:s_box|Ram0" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_15|S_BOX:s_box|Ram3" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_15|S_BOX:s_box|Ram1" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_15|S_BOX:s_box|Ram7" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_15|S_BOX:s_box|Ram5" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_15|S_BOX:s_box|Ram6" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_15|S_BOX:s_box|Ram2" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_14|S_BOX:s_box|Ram4" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_14|S_BOX:s_box|Ram0" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_14|S_BOX:s_box|Ram3" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_14|S_BOX:s_box|Ram1" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_14|S_BOX:s_box|Ram7" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_14|S_BOX:s_box|Ram5" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_14|S_BOX:s_box|Ram6" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_14|S_BOX:s_box|Ram2" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_13|S_BOX:s_box|Ram4" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_13|S_BOX:s_box|Ram0" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_13|S_BOX:s_box|Ram3" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_13|S_BOX:s_box|Ram1" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_13|S_BOX:s_box|Ram7" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_13|S_BOX:s_box|Ram5" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_13|S_BOX:s_box|Ram6" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_13|S_BOX:s_box|Ram2" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_12|S_BOX:s_box|Ram4" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_12|S_BOX:s_box|Ram0" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_12|S_BOX:s_box|Ram3" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_12|S_BOX:s_box|Ram1" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_12|S_BOX:s_box|Ram7" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_12|S_BOX:s_box|Ram5" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_12|S_BOX:s_box|Ram6" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_12|S_BOX:s_box|Ram2" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_11|S_BOX:s_box|Ram4" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_11|S_BOX:s_box|Ram0" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_11|S_BOX:s_box|Ram3" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_11|S_BOX:s_box|Ram1" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_11|S_BOX:s_box|Ram7" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_11|S_BOX:s_box|Ram5" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_11|S_BOX:s_box|Ram6" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_11|S_BOX:s_box|Ram2" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_10|S_BOX:s_box|Ram4" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_10|S_BOX:s_box|Ram0" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_10|S_BOX:s_box|Ram3" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_10|S_BOX:s_box|Ram1" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_10|S_BOX:s_box|Ram7" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_10|S_BOX:s_box|Ram5" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_10|S_BOX:s_box|Ram6" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_10|S_BOX:s_box|Ram2" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_9|S_BOX:s_box|Ram4" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_9|S_BOX:s_box|Ram0" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_9|S_BOX:s_box|Ram3" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_9|S_BOX:s_box|Ram1" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_9|S_BOX:s_box|Ram7" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_9|S_BOX:s_box|Ram5" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_9|S_BOX:s_box|Ram6" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_9|S_BOX:s_box|Ram2" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_8|S_BOX:s_box|Ram4" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_8|S_BOX:s_box|Ram0" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_8|S_BOX:s_box|Ram3" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_8|S_BOX:s_box|Ram1" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_8|S_BOX:s_box|Ram7" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_8|S_BOX:s_box|Ram5" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_8|S_BOX:s_box|Ram6" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_8|S_BOX:s_box|Ram2" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_7|S_BOX:s_box|Ram4" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_7|S_BOX:s_box|Ram0" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_7|S_BOX:s_box|Ram3" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_7|S_BOX:s_box|Ram1" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_7|S_BOX:s_box|Ram7" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_7|S_BOX:s_box|Ram5" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_7|S_BOX:s_box|Ram6" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_7|S_BOX:s_box|Ram2" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_6|S_BOX:s_box|Ram4" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_6|S_BOX:s_box|Ram0" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_6|S_BOX:s_box|Ram3" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_6|S_BOX:s_box|Ram1" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_6|S_BOX:s_box|Ram7" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_6|S_BOX:s_box|Ram5" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_6|S_BOX:s_box|Ram6" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_6|S_BOX:s_box|Ram2" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_5|S_BOX:s_box|Ram4" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_5|S_BOX:s_box|Ram0" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_5|S_BOX:s_box|Ram3" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_5|S_BOX:s_box|Ram1" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_5|S_BOX:s_box|Ram7" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_5|S_BOX:s_box|Ram5" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_5|S_BOX:s_box|Ram6" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_5|S_BOX:s_box|Ram2" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_4|S_BOX:s_box|Ram4" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_4|S_BOX:s_box|Ram0" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_4|S_BOX:s_box|Ram3" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_4|S_BOX:s_box|Ram1" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_4|S_BOX:s_box|Ram7" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_4|S_BOX:s_box|Ram5" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_4|S_BOX:s_box|Ram6" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_4|S_BOX:s_box|Ram2" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_3|S_BOX:s_box|Ram4" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_3|S_BOX:s_box|Ram0" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_3|S_BOX:s_box|Ram3" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_3|S_BOX:s_box|Ram1" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_3|S_BOX:s_box|Ram7" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_3|S_BOX:s_box|Ram5" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_3|S_BOX:s_box|Ram6" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_3|S_BOX:s_box|Ram2" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_2|S_BOX:s_box|Ram4" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_2|S_BOX:s_box|Ram0" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_2|S_BOX:s_box|Ram3" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_2|S_BOX:s_box|Ram1" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_2|S_BOX:s_box|Ram7" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_2|S_BOX:s_box|Ram5" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_2|S_BOX:s_box|Ram6" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_2|S_BOX:s_box|Ram2" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_1|S_BOX:s_box|Ram4" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_1|S_BOX:s_box|Ram0" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_1|S_BOX:s_box|Ram3" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_1|S_BOX:s_box|Ram1" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_1|S_BOX:s_box|Ram7" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_1|S_BOX:s_box|Ram5" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_1|S_BOX:s_box|Ram6" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "F_FUNCTION:f_block_1|S_BOX:s_box|Ram2" is uninferred due to inappropriate RAM size
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 8 input pin(s) that do not drive logic
@@ -390,14 +498,14 @@ Warning (21074): Design contains 8 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Key_in[40]"
     Warning (15610): No output dependent on input pin "Key_in[48]"
     Warning (15610): No output dependent on input pin "Key_in[56]"
-Info (21057): Implemented 636 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 5533 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 131 input pins
     Info (21059): Implemented 65 output pins
-    Info (21061): Implemented 440 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 4620 megabytes
-    Info: Processing ended: Thu Apr 16 12:50:22 2026
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:02
+    Info (21061): Implemented 5337 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 4637 megabytes
+    Info: Processing ended: Fri Apr 17 18:22:25 2026
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:26
 
 

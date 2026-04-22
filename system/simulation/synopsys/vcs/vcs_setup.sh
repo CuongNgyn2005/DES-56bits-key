@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 13.0sp1 232 win32 2026.04.12.16:53:39
+# ACDS 13.0sp1 232 win32 2026.04.16.23:10:38
 
 # ----------------------------------------
 # vcs - auto-generated simulation script
@@ -21,7 +21,7 @@
 # initialize variables
 TOP_LEVEL_NAME="system"
 QSYS_SIMDIR="./../../"
-QUARTUS_INSTALL_DIR="C:/altera/13.0sp1/quartus/"
+QUARTUS_INSTALL_DIR="E:/altera/13.0sp1/quartus/"
 SKIP_FILE_COPY=0
 SKIP_ELAB=0
 SKIP_SIM=0

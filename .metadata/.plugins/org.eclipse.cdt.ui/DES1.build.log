@@ -1,0 +1,26 @@
+
+**** Build of configuration Nios II for project DES1 ****
+
+make all 
+      1 [main] sh 18664 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 10064 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] echo 2044 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: Building ../DES1_bsp/
+make --no-print-directory -C ../DES1_bsp/
+      1 [main] pwd 16688 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 16980 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 10480 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      1 [main] true 26832 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 23508 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[DES1 build complete]
+
+**** Build Finished ****

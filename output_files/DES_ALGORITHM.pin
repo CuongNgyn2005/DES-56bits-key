@@ -70,39 +70,39 @@ Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage 
 -------------------------------------------------------------------------------------------------------------
 GND                          : A2        : gnd    :                   :         :           :                
 VCCIO3                       : A3        : power  :                   : 3.3V    : 3         :                
-Plaintext[10]                : A4        : input  : 3.3-V LVTTL       :         : 3         : N              
-Plaintext[37]                : A5        : input  : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[20]               : A6        : output : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[45]               : A7        : output : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[43]               : A8        : output : 3.3-V LVTTL       :         : 3         : N              
-Plaintext[44]                : A9        : input  : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[30]               : A10       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : A4        :        :                   :         : 3         :                
+GND*                         : A5        :        :                   :         : 3         :                
+GND*                         : A6        :        :                   :         : 3         :                
+Key_in[43]                   : A7        : input  : 3.3-V LVTTL       :         : 3         : N              
+Key_in[55]                   : A8        : input  : 3.3-V LVTTL       :         : 3         : N              
+Key_in[49]                   : A9        : input  : 3.3-V LVTTL       :         : 3         : N              
+Plaintext[49]                : A10       : input  : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : A11       : power  :                   : 3.3V    : 3         :                
 GND                          : A12       : gnd    :                   :         :           :                
 GND+                         : A13       :        :                   :         : 4         :                
-Plaintext[3]                 : A14       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : A14       :        :                   :         : 4         :                
 GND                          : A15       : gnd    :                   :         :           :                
 VCCIO4                       : A16       : power  :                   : 3.3V    : 4         :                
-Key_in[21]                   : A17       : input  : 3.3-V LVTTL       :         : 4         : N              
-Ciphertext[14]               : A18       : output : 3.3-V LVTTL       :         : 4         : N              
-Key_in[35]                   : A19       : input  : 3.3-V LVTTL       :         : 4         : N              
-Key_in[46]                   : A20       : input  : 3.3-V LVTTL       :         : 4         : N              
-Key_in[14]                   : A21       : input  : 3.3-V LVTTL       :         : 4         : N              
-Ciphertext[47]               : A22       : output : 3.3-V LVTTL       :         : 4         : N              
-Plaintext[46]                : A23       : input  : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[42]               : A17       : output : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[1]                : A18       : output : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[37]               : A19       : output : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[24]               : A20       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : A21       :        :                   :         : 4         :                
+GND*                         : A22       :        :                   :         : 4         :                
+GND*                         : A23       :        :                   :         : 4         :                
 VCCIO4                       : A24       : power  :                   : 3.3V    : 4         :                
 GND                          : A25       : gnd    :                   :         :           :                
 GND*                         : AA1       :        :                   :         : 1         :                
 GND*                         : AA2       :        :                   :         : 1         :                
 GND*                         : AA3       :        :                   :         : 1         :                
 GND*                         : AA4       :        :                   :         : 1         :                
-Key_in[48]                   : AA5       : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : AA5       :        :                   :         : 1         :                
 GND*                         : AA6       :        :                   :         : 1         :                
 GND*                         : AA7       :        :                   :         : 1         :                
 VCCA_PLL1                    : AA8       : power  :                   : 1.2V    :           :                
 GND*                         : AA9       :        :                   :         : 8         :                
 GND*                         : AA10      :        :                   :         : 8         :                
-GND*                         : AA11      :        :                   :         : 8         :                
+Key_in[45]                   : AA11      : input  : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : AA12      :        :                   :         : 8         :                
 GND*                         : AA13      :        :                   :         : 7         :                
 GND*                         : AA14      :        :                   :         : 7         :                
@@ -120,7 +120,7 @@ GND*                         : AA25      :        :                   :         
 GND*                         : AA26      :        :                   :         : 6         :                
 GND*                         : AB1       :        :                   :         : 1         :                
 GND*                         : AB2       :        :                   :         : 1         :                
-GND*                         : AB3       :        :                   :         : 1         :                
+Key_in[56]                   : AB3       : input  : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : AB4       :        :                   :         : 1         :                
 VCCIO1                       : AB5       : power  :                   : 3.3V    : 1         :                
 VCCIO8                       : AB6       : power  :                   : 3.3V    : 8         :                
@@ -180,8 +180,8 @@ GND*                         : AD7       :        :                   :         
 GND*                         : AD8       :        :                   :         : 8         :                
 GND                          : AD9       : gnd    :                   :         :           :                
 GND*                         : AD10      :        :                   :         : 8         :                
-Key_in[44]                   : AD11      : input  : 3.3-V LVTTL       :         : 8         : N              
-Key_in[32]                   : AD12      : input  : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AD11      :        :                   :         : 8         :                
+GND*                         : AD12      :        :                   :         : 8         :                
 GND+                         : AD13      :        :                   :         : 8         :                
 GND                          : AD14      : gnd    :                   :         :           :                
 GND*                         : AD15      :        :                   :         : 7         :                
@@ -202,10 +202,10 @@ GND*                         : AE3       :        :                   :         
 GND*                         : AE4       :        :                   :         : 8         :                
 GND*                         : AE5       :        :                   :         : 8         :                
 GND*                         : AE6       :        :                   :         : 8         :                
-GND*                         : AE7       :        :                   :         : 8         :                
+Plaintext[32]                : AE7       : input  : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : AE8       :        :                   :         : 8         :                
 GND*                         : AE9       :        :                   :         : 8         :                
-Plaintext[63]                : AE10      : input  : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AE10      :        :                   :         : 8         :                
 GND*                         : AE11      :        :                   :         : 8         :                
 GND*                         : AE12      :        :                   :         : 8         :                
 GND*                         : AE13      :        :                   :         : 8         :                
@@ -213,10 +213,10 @@ GND+                         : AE14      :        :                   :         
 GND*                         : AE15      :        :                   :         : 7         :                
 GND*                         : AE16      :        :                   :         : 7         :                
 GND*                         : AE17      :        :                   :         : 7         :                
-GND*                         : AE18      :        :                   :         : 7         :                
+Key_in[48]                   : AE18      : input  : 3.3-V LVTTL       :         : 7         : N              
 GND*                         : AE19      :        :                   :         : 7         :                
 GND*                         : AE20      :        :                   :         : 7         :                
-GND*                         : AE21      :        :                   :         : 7         :                
+Key_in[16]                   : AE21      : input  : 3.3-V LVTTL       :         : 7         : N              
 GND*                         : AE22      :        :                   :         : 7         :                
 GND*                         : AE23      :        :                   :         : 7         :                
 ~LVDS150p/nCEO~              : AE24      : output : 3.3-V LVTTL       :         : 6         : N              
@@ -227,10 +227,10 @@ VCCIO8                       : AF3       : power  :                   : 3.3V    
 GND*                         : AF4       :        :                   :         : 8         :                
 GND*                         : AF5       :        :                   :         : 8         :                
 GND*                         : AF6       :        :                   :         : 8         :                
-GND*                         : AF7       :        :                   :         : 8         :                
+Key_in[59]                   : AF7       : input  : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : AF8       :        :                   :         : 8         :                
-GND*                         : AF9       :        :                   :         : 8         :                
-Plaintext[54]                : AF10      : input  : 3.3-V LVTTL       :         : 8         : N              
+Plaintext[47]                : AF9       : input  : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AF10      :        :                   :         : 8         :                
 VCCIO8                       : AF11      : power  :                   : 3.3V    : 8         :                
 GND                          : AF12      : gnd    :                   :         :           :                
 GND*                         : AF13      :        :                   :         : 8         :                
@@ -247,249 +247,249 @@ GND*                         : AF23      :        :                   :         
 VCCIO7                       : AF24      : power  :                   : 3.3V    : 7         :                
 GND                          : AF25      : gnd    :                   :         :           :                
 GND                          : B1        : gnd    :                   :         :           :                
-Plaintext[16]                : B2        : input  : 3.3-V LVTTL       :         : 2         : N              
-Ciphertext[31]               : B3        : output : 3.3-V LVTTL       :         : 2         : N              
-Key_in[3]                    : B4        : input  : 3.3-V LVTTL       :         : 3         : N              
-Key_in[11]                   : B5        : input  : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[11]               : B6        : output : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[19]               : B7        : output : 3.3-V LVTTL       :         : 3         : N              
-Plaintext[0]                 : B8        : input  : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[34]               : B9        : output : 3.3-V LVTTL       :         : 3         : N              
-Start                        : B10       : input  : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[2]                : B11       : output : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[60]               : B12       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : B2        :        :                   :         : 2         :                
+GND*                         : B3        :        :                   :         : 2         :                
+GND*                         : B4        :        :                   :         : 3         :                
+GND*                         : B5        :        :                   :         : 3         :                
+GND*                         : B6        :        :                   :         : 3         :                
+Plaintext[16]                : B7        : input  : 3.3-V LVTTL       :         : 3         : N              
+Key_in[17]                   : B8        : input  : 3.3-V LVTTL       :         : 3         : N              
+Key_in[26]                   : B9        : input  : 3.3-V LVTTL       :         : 3         : N              
+Key_in[14]                   : B10       : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : B11       :        :                   :         : 3         :                
+GND*                         : B12       :        :                   :         : 3         :                
 GND+                         : B13       :        :                   :         : 4         :                
-Ciphertext[26]               : B14       : output : 3.3-V LVTTL       :         : 4         : N              
-Key_in[31]                   : B15       : input  : 3.3-V LVTTL       :         : 4         : N              
-Key_in[23]                   : B16       : input  : 3.3-V LVTTL       :         : 4         : N              
-Key_in[37]                   : B17       : input  : 3.3-V LVTTL       :         : 4         : N              
-Ciphertext[44]               : B18       : output : 3.3-V LVTTL       :         : 4         : N              
-Ciphertext[37]               : B19       : output : 3.3-V LVTTL       :         : 4         : N              
-Plaintext[11]                : B20       : input  : 3.3-V LVTTL       :         : 4         : N              
-Plaintext[24]                : B21       : input  : 3.3-V LVTTL       :         : 4         : N              
-Key_in[45]                   : B22       : input  : 3.3-V LVTTL       :         : 4         : N              
-Key_in[7]                    : B23       : input  : 3.3-V LVTTL       :         : 4         : N              
-Ciphertext[9]                : B24       : output : 3.3-V LVTTL       :         : 5         : N              
-Done                         : B25       : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : B14       :        :                   :         : 4         :                
+GND*                         : B15       :        :                   :         : 4         :                
+Ciphertext[23]               : B16       : output : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[35]               : B17       : output : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[54]               : B18       : output : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[21]               : B19       : output : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[47]               : B20       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : B21       :        :                   :         : 4         :                
+GND*                         : B22       :        :                   :         : 4         :                
+GND*                         : B23       :        :                   :         : 4         :                
+GND*                         : B24       :        :                   :         : 5         :                
+GND*                         : B25       :        :                   :         : 5         :                
 GND                          : B26       : gnd    :                   :         :           :                
 VCCIO2                       : C1        : power  :                   : 3.3V    : 2         :                
-Plaintext[39]                : C2        : input  : 3.3-V LVTTL       :         : 2         : N              
-Plaintext[17]                : C3        : input  : 3.3-V LVTTL       :         : 2         : N              
-Key_in[28]                   : C4        : input  : 3.3-V LVTTL       :         : 3         : N              
-Plaintext[1]                 : C5        : input  : 3.3-V LVTTL       :         : 3         : N              
-Key_in[20]                   : C6        : input  : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[21]               : C7        : output : 3.3-V LVTTL       :         : 3         : N              
-Plaintext[21]                : C8        : input  : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[1]                : C9        : output : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[63]               : C10       : output : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[46]               : C11       : output : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[4]                : C12       : output : 3.3-V LVTTL       :         : 3         : N              
+Key_in[24]                   : C2        : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : C3        :        :                   :         : 2         :                
+Key_in[32]                   : C4        : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : C5        :        :                   :         : 3         :                
+GND*                         : C6        :        :                   :         : 3         :                
+Plaintext[7]                 : C7        : input  : 3.3-V LVTTL       :         : 3         : N              
+Plaintext[17]                : C8        : input  : 3.3-V LVTTL       :         : 3         : N              
+Plaintext[9]                 : C9        : input  : 3.3-V LVTTL       :         : 3         : N              
+Plaintext[30]                : C10       : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : C11       :        :                   :         : 3         :                
+GND*                         : C12       :        :                   :         : 3         :                
 Key_in[0]                    : C13       : input  : 3.3-V LVTTL       :         : 3         : N              
 GND                          : C14       : gnd    :                   :         :           :                
-Key_in[47]                   : C15       : input  : 3.3-V LVTTL       :         : 4         : N              
-Key_in[15]                   : C16       : input  : 3.3-V LVTTL       :         : 4         : N              
-Ciphertext[28]               : C17       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : C15       :        :                   :         : 4         :                
+GND*                         : C16       :        :                   :         : 4         :                
+Ciphertext[52]               : C17       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : C18       : gnd    :                   :         :           :                
-Key_in[6]                    : C19       : input  : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[58]               : C19       : output : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : C20       : power  :                   : 3.3V    : 4         :                
-Ciphertext[15]               : C21       : output : 3.3-V LVTTL       :         : 4         : N              
-Plaintext[14]                : C22       : input  : 3.3-V LVTTL       :         : 4         : N              
-Plaintext[8]                 : C23       : input  : 3.3-V LVTTL       :         : 4         : N              
-Key_in[29]                   : C24       : input  : 3.3-V LVTTL       :         : 5         : N              
-Ciphertext[7]                : C25       : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : C21       :        :                   :         : 4         :                
+GND*                         : C22       :        :                   :         : 4         :                
+GND*                         : C23       :        :                   :         : 4         :                
+GND*                         : C24       :        :                   :         : 5         :                
+GND*                         : C25       :        :                   :         : 5         :                
 VCCIO5                       : C26       : power  :                   : 3.3V    : 5         :                
-Key_in[49]                   : D1        : input  : 3.3-V LVTTL       :         : 2         : N              
-Key_in[41]                   : D2        : input  : 3.3-V LVTTL       :         : 2         : N              
+Key_in[63]                   : D1        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[50]                : D2        : input  : 3.3-V LVTTL       :         : 2         : N              
 ~nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D3        : input  : 3.3-V LVTTL       :         : 2         : N              
 GND                          : D4        : gnd    :                   :         :           :                
-Ciphertext[16]               : D5        : output : 3.3-V LVTTL       :         : 3         : N              
-Plaintext[33]                : D6        : input  : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[35]               : D7        : output : 3.3-V LVTTL       :         : 3         : N              
-Plaintext[52]                : D8        : input  : 3.3-V LVTTL       :         : 3         : N              
-Plaintext[45]                : D9        : input  : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[58]               : D10       : output : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[32]               : D11       : output : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[0]                : D12       : output : 3.3-V LVTTL       :         : 3         : N              
+Plaintext[33]                : D5        : input  : 3.3-V LVTTL       :         : 3         : N              
+Key_in[35]                   : D6        : input  : 3.3-V LVTTL       :         : 3         : N              
+Key_in[13]                   : D7        : input  : 3.3-V LVTTL       :         : 3         : N              
+Key_in[27]                   : D8        : input  : 3.3-V LVTTL       :         : 3         : N              
+Plaintext[42]                : D9        : input  : 3.3-V LVTTL       :         : 3         : N              
+Plaintext[10]                : D10       : input  : 3.3-V LVTTL       :         : 3         : N              
+Key_in[1]                    : D11       : input  : 3.3-V LVTTL       :         : 3         : N              
+Plaintext[62]                : D12       : input  : 3.3-V LVTTL       :         : 3         : N              
 Key_in[8]                    : D13       : input  : 3.3-V LVTTL       :         : 3         : N              
-Key_in[53]                   : D14       : input  : 3.3-V LVTTL       :         : 4         : N              
-Ciphertext[12]               : D15       : output : 3.3-V LVTTL       :         : 4         : N              
-Plaintext[47]                : D16       : input  : 3.3-V LVTTL       :         : 4         : N              
-Plaintext[41]                : D17       : input  : 3.3-V LVTTL       :         : 4         : N              
-Plaintext[62]                : D18       : input  : 3.3-V LVTTL       :         : 4         : N              
-Key_in[63]                   : D19       : input  : 3.3-V LVTTL       :         : 4         : N              
-Plaintext[15]                : D20       : input  : 3.3-V LVTTL       :         : 4         : N              
-Ciphertext[25]               : D21       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : D14       :        :                   :         : 4         :                
+Start                        : D15       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : D16       :        :                   :         : 4         :                
+Ciphertext[56]               : D17       : output : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[13]               : D18       : output : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[10]               : D19       : output : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[22]               : D20       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : D21       :        :                   :         : 4         :                
 VCCIO4                       : D22       : power  :                   : 3.3V    : 4         :                
-Ciphertext[3]                : D23       : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : D23       :        :                   :         : 5         :                
 GND                          : D24       : gnd    :                   :         :           :                
-Plaintext[27]                : D25       : input  : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : D25       :        :                   :         : 5         :                
 GND*                         : D26       :        :                   :         : 5         :                
-Plaintext[49]                : E1        : input  : 3.3-V LVTTL       :         : 2         : N              
-Key_in[42]                   : E2        : input  : 3.3-V LVTTL       :         : 2         : N              
+Key_in[10]                   : E1        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[61]                : E2        : input  : 3.3-V LVTTL       :         : 2         : N              
 ~ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E3        : input  : 3.3-V LVTTL       :         : 2         : N              
 GND_PLL3                     : E4        : gnd    :                   :         :           :                
-Plaintext[32]                : E5        : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : E5        :        :                   :         : 2         :                
 VCCIO3                       : E6        : power  :                   : 3.3V    : 3         :                
 GND                          : E7        : gnd    :                   :         :           :                
-Ciphertext[48]               : E8        : output : 3.3-V LVTTL       :         : 3         : N              
+Plaintext[34]                : E8        : input  : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : E9        : power  :                   : 3.3V    : 3         :                
-Ciphertext[22]               : E10       : output : 3.3-V LVTTL       :         : 3         : N              
+Key_in[2]                    : E10       : input  : 3.3-V LVTTL       :         : 3         : N              
 GND                          : E11       : gnd    :                   :         :           :                
-Ciphertext[6]                : E12       : output : 3.3-V LVTTL       :         : 3         : N              
+Plaintext[56]                : E12       : input  : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : E13       : power  :                   : 3.3V    : 3         :                
 VCCIO4                       : E14       : power  :                   : 3.3V    : 4         :                
-Plaintext[12]                : E15       : input  : 3.3-V LVTTL       :         : 4         : N              
+Done                         : E15       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : E16       : gnd    :                   :         :           :                
 VCCIO4                       : E17       : power  :                   : 3.3V    : 4         :                
-Plaintext[36]                : E18       : input  : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[14]               : E18       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : E19       : gnd    :                   :         :           :                
-Key_in[43]                   : E20       : input  : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[36]               : E20       : output : 3.3-V LVTTL       :         : 4         : N              
 GND_PLL2                     : E21       : gnd    :                   :         :           :                
-Key_in[54]                   : E22       : input  : 3.3-V LVTTL       :         : 5         : N              
-Ciphertext[40]               : E23       : output : 3.3-V LVTTL       :         : 5         : N              
-Plaintext[60]                : E24       : input  : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : E22       :        :                   :         : 5         :                
+GND*                         : E23       :        :                   :         : 5         :                
+GND*                         : E24       :        :                   :         : 5         :                
 GND*                         : E25       :        :                   :         : 5         :                
 GND*                         : E26       :        :                   :         : 5         :                
-Plaintext[56]                : F1        : input  : 3.3-V LVTTL       :         : 2         : N              
-Plaintext[18]                : F2        : input  : 3.3-V LVTTL       :         : 2         : N              
-Ciphertext[54]               : F3        : output : 3.3-V LVTTL       :         : 2         : N              
-Key_in[2]                    : F4        : input  : 3.3-V LVTTL       :         : 2         : N              
+Key_in[9]                    : F1        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[25]                : F2        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[2]                 : F3        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[60]                : F4        : input  : 3.3-V LVTTL       :         : 2         : N              
 VCCIO2                       : F5        : power  :                   : 3.3V    : 2         :                
-Plaintext[35]                : F6        : input  : 3.3-V LVTTL       :         : 2         : N              
-Key_in[57]                   : F7        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[26]                : F6        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[39]                : F7        : input  : 3.3-V LVTTL       :         : 2         : N              
 GNDA_PLL3                    : F8        : gnd    :                   :         :           :                
-Ciphertext[17]               : F9        : output : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[33]               : F10       : output : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[38]               : F11       : output : 3.3-V LVTTL       :         : 3         : N              
-Plaintext[51]                : F12       : input  : 3.3-V LVTTL       :         : 3         : N              
-Key_in[34]                   : F13       : input  : 3.3-V LVTTL       :         : 4         : N              
-Plaintext[7]                 : F14       : input  : 3.3-V LVTTL       :         : 4         : N              
-Ciphertext[13]               : F15       : output : 3.3-V LVTTL       :         : 4         : N              
-Key_in[39]                   : F16       : input  : 3.3-V LVTTL       :         : 4         : N              
-Ciphertext[36]               : F17       : output : 3.3-V LVTTL       :         : 4         : N              
-Ciphertext[51]               : F18       : output : 3.3-V LVTTL       :         : 4         : N              
+Key_in[50]                   : F9        : input  : 3.3-V LVTTL       :         : 3         : N              
+Plaintext[28]                : F10       : input  : 3.3-V LVTTL       :         : 3         : N              
+Plaintext[54]                : F11       : input  : 3.3-V LVTTL       :         : 3         : N              
+Key_in[62]                   : F12       : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : F13       :        :                   :         : 4         :                
+GND*                         : F14       :        :                   :         : 4         :                
+Ciphertext[33]               : F15       : output : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[41]               : F16       : output : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[34]               : F17       : output : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[59]               : F18       : output : 3.3-V LVTTL       :         : 4         : N              
 GNDA_PLL2                    : F19       : gnd    :                   :         :           :                
-Plaintext[5]                 : F20       : input  : 3.3-V LVTTL       :         : 5         : N              
-Key_in[38]                   : F21       : input  : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : F20       :        :                   :         : 5         :                
+GND*                         : F21       :        :                   :         : 5         :                
 VCCIO5                       : F22       : power  :                   : 3.3V    : 5         :                
-GND*                         : F23       :        :                   :         : 5         :                
+Ciphertext[9]                : F23       : output : 3.3-V LVTTL       :         : 5         : N              
 GND*                         : F24       :        :                   :         : 5         :                
-GND*                         : F25       :        :                   :         : 5         :                
-GND*                         : F26       :        :                   :         : 5         :                
-Plaintext[58]                : G1        : input  : 3.3-V LVTTL       :         : 2         : N              
-Key_in[30]                   : G2        : input  : 3.3-V LVTTL       :         : 2         : N              
-Plaintext[59]                : G3        : input  : 3.3-V LVTTL       :         : 2         : N              
-Plaintext[2]                 : G4        : input  : 3.3-V LVTTL       :         : 2         : N              
-Ciphertext[39]               : G5        : output : 3.3-V LVTTL       :         : 2         : N              
-Plaintext[53]                : G6        : input  : 3.3-V LVTTL       :         : 2         : N              
+Ciphertext[53]               : F25       : output : 3.3-V LVTTL       :         : 5         : N              
+Ciphertext[50]               : F26       : output : 3.3-V LVTTL       :         : 5         : N              
+Key_in[19]                   : G1        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[55]                : G2        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[57]                : G3        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[0]                 : G4        : input  : 3.3-V LVTTL       :         : 2         : N              
+Key_in[38]                   : G5        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[13]                : G6        : input  : 3.3-V LVTTL       :         : 2         : N              
 GND_PLL3                     : G7        : gnd    :                   :         :           :                
 VCCA_PLL3                    : G8        : power  :                   : 1.2V    :           :                
-Ciphertext[24]               : G9        : output : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[18]               : G10       : output : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[50]               : G11       : output : 3.3-V LVTTL       :         : 3         : N              
-Plaintext[40]                : G12       : input  : 3.3-V LVTTL       :         : 3         : N              
-Key_in[62]                   : G13       : input  : 3.3-V LVTTL       :         : 4         : N              
-Ciphertext[8]                : G14       : output : 3.3-V LVTTL       :         : 4         : N              
-Plaintext[13]                : G15       : input  : 3.3-V LVTTL       :         : 4         : N              
-Plaintext[9]                 : G16       : input  : 3.3-V LVTTL       :         : 4         : N              
-Plaintext[26]                : G17       : input  : 3.3-V LVTTL       :         : 4         : N              
-Key_in[22]                   : G18       : input  : 3.3-V LVTTL       :         : 4         : N              
+Key_in[33]                   : G9        : input  : 3.3-V LVTTL       :         : 3         : N              
+Key_in[3]                    : G10       : input  : 3.3-V LVTTL       :         : 3         : N              
+Plaintext[24]                : G11       : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : G12       :        :                   :         : 3         :                
+GND*                         : G13       :        :                   :         : 4         :                
+GND*                         : G14       :        :                   :         : 4         :                
+Ciphertext[17]               : G15       : output : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[38]               : G16       : output : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[31]               : G17       : output : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[25]               : G18       : output : 3.3-V LVTTL       :         : 4         : N              
 VCCA_PLL2                    : G19       : power  :                   : 1.2V    :           :                
 GND_PLL2                     : G20       : gnd    :                   :         :           :                
-Ciphertext[41]               : G21       : output : 3.3-V LVTTL       :         : 5         : N              
-Key_in[59]                   : G22       : input  : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : G23       :        :                   :         : 5         :                
-GND*                         : G24       :        :                   :         : 5         :                
-GND*                         : G25       :        :                   :         : 5         :                
-GND*                         : G26       :        :                   :         : 5         :                
-Plaintext[34]                : H1        : input  : 3.3-V LVTTL       :         : 2         : N              
-Key_in[25]                   : H2        : input  : 3.3-V LVTTL       :         : 2         : N              
-Key_in[50]                   : H3        : input  : 3.3-V LVTTL       :         : 2         : N              
-Key_in[12]                   : H4        : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : G21       :        :                   :         : 5         :                
+GND*                         : G22       :        :                   :         : 5         :                
+Ciphertext[40]               : G23       : output : 3.3-V LVTTL       :         : 5         : N              
+Ciphertext[29]               : G24       : output : 3.3-V LVTTL       :         : 5         : N              
+Ciphertext[49]               : G25       : output : 3.3-V LVTTL       :         : 5         : N              
+Ciphertext[20]               : G26       : output : 3.3-V LVTTL       :         : 5         : N              
+Key_in[51]                   : H1        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[3]                 : H2        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[52]                : H3        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[41]                : H4        : input  : 3.3-V LVTTL       :         : 2         : N              
 GND                          : H5        : gnd    :                   :         :           :                
-Key_in[60]                   : H6        : input  : 3.3-V LVTTL       :         : 2         : N              
+Key_in[42]                   : H6        : input  : 3.3-V LVTTL       :         : 2         : N              
 VCCD_PLL3                    : H7        : power  :                   : 1.2V    :           :                
-Plaintext[19]                : H8        : input  : 3.3-V LVTTL       :         : 3         : N              
+Plaintext[59]                : H8        : input  : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : H9        : power  :                   : 3.3V    : 3         :                
-Ciphertext[52]               : H10       : output : 3.3-V LVTTL       :         : 3         : N              
-Plaintext[20]                : H11       : input  : 3.3-V LVTTL       :         : 3         : N              
-Plaintext[23]                : H12       : input  : 3.3-V LVTTL       :         : 3         : N              
+Key_in[44]                   : H10       : input  : 3.3-V LVTTL       :         : 3         : N              
+Key_in[12]                   : H11       : input  : 3.3-V LVTTL       :         : 3         : N              
+Plaintext[22]                : H12       : input  : 3.3-V LVTTL       :         : 3         : N              
 GND                          : H13       : gnd    :                   :         :           :                
 GND                          : H14       : gnd    :                   :         :           :                
-Key_in[13]                   : H15       : input  : 3.3-V LVTTL       :         : 4         : N              
-Ciphertext[5]                : H16       : output : 3.3-V LVTTL       :         : 4         : N              
-Ciphertext[27]               : H17       : output : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[28]               : H15       : output : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[45]               : H16       : output : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[16]               : H17       : output : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : H18       : power  :                   : 3.3V    : 4         :                
-GND*                         : H19       :        :                   :         : 5         :                
+Ciphertext[0]                : H19       : output : 3.3-V LVTTL       :         : 5         : N              
 VCCD_PLL2                    : H20       : power  :                   : 1.2V    :           :                
-Ciphertext[61]               : H21       : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : H21       :        :                   :         : 5         :                
 GND                          : H22       : gnd    :                   :         :           :                
-GND*                         : H23       :        :                   :         : 5         :                
-GND*                         : H24       :        :                   :         : 5         :                
-GND*                         : H25       :        :                   :         : 5         :                
-GND*                         : H26       :        :                   :         : 5         :                
-Plaintext[31]                : J1        : input  : 3.3-V LVTTL       :         : 2         : N              
-Ciphertext[49]               : J2        : output : 3.3-V LVTTL       :         : 2         : N              
-Key_in[5]                    : J3        : input  : 3.3-V LVTTL       :         : 2         : N              
-Key_in[17]                   : J4        : input  : 3.3-V LVTTL       :         : 2         : N              
-Key_in[1]                    : J5        : input  : 3.3-V LVTTL       :         : 2         : N              
-Plaintext[48]                : J6        : input  : 3.3-V LVTTL       :         : 2         : N              
-Ciphertext[53]               : J7        : output : 3.3-V LVTTL       :         : 2         : N              
-Ciphertext[23]               : J8        : output : 3.3-V LVTTL       :         : 2         : N              
-Ciphertext[56]               : J9        : output : 3.3-V LVTTL       :         : 3         : N              
-Key_in[27]                   : J10       : input  : 3.3-V LVTTL       :         : 3         : N              
-Key_in[19]                   : J11       : input  : 3.3-V LVTTL       :         : 3         : N              
+Ciphertext[32]               : H23       : output : 3.3-V LVTTL       :         : 5         : N              
+Ciphertext[7]                : H24       : output : 3.3-V LVTTL       :         : 5         : N              
+Ciphertext[3]                : H25       : output : 3.3-V LVTTL       :         : 5         : N              
+Ciphertext[62]               : H26       : output : 3.3-V LVTTL       :         : 5         : N              
+Key_in[34]                   : J1        : input  : 3.3-V LVTTL       :         : 2         : N              
+Key_in[25]                   : J2        : input  : 3.3-V LVTTL       :         : 2         : N              
+Key_in[23]                   : J3        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[38]                : J4        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[15]                : J5        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[37]                : J6        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[19]                : J7        : input  : 3.3-V LVTTL       :         : 2         : N              
+Key_in[47]                   : J8        : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : J9        :        :                   :         : 3         :                
+GND*                         : J10       :        :                   :         : 3         :                
+GND*                         : J11       :        :                   :         : 3         :                
 VCCIO3                       : J12       : power  :                   : 3.3V    : 3         :                
-Ciphertext[10]               : J13       : output : 3.3-V LVTTL       :         : 3         : N              
-Ciphertext[62]               : J14       : output : 3.3-V LVTTL       :         : 3         : N              
+Key_in[53]                   : J13       : input  : 3.3-V LVTTL       :         : 3         : N              
+Key_in[21]                   : J14       : input  : 3.3-V LVTTL       :         : 3         : N              
 VCCIO4                       : J15       : power  :                   : 3.3V    : 4         :                
-Key_in[61]                   : J16       : input  : 3.3-V LVTTL       :         : 4         : N              
-Plaintext[61]                : J17       : input  : 3.3-V LVTTL       :         : 4         : N              
-Plaintext[25]                : J18       : input  : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[46]               : J16       : output : 3.3-V LVTTL       :         : 4         : N              
+Ciphertext[5]                : J17       : output : 3.3-V LVTTL       :         : 4         : N              
+Key_in[40]                   : J18       : input  : 3.3-V LVTTL       :         : 4         : N              
 VCCIO5                       : J19       : power  :                   : 3.3V    : 5         :                
-Key_in[16]                   : J20       : input  : 3.3-V LVTTL       :         : 5         : N              
-Key_in[40]                   : J21       : input  : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : J20       :        :                   :         : 5         :                
+GND*                         : J21       :        :                   :         : 5         :                
 GND*                         : J22       :        :                   :         : 5         :                
-GND*                         : J23       :        :                   :         : 5         :                
-GND*                         : J24       :        :                   :         : 5         :                
-GND*                         : J25       :        :                   :         : 5         :                
-GND*                         : J26       :        :                   :         : 5         :                
-Plaintext[22]                : K1        : input  : 3.3-V LVTTL       :         : 2         : N              
-Ciphertext[57]               : K2        : output : 3.3-V LVTTL       :         : 2         : N              
-Ciphertext[29]               : K3        : output : 3.3-V LVTTL       :         : 2         : N              
-Plaintext[30]                : K4        : input  : 3.3-V LVTTL       :         : 2         : N              
-Key_in[9]                    : K5        : input  : 3.3-V LVTTL       :         : 2         : N              
-Key_in[26]                   : K6        : input  : 3.3-V LVTTL       :         : 2         : N              
-Plaintext[28]                : K7        : input  : 3.3-V LVTTL       :         : 2         : N              
-Plaintext[29]                : K8        : input  : 3.3-V LVTTL       :         : 2         : N              
-Ciphertext[59]               : K9        : output : 3.3-V LVTTL       :         : 3         : N              
+Ciphertext[27]               : J23       : output : 3.3-V LVTTL       :         : 5         : N              
+Ciphertext[44]               : J24       : output : 3.3-V LVTTL       :         : 5         : N              
+Ciphertext[26]               : J25       : output : 3.3-V LVTTL       :         : 5         : N              
+Ciphertext[6]                : J26       : output : 3.3-V LVTTL       :         : 5         : N              
+Key_in[15]                   : K1        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[1]                 : K2        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[35]                : K3        : input  : 3.3-V LVTTL       :         : 2         : N              
+Key_in[60]                   : K4        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[44]                : K5        : input  : 3.3-V LVTTL       :         : 2         : N              
+Key_in[36]                   : K6        : input  : 3.3-V LVTTL       :         : 2         : N              
+Key_in[7]                    : K7        : input  : 3.3-V LVTTL       :         : 2         : N              
+Key_in[6]                    : K8        : input  : 3.3-V LVTTL       :         : 2         : N              
+Key_in[54]                   : K9        : input  : 3.3-V LVTTL       :         : 3         : N              
 VCCINT                       : K10       : power  :                   : 1.2V    :           :                
 VCCINT                       : K11       : power  :                   : 1.2V    :           :                
 VCCINT                       : K12       : power  :                   : 1.2V    :           :                
 VCCINT                       : K13       : power  :                   : 1.2V    :           :                
 VCCINT                       : K14       : power  :                   : 1.2V    :           :                
 VCCINT                       : K15       : power  :                   : 1.2V    :           :                
-Plaintext[4]                 : K16       : input  : 3.3-V LVTTL       :         : 4         : N              
-Key_in[4]                    : K17       : input  : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : K18       :        :                   :         : 5         :                
-GND*                         : K19       :        :                   :         : 5         :                
+Ciphertext[63]               : K16       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : K17       :        :                   :         : 4         :                
+Ciphertext[39]               : K18       : output : 3.3-V LVTTL       :         : 5         : N              
+Ciphertext[2]                : K19       : output : 3.3-V LVTTL       :         : 5         : N              
 GND                          : K20       : gnd    :                   :         :           :                
-GND*                         : K21       :        :                   :         : 5         :                
-GND*                         : K22       :        :                   :         : 5         :                
-GND*                         : K23       :        :                   :         : 5         :                
-GND*                         : K24       :        :                   :         : 5         :                
+Ciphertext[57]               : K21       : output : 3.3-V LVTTL       :         : 5         : N              
+Ciphertext[60]               : K22       : output : 3.3-V LVTTL       :         : 5         : N              
+Ciphertext[4]                : K23       : output : 3.3-V LVTTL       :         : 5         : N              
+Ciphertext[48]               : K24       : output : 3.3-V LVTTL       :         : 5         : N              
 GND*                         : K25       :        :                   :         : 5         :                
-GND*                         : K26       :        :                   :         : 5         :                
+Ciphertext[30]               : K26       : output : 3.3-V LVTTL       :         : 5         : N              
 VCCIO2                       : L1        : power  :                   : 3.3V    : 2         :                
-Plaintext[57]                : L2        : input  : 3.3-V LVTTL       :         : 2         : N              
-Key_in[36]                   : L3        : input  : 3.3-V LVTTL       :         : 2         : N              
-Key_in[58]                   : L4        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[48]                : L2        : input  : 3.3-V LVTTL       :         : 2         : N              
+Key_in[30]                   : L3        : input  : 3.3-V LVTTL       :         : 2         : N              
+Key_in[57]                   : L4        : input  : 3.3-V LVTTL       :         : 2         : N              
 GND                          : L5        : gnd    :                   :         :           :                
-Ciphertext[55]               : L6        : output : 3.3-V LVTTL       :         : 2         : N              
-Plaintext[6]                 : L7        : input  : 3.3-V LVTTL       :         : 2         : N              
+Key_in[4]                    : L6        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[4]                 : L7        : input  : 3.3-V LVTTL       :         : 2         : N              
 TMS                          : L8        : input  :                   :         : 2         :                
-Key_in[52]                   : L9        : input  : 3.3-V LVTTL       :         : 2         : N              
-Ciphertext[42]               : L10       : output : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[23]                : L9        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[27]                : L10       : input  : 3.3-V LVTTL       :         : 2         : N              
 VCCINT                       : L11       : power  :                   : 1.2V    :           :                
 GND                          : L12       : gnd    :                   :         :           :                
 GND                          : L13       : gnd    :                   :         :           :                
@@ -498,19 +498,19 @@ GND                          : L15       : gnd    :                   :         
 VCCINT                       : L16       : power  :                   : 1.2V    :           :                
 VCCINT                       : L17       : power  :                   : 1.2V    :           :                
 VCCINT                       : L18       : power  :                   : 1.2V    :           :                
-GND*                         : L19       :        :                   :         : 5         :                
-GND*                         : L20       :        :                   :         : 5         :                
-GND*                         : L21       :        :                   :         : 5         :                
+Ciphertext[18]               : L19       : output : 3.3-V LVTTL       :         : 5         : N              
+Ciphertext[8]                : L20       : output : 3.3-V LVTTL       :         : 5         : N              
+Ciphertext[11]               : L21       : output : 3.3-V LVTTL       :         : 5         : N              
 GND                          : L22       : gnd    :                   :         :           :                
-GND*                         : L23       :        :                   :         : 5         :                
-GND*                         : L24       :        :                   :         : 5         :                
-GND*                         : L25       :        :                   :         : 5         :                
+Ciphertext[51]               : L23       : output : 3.3-V LVTTL       :         : 5         : N              
+Ciphertext[43]               : L24       : output : 3.3-V LVTTL       :         : 5         : N              
+Ciphertext[55]               : L25       : output : 3.3-V LVTTL       :         : 5         : N              
 VCCIO5                       : L26       : power  :                   : 3.3V    : 5         :                
 GND                          : M1        : gnd    :                   :         :           :                
-Key_in[10]                   : M2        : input  : 3.3-V LVTTL       :         : 2         : N              
-Key_in[18]                   : M3        : input  : 3.3-V LVTTL       :         : 2         : N              
-Plaintext[43]                : M4        : input  : 3.3-V LVTTL       :         : 2         : N              
-Plaintext[42]                : M5        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[5]                 : M2        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[45]                : M3        : input  : 3.3-V LVTTL       :         : 2         : N              
+Key_in[29]                   : M4        : input  : 3.3-V LVTTL       :         : 2         : N              
+Key_in[22]                   : M5        : input  : 3.3-V LVTTL       :         : 2         : N              
 TCK                          : M6        : input  :                   :         : 2         :                
 TDO                          : M7        : output :                   :         : 2         :                
 TDI                          : M8        : input  :                   :         : 2         :                
@@ -527,8 +527,8 @@ VCCIO5                       : M18       : power  :                   : 3.3V    
 GND*                         : M19       :        :                   :         : 5         :                
 GND*                         : M20       :        :                   :         : 5         :                
 GND*                         : M21       :        :                   :         : 5         :                
-GND*                         : M22       :        :                   :         : 5         :                
-GND*                         : M23       :        :                   :         : 5         :                
+Ciphertext[12]               : M22       : output : 3.3-V LVTTL       :         : 5         : N              
+Ciphertext[15]               : M23       : output : 3.3-V LVTTL       :         : 5         : N              
 GND*                         : M24       :        :                   :         : 5         :                
 GND*                         : M25       :        :                   :         : 5         :                
 GND                          : M26       : gnd    :                   :         :           :                
@@ -540,7 +540,7 @@ VCCIO2                       : N5        : power  :                   : 3.3V    
 DCLK                         : N6        :        :                   :         : 2         :                
 nCONFIG                      : N7        :        :                   :         : 2         :                
 GND                          : N8        : gnd    :                   :         :           :                
-Key_in[33]                   : N9        : input  : 3.3-V LVTTL       :         : 2         : N              
+Key_in[31]                   : N9        : input  : 3.3-V LVTTL       :         : 2         : N              
 VCCINT                       : N10       : power  :                   : 1.2V    :           :                
 GND                          : N11       : gnd    :                   :         :           :                
 GND                          : N12       : gnd    :                   :         :           :                
@@ -549,7 +549,7 @@ GND                          : N14       : gnd    :                   :         
 GND                          : N15       : gnd    :                   :         :           :                
 GND                          : N16       : gnd    :                   :         :           :                
 VCCINT                       : N17       : power  :                   : 1.2V    :           :                
-GND*                         : N18       :        :                   :         : 5         :                
+Ciphertext[61]               : N18       : output : 3.3-V LVTTL       :         : 5         : N              
 GND                          : N19       : gnd    :                   :         :           :                
 GND*                         : N20       :        :                   :         : 5         :                
 NC                           : N21       :        :                   :         :           :                
@@ -560,13 +560,13 @@ GND+                         : N25       :        :                   :         
 GND+                         : N26       :        :                   :         : 5         :                
 Reset_n                      : P1        : input  : 3.3-V LVTTL       :         : 1         : N              
 Clk                          : P2        : input  : 3.3-V LVTTL       :         : 1         : N              
-Key_in[51]                   : P3        : input  : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : P4        :        :                   :         : 1         :                
+Key_in[11]                   : P3        : input  : 3.3-V LVTTL       :         : 1         : N              
+Plaintext[43]                : P4        : input  : 3.3-V LVTTL       :         : 1         : N              
 VCCIO1                       : P5        : power  :                   : 3.3V    : 1         :                
-GND*                         : P6        :        :                   :         : 1         :                
-GND*                         : P7        :        :                   :         : 1         :                
+Key_in[58]                   : P6        : input  : 3.3-V LVTTL       :         : 1         : N              
+Key_in[28]                   : P7        : input  : 3.3-V LVTTL       :         : 1         : N              
 GND                          : P8        : gnd    :                   :         :           :                
-Plaintext[55]                : P9        : input  : 3.3-V LVTTL       :         : 2         : N              
+Plaintext[31]                : P9        : input  : 3.3-V LVTTL       :         : 2         : N              
 VCCINT                       : P10       : power  :                   : 1.2V    :           :                
 GND                          : P11       : gnd    :                   :         :           :                
 GND                          : P12       : gnd    :                   :         :           :                
@@ -575,7 +575,7 @@ GND                          : P14       : gnd    :                   :         
 GND                          : P15       : gnd    :                   :         :           :                
 GND                          : P16       : gnd    :                   :         :           :                
 GND*                         : P17       :        :                   :         : 6         :                
-GND*                         : P18       :        :                   :         : 5         :                
+Ciphertext[19]               : P18       : output : 3.3-V LVTTL       :         : 5         : N              
 GND                          : P19       : gnd    :                   :         :           :                
 MSEL0                        : P20       :        :                   :         : 6         :                
 MSEL1                        : P21       :        :                   :         : 6         :                
@@ -585,12 +585,12 @@ GND*                         : P24       :        :                   :         
 GND+                         : P25       :        :                   :         : 6         :                
 GND+                         : P26       :        :                   :         : 6         :                
 GND                          : R1        : gnd    :                   :         :           :                
-Plaintext[38]                : R2        : input  : 3.3-V LVTTL       :         : 1         : N              
-Plaintext[50]                : R3        : input  : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : R4        :        :                   :         : 1         :                
-GND*                         : R5        :        :                   :         : 1         :                
-GND*                         : R6        :        :                   :         : 1         :                
-GND*                         : R7        :        :                   :         : 1         :                
+Plaintext[51]                : R2        : input  : 3.3-V LVTTL       :         : 1         : N              
+Key_in[39]                   : R3        : input  : 3.3-V LVTTL       :         : 1         : N              
+Plaintext[6]                 : R4        : input  : 3.3-V LVTTL       :         : 1         : N              
+Plaintext[53]                : R5        : input  : 3.3-V LVTTL       :         : 1         : N              
+Plaintext[46]                : R6        : input  : 3.3-V LVTTL       :         : 1         : N              
+Plaintext[21]                : R7        : input  : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : R8        :        :                   :         : 1         :                
 VCCIO1                       : R9        : power  :                   : 3.3V    : 1         :                
 VCCINT                       : R10       : power  :                   : 1.2V    :           :                
@@ -611,15 +611,15 @@ GND*                         : R24       :        :                   :         
 GND*                         : R25       :        :                   :         : 6         :                
 GND                          : R26       : gnd    :                   :         :           :                
 VCCIO1                       : T1        : power  :                   : 3.3V    : 1         :                
-GND*                         : T2        :        :                   :         : 1         :                
-GND*                         : T3        :        :                   :         : 1         :                
-GND*                         : T4        :        :                   :         : 1         :                
+Key_in[61]                   : T2        : input  : 3.3-V LVTTL       :         : 1         : N              
+Key_in[52]                   : T3        : input  : 3.3-V LVTTL       :         : 1         : N              
+Key_in[41]                   : T4        : input  : 3.3-V LVTTL       :         : 1         : N              
 GND                          : T5        : gnd    :                   :         :           :                
-GND*                         : T6        :        :                   :         : 1         :                
-GND*                         : T7        :        :                   :         : 1         :                
+Key_in[5]                    : T6        : input  : 3.3-V LVTTL       :         : 1         : N              
+Plaintext[40]                : T7        : input  : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : T8        :        :                   :         : 1         :                
-GND*                         : T9        :        :                   :         : 1         :                
-GND*                         : T10       :        :                   :         : 1         :                
+Plaintext[12]                : T9        : input  : 3.3-V LVTTL       :         : 1         : N              
+Plaintext[8]                 : T10       : input  : 3.3-V LVTTL       :         : 1         : N              
 VCCINT                       : T11       : power  :                   : 1.2V    :           :                
 GND                          : T12       : gnd    :                   :         :           :                
 GND                          : T13       : gnd    :                   :         :           :                
@@ -636,23 +636,23 @@ GND*                         : T23       :        :                   :         
 GND*                         : T24       :        :                   :         : 6         :                
 GND*                         : T25       :        :                   :         : 6         :                
 VCCIO6                       : T26       : power  :                   : 3.3V    : 6         :                
-GND*                         : U1        :        :                   :         : 1         :                
-GND*                         : U2        :        :                   :         : 1         :                
-GND*                         : U3        :        :                   :         : 1         :                
-GND*                         : U4        :        :                   :         : 1         :                
+Plaintext[14]                : U1        : input  : 3.3-V LVTTL       :         : 1         : N              
+Plaintext[36]                : U2        : input  : 3.3-V LVTTL       :         : 1         : N              
+Key_in[37]                   : U3        : input  : 3.3-V LVTTL       :         : 1         : N              
+Plaintext[18]                : U4        : input  : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : U5        :        :                   :         : 1         :                
 GND*                         : U6        :        :                   :         : 1         :                
-GND*                         : U7        :        :                   :         : 1         :                
+Key_in[20]                   : U7        : input  : 3.3-V LVTTL       :         : 1         : N              
 GND                          : U8        : gnd    :                   :         :           :                
-GND*                         : U9        :        :                   :         : 1         :                
-GND*                         : U10       :        :                   :         : 1         :                
+Plaintext[63]                : U9        : input  : 3.3-V LVTTL       :         : 1         : N              
+Key_in[18]                   : U10       : input  : 3.3-V LVTTL       :         : 1         : N              
 VCCINT                       : U11       : power  :                   : 1.2V    :           :                
 GND*                         : U12       :        :                   :         : 8         :                
 VCCINT                       : U13       : power  :                   : 1.2V    :           :                
 VCCINT                       : U14       : power  :                   : 1.2V    :           :                
 VCCINT                       : U15       : power  :                   : 1.2V    :           :                
 VCCINT                       : U16       : power  :                   : 1.2V    :           :                
-Key_in[24]                   : U17       : input  : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : U17       :        :                   :         : 7         :                
 GND*                         : U18       :        :                   :         : 7         :                
 GND                          : U19       : gnd    :                   :         :           :                
 GND*                         : U20       :        :                   :         : 6         :                
@@ -662,19 +662,19 @@ GND*                         : U23       :        :                   :         
 GND*                         : U24       :        :                   :         : 6         :                
 GND*                         : U25       :        :                   :         : 6         :                
 GND*                         : U26       :        :                   :         : 6         :                
-GND*                         : V1        :        :                   :         : 1         :                
-GND*                         : V2        :        :                   :         : 1         :                
-GND*                         : V3        :        :                   :         : 1         :                
-GND*                         : V4        :        :                   :         : 1         :                
+Plaintext[11]                : V1        : input  : 3.3-V LVTTL       :         : 1         : N              
+Key_in[46]                   : V2        : input  : 3.3-V LVTTL       :         : 1         : N              
+Plaintext[58]                : V3        : input  : 3.3-V LVTTL       :         : 1         : N              
+Plaintext[20]                : V4        : input  : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : V5        :        :                   :         : 1         :                
 GND*                         : V6        :        :                   :         : 1         :                
 GND*                         : V7        :        :                   :         : 1         :                
 VCCIO1                       : V8        : power  :                   : 3.3V    : 1         :                
-Key_in[56]                   : V9        : input  : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : V9        :        :                   :         : 8         :                
 GND*                         : V10       :        :                   :         : 8         :                
 GND*                         : V11       :        :                   :         : 8         :                
 VCCIO8                       : V12       : power  :                   : 3.3V    : 8         :                
-Key_in[55]                   : V13       : input  : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : V13       :        :                   :         : 8         :                
 GND*                         : V14       :        :                   :         : 8         :                
 VCCIO7                       : V15       : power  :                   : 3.3V    : 7         :                
 VCCINT                       : V16       : power  :                   : 1.2V    :           :                
@@ -689,7 +689,7 @@ GND*                         : V24       :        :                   :         
 GND*                         : V25       :        :                   :         : 6         :                
 GND*                         : V26       :        :                   :         : 6         :                
 GND*                         : W1        :        :                   :         : 1         :                
-GND*                         : W2        :        :                   :         : 1         :                
+Plaintext[29]                : W2        : input  : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : W3        :        :                   :         : 1         :                
 GND*                         : W4        :        :                   :         : 1         :                
 GND                          : W5        : gnd    :                   :         :           :                

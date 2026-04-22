@@ -14,6 +14,7 @@ module DES_AVALON_WRAPPER (
     reg [63:0] plaintext_reg;
     reg [63:0] key_reg;
     reg start_reg;
+    reg done_reg; // NEW
     
     // Tín hiệu từ module DES
     wire [63:0] ciphertext_wire;
@@ -25,10 +26,14 @@ module DES_AVALON_WRAPPER (
             plaintext_reg <= 64'b0;
             key_reg <= 64'b0;
             start_reg <= 1'b0;
+            done_reg <= 1'b0;
         end else begin
             if (write) begin
                 case (address)
-                    3'd0: start_reg <= writedata[0]; // Ghi bit 0 để Start
+                    3'd0: begin 
+                        start_reg <= writedata[0]; // Ghi bit 0 để Start
+                        if (writedata[0]) done_reg <= 1'b0; // CLEAR done_reg khi có xung Start mới
+                    end
                     3'd1: plaintext_reg[31:0] <= writedata;
                     3'd2: plaintext_reg[63:32] <= writedata;
                     3'd3: key_reg[31:0] <= writedata;
@@ -37,6 +42,10 @@ module DES_AVALON_WRAPPER (
             end else begin
                 // Tự động clear Start để tạo xung 1 chu kỳ clock cho FSM
                 start_reg <= 1'b0; 
+                // CATCH pulse Done từ Pipeline (1 xung)
+                if (done_wire) begin
+                    done_reg <= 1'b1;
+                end
             end
         end
     end
@@ -44,7 +53,7 @@ module DES_AVALON_WRAPPER (
     // Logic Đọc (DES IP -> Nios II)
     always @(*) begin
         case (address)
-            3'd0: readdata = {30'b0, done_wire, start_reg}; // Đọc bit 1 để kiểm tra Done
+            3'd0: readdata = {30'b0, done_reg, start_reg}; // Đọc bit 1 để kiểm tra Done
             3'd5: readdata = ciphertext_wire[31:0];
             3'd6: readdata = ciphertext_wire[63:32];
             default: readdata = 32'b0;
