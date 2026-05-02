@@ -60,10 +60,10 @@ module DES_AVALON_WRAPPER (
         endcase
     end
 
-    // Khởi tạo IP DES của bạn
+    // Khởi tạo IP DES
     DES_ALGORITHM des_inst (
         .Clk(clk),
-        .Reset_n(reset_n), // FSM của bạn dùng Reset tích cực mức cao
+        .Reset_n(reset_n),
         .Start(start_reg),
         .Plaintext(plaintext_reg),
         .Key_in(key_reg),

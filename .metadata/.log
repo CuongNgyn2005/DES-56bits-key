@@ -20,3 +20,128 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.
 
 !ENTRY com.altera.sbtgui.launch 4 0 2026-04-17 16:24:02.111
 !MESSAGE Failed Executing: make sim SPD=D:/CE433/DES-56bits-key/system_tb.spd ELF=D:/CE433/DES-56bits-key/software/DES1/DES1.elf ENABLE_VSIM_GUI=1 VSIM_DIR='E:/altera/13.0sp1/modelsim_ase/win32aloem'  return code: 2
+!SESSION 2026-05-02 22:09:11.190 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2026-05-02 22:09:25.019
+!MESSAGE An error occurred while committing the engine session for profile: epp.package.cpp.
+!SUBENTRY 1 org.eclipse.equinox.p2.touchpoint.eclipse 4 0 2026-05-02 22:09:25.019
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.equinox.p2.touchpoint.eclipse 4 0 2026-05-02 22:09:25.019
+!MESSAGE Error saving manipulator.
+!STACK 0
+java.lang.IllegalStateException: Failed to create directory {0}.
+	at org.eclipse.equinox.internal.frameworkadmin.equinox.EclipseLauncherParser.save(EclipseLauncherParser.java:280)
+	at org.eclipse.equinox.internal.frameworkadmin.equinox.EquinoxManipulatorImpl.save(EquinoxManipulatorImpl.java:378)
+	at org.eclipse.equinox.internal.p2.touchpoint.eclipse.LazyManipulator.save(LazyManipulator.java:96)
+	at org.eclipse.equinox.internal.p2.touchpoint.eclipse.EclipseTouchpoint.saveManipulator(EclipseTouchpoint.java:61)
+	at org.eclipse.equinox.internal.p2.touchpoint.eclipse.EclipseTouchpoint.commit(EclipseTouchpoint.java:137)
+	at org.eclipse.equinox.internal.p2.engine.EngineSession.commit(EngineSession.java:123)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:93)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:44)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.executePlan(ProfileSynchronizer.java:768)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.performAddRemove(ProfileSynchronizer.java:189)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.synchronize(ProfileSynchronizer.java:128)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.synchronize(Activator.java:461)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:176)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:389)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1131)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+!SUBENTRY 2 org.eclipse.equinox.p2.touchpoint.eclipse 4 0 2026-05-02 22:09:25.019
+!MESSAGE Error saving platform configuration.
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Exception when saving configuration to: C:\Users\cncuo\OneDrive\.altera.sbt4e\configuration\org.eclipse.update\platform.xml.
+	at org.eclipse.equinox.internal.p2.update.ConfigurationWriter.save(ConfigurationWriter.java:61)
+	at org.eclipse.equinox.internal.p2.update.ConfigurationIO.write(ConfigurationIO.java:69)
+	at org.eclipse.equinox.internal.p2.update.Configuration.save(Configuration.java:46)
+	at org.eclipse.equinox.internal.p2.touchpoint.eclipse.PlatformConfigurationWrapper.save(PlatformConfigurationWrapper.java:236)
+	at org.eclipse.equinox.internal.p2.touchpoint.eclipse.EclipseTouchpoint.savePlatformConfigurationWrapper(EclipseTouchpoint.java:78)
+	at org.eclipse.equinox.internal.p2.touchpoint.eclipse.EclipseTouchpoint.commit(EclipseTouchpoint.java:144)
+	at org.eclipse.equinox.internal.p2.engine.EngineSession.commit(EngineSession.java:123)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:93)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:44)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.executePlan(ProfileSynchronizer.java:768)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.performAddRemove(ProfileSynchronizer.java:189)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.synchronize(ProfileSynchronizer.java:128)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.synchronize(Activator.java:461)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:176)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:389)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1131)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+Caused by: java.io.FileNotFoundException: C:\Users\cncuo\OneDrive\.altera.sbt4e\configuration\org.eclipse.update\platform.xml (The system cannot find the path specified)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.update.ConfigurationWriter.save(ConfigurationWriter.java:34)
+	... 28 more
+!SUBENTRY 3 org.eclipse.equinox.p2.core 4 0 2026-05-02 22:09:25.020
+!MESSAGE Exception when saving configuration to: C:\Users\cncuo\OneDrive\.altera.sbt4e\configuration\org.eclipse.update\platform.xml.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\cncuo\OneDrive\.altera.sbt4e\configuration\org.eclipse.update\platform.xml (The system cannot find the path specified)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.update.ConfigurationWriter.save(ConfigurationWriter.java:34)
+	at org.eclipse.equinox.internal.p2.update.ConfigurationIO.write(ConfigurationIO.java:69)
+	at org.eclipse.equinox.internal.p2.update.Configuration.save(Configuration.java:46)
+	at org.eclipse.equinox.internal.p2.touchpoint.eclipse.PlatformConfigurationWrapper.save(PlatformConfigurationWrapper.java:236)
+	at org.eclipse.equinox.internal.p2.touchpoint.eclipse.EclipseTouchpoint.savePlatformConfigurationWrapper(EclipseTouchpoint.java:78)
+	at org.eclipse.equinox.internal.p2.touchpoint.eclipse.EclipseTouchpoint.commit(EclipseTouchpoint.java:144)
+	at org.eclipse.equinox.internal.p2.engine.EngineSession.commit(EngineSession.java:123)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:93)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:44)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.executePlan(ProfileSynchronizer.java:768)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.performAddRemove(ProfileSynchronizer.java:189)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.synchronize(ProfileSynchronizer.java:128)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.synchronize(Activator.java:461)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:176)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:389)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1131)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-05-02 22:10:11.825
+!MESSAGE Indexed 'DES' (1 sources, 13 headers) in 0.07 sec: 9 declarations; 43 references; 18 unresolved inclusions; 0 syntax errors; 16 unresolved names (23.53%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-05-02 22:10:12.965
+!MESSAGE Indexed 'DES_bsp' (77 sources, 55 headers) in 1.14 sec: 919 declarations; 2,181 references; 113 unresolved inclusions; 5 syntax errors; 193 unresolved names (5.86%)

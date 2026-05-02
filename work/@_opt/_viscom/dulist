@@ -1,0 +1,16 @@
+2 11 DES_CONTROL 4 fast 28 D:/CE433/DES-56bits-key/work 0 0 0 0 108 0
+2 2 IP 4 fast 28 D:/CE433/DES-56bits-key/work 0 0 0 0 139 0
+1 12 REGISTER_TOP 4 fast 28 D:/CE433/DES-56bits-key/work 0 0 0 0 54 0
+2 4 PC_1 4 fast 28 D:/CE433/DES-56bits-key/work 0 0 0 0 122 0
+2 12 SHIFT_LEFT_1 4 fast 28 D:/CE433/DES-56bits-key/work 0 0 0 0 10 0
+2 12 SHIFT_LEFT_2 4 fast 28 D:/CE433/DES-56bits-key/work 0 0 0 0 10 0
+2 4 PC_2 4 fast 28 D:/CE433/DES-56bits-key/work 0 0 0 0 102 0
+1 9 ROUND_KEY 4 fast 28 D:/CE433/DES-56bits-key/work 0 0 0 0 381 0
+2 8 E_MATRIX 4 fast 28 D:/CE433/DES-56bits-key/work 0 0 131072 0 102 0
+2 9 E_XOR_KEY 4 fast 28 D:/CE433/DES-56bits-key/work 0 0 0 0 57 0
+2 5 S_BOX 4 fast 28 D:/CE433/DES-56bits-key/work 0 0 131072 0 1159 0
+2 8 P_MATRIX 4 fast 28 D:/CE433/DES-56bits-key/work 0 0 131072 0 70 0
+2 10 F_FUNCTION 4 fast 28 D:/CE433/DES-56bits-key/work 0 0 393216 0 1431 0
+2 4 IP_1 4 fast 28 D:/CE433/DES-56bits-key/work 0 0 0 0 134 0
+1 13 DES_ALGORITHM 4 fast 28 D:/CE433/DES-56bits-key/work 0 0 573440 0 2324 0
+1 13 DES_TESTBENCH 4 fast 28 D:/CE433/DES-56bits-key/work 0 0 573440 0 2422 0

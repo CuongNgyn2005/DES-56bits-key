@@ -1,0 +1,1 @@
+E:/altera_prime/25.01std/questa_fe/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 541104 work.DES_TESTBENCH -quiet -auto_acc_if_foreign -work work -allow_unnamed -o _opt -id 1-e89c25990ee9-69eb7bc5-331-6fa0

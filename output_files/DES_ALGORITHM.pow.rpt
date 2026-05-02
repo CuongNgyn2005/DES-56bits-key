@@ -1,0 +1,510 @@
+PowerPlay Power Analyzer report for DES_ALGORITHM
+Sat May 02 22:34:42 2026
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. PowerPlay Power Analyzer Summary
+  3. PowerPlay Power Analyzer Settings
+  4. Indeterminate Toggle Rates
+  5. Operating Conditions Used
+  6. Thermal Power Dissipation by Block
+  7. Thermal Power Dissipation by Block Type
+  8. Thermal Power Dissipation by Hierarchy
+  9. Core Dynamic Thermal Power Dissipation by Clock Domain
+ 10. Current Drawn from Voltage Supplies Summary
+ 11. VCCIO Supply Current Drawn by I/O Bank
+ 12. VCCIO Supply Current Drawn by Voltage
+ 13. Confidence Metric Details
+ 14. Signal Activities
+ 15. PowerPlay Power Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------------------+
+; PowerPlay Power Analyzer Summary                                                          ;
++----------------------------------------+--------------------------------------------------+
+; PowerPlay Power Analyzer Status        ; Successful - Sat May 02 22:34:42 2026            ;
+; Quartus II 64-Bit Version              ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition  ;
+; Revision Name                          ; DES_ALGORITHM                                    ;
+; Top-level Entity Name                  ; DES_ALGORITHM                                    ;
+; Family                                 ; Cyclone II                                       ;
+; Device                                 ; EP2C35F672C6                                     ;
+; Power Models                           ; Final                                            ;
+; Total Thermal Power Dissipation        ; 133.08 mW                                        ;
+; Core Dynamic Thermal Power Dissipation ; 0.00 mW                                          ;
+; Core Static Thermal Power Dissipation  ; 80.00 mW                                         ;
+; I/O Thermal Power Dissipation          ; 53.08 mW                                         ;
+; Power Estimation Confidence            ; Low: user provided insufficient toggle rate data ;
++----------------------------------------+--------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; PowerPlay Power Analyzer Settings                                                                                                  ;
++----------------------------------------------------------------------------+---------------------------------------+---------------+
+; Option                                                                     ; Setting                               ; Default Value ;
++----------------------------------------------------------------------------+---------------------------------------+---------------+
+; Use smart compilation                                                      ; Off                                   ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                                    ; On            ;
+; Enable compact report table                                                ; Off                                   ; Off           ;
+; Preset Cooling Solution                                                    ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ;               ;
+; Board thermal model                                                        ; None (CONSERVATIVE)                   ;               ;
+; Default Power Toggle Rate                                                  ; 12.5%                                 ; 12.5%         ;
+; Default Power Input I/O Toggle Rate                                        ; 12.5%                                 ; 12.5%         ;
+; Use vectorless estimation                                                  ; On                                    ; On            ;
+; Use Input Files                                                            ; Off                                   ; Off           ;
+; Filter Glitches in VCD File Reader                                         ; On                                    ; On            ;
+; Power Analyzer Report Signal Activity                                      ; Off                                   ; Off           ;
+; Power Analyzer Report Power Dissipation                                    ; Off                                   ; Off           ;
+; Device Power Characteristics                                               ; TYPICAL                               ; TYPICAL       ;
+; Automatically Compute Junction Temperature                                 ; On                                    ; On            ;
+; Specified Junction Temperature                                             ; 25                                    ; 25            ;
+; Ambient Temperature                                                        ; 25                                    ; 25            ;
+; Use Custom Cooling Solution                                                ; Off                                   ; Off           ;
+; Board Temperature                                                          ; 25                                    ; 25            ;
+; Enable HPS                                                                 ; Off                                   ; Off           ;
+; Processor Frequency                                                        ; 0.0                                   ; 0.0           ;
++----------------------------------------------------------------------------+---------------------------------------+---------------+
+
+
++---------------------------------------------+
+; Indeterminate Toggle Rates                  ;
++---------------+-----------------------------+
+; Node          ; Reason                      ;
++---------------+-----------------------------+
+; Key_in[0]     ; No valid clock domain found ;
+; Key_in[8]     ; No valid clock domain found ;
+; Key_in[16]    ; No valid clock domain found ;
+; Key_in[24]    ; No valid clock domain found ;
+; Key_in[32]    ; No valid clock domain found ;
+; Key_in[40]    ; No valid clock domain found ;
+; Key_in[48]    ; No valid clock domain found ;
+; Key_in[56]    ; No valid clock domain found ;
+; Clk           ; No valid clock domain found ;
+; Reset_n       ; No valid clock domain found ;
+; Plaintext[22] ; No valid clock domain found ;
+; Plaintext[61] ; No valid clock domain found ;
+; Key_in[42]    ; No valid clock domain found ;
+; Plaintext[19] ; No valid clock domain found ;
+; Key_in[10]    ; No valid clock domain found ;
+; Plaintext[11] ; No valid clock domain found ;
+; Key_in[25]    ; No valid clock domain found ;
+; Plaintext[35] ; No valid clock domain found ;
+; Key_in[60]    ; No valid clock domain found ;
+; Plaintext[27] ; No valid clock domain found ;
+; Key_in[27]    ; No valid clock domain found ;
+; Plaintext[3]  ; No valid clock domain found ;
+; Key_in[36]    ; No valid clock domain found ;
+; Plaintext[23] ; No valid clock domain found ;
+; Key_in[4]     ; No valid clock domain found ;
+; Plaintext[4]  ; No valid clock domain found ;
+; Plaintext[31] ; No valid clock domain found ;
+; Key_in[15]    ; No valid clock domain found ;
+; Plaintext[39] ; No valid clock domain found ;
+; Key_in[47]    ; No valid clock domain found ;
+; Plaintext[57] ; No valid clock domain found ;
+; Key_in[54]    ; No valid clock domain found ;
+; Plaintext[7]  ; No valid clock domain found ;
+; Key_in[13]    ; No valid clock domain found ;
+; Plaintext[15] ; No valid clock domain found ;
+; Key_in[30]    ; No valid clock domain found ;
+; Key_in[37]    ; No valid clock domain found ;
+; Plaintext[25] ; No valid clock domain found ;
+; Key_in[49]    ; No valid clock domain found ;
+; Plaintext[28] ; No valid clock domain found ;
+; Plaintext[59] ; No valid clock domain found ;
+; Key_in[3]     ; No valid clock domain found ;
+; Key_in[1]     ; No valid clock domain found ;
+; Plaintext[17] ; No valid clock domain found ;
+; Plaintext[33] ; No valid clock domain found ;
+; Key_in[44]    ; No valid clock domain found ;
+; Plaintext[1]  ; No valid clock domain found ;
+; Key_in[43]    ; No valid clock domain found ;
+; Plaintext[9]  ; No valid clock domain found ;
+; Key_in[26]    ; No valid clock domain found ;
+; Key_in[28]    ; No valid clock domain found ;
+; Plaintext[5]  ; No valid clock domain found ;
+; Key_in[22]    ; No valid clock domain found ;
+; Plaintext[36] ; No valid clock domain found ;
+; Plaintext[63] ; No valid clock domain found ;
+; Key_in[45]    ; No valid clock domain found ;
+; Plaintext[55] ; No valid clock domain found ;
+; Key_in[55]    ; No valid clock domain found ;
+; Key_in[31]    ; No valid clock domain found ;
+; Key_in[7]     ; No valid clock domain found ;
+; Plaintext[47] ; No valid clock domain found ;
+; Key_in[62]    ; No valid clock domain found ;
+; Key_in[14]    ; No valid clock domain found ;
+; Key_in[46]    ; No valid clock domain found ;
+; Plaintext[12] ; No valid clock domain found ;
+; Plaintext[29] ; No valid clock domain found ;
+; Key_in[5]     ; No valid clock domain found ;
+; Plaintext[53] ; No valid clock domain found ;
+; Plaintext[45] ; No valid clock domain found ;
+; Key_in[23]    ; No valid clock domain found ;
+; Plaintext[37] ; No valid clock domain found ;
+; Key_in[63]    ; No valid clock domain found ;
+; Plaintext[62] ; No valid clock domain found ;
+; Plaintext[20] ; No valid clock domain found ;
+; Key_in[41]    ; No valid clock domain found ;
+; Key_in[35]    ; No valid clock domain found ;
+; Key_in[17]    ; No valid clock domain found ;
+; Key_in[34]    ; No valid clock domain found ;
+; Plaintext[43] ; No valid clock domain found ;
+; Key_in[59]    ; No valid clock domain found ;
+; Plaintext[51] ; No valid clock domain found ;
+; Key_in[11]    ; No valid clock domain found ;
+; Key_in[9]     ; No valid clock domain found ;
+; Plaintext[34] ; No valid clock domain found ;
+; Key_in[19]    ; No valid clock domain found ;
+; Key_in[33]    ; No valid clock domain found ;
+; Plaintext[41] ; No valid clock domain found ;
+; Key_in[51]    ; No valid clock domain found ;
+; Key_in[50]    ; No valid clock domain found ;
+; Plaintext[49] ; No valid clock domain found ;
+; Key_in[2]     ; No valid clock domain found ;
+; Key_in[29]    ; No valid clock domain found ;
+; Plaintext[58] ; No valid clock domain found ;
+; Key_in[20]    ; No valid clock domain found ;
+; Plaintext[21] ; No valid clock domain found ;
+; Key_in[39]    ; No valid clock domain found ;
+; Key_in[6]     ; No valid clock domain found ;
+; Key_in[61]    ; No valid clock domain found ;
+; Plaintext[13] ; No valid clock domain found ;
+; Key_in[38]    ; No valid clock domain found ;
+; Plaintext[50] ; No valid clock domain found ;
+; Plaintext[0]  ; No valid clock domain found ;
+; Plaintext[26] ; No valid clock domain found ;
+; Plaintext[42] ; No valid clock domain found ;
+; Key_in[53]    ; No valid clock domain found ;
+; Plaintext[30] ; No valid clock domain found ;
+; Plaintext[46] ; No valid clock domain found ;
+; Plaintext[38] ; No valid clock domain found ;
+; Plaintext[54] ; No valid clock domain found ;
+; Plaintext[56] ; No valid clock domain found ;
+; Plaintext[24] ; No valid clock domain found ;
+; Plaintext[6]  ; No valid clock domain found ;
+; Plaintext[40] ; No valid clock domain found ;
+; Plaintext[32] ; No valid clock domain found ;
+; Key_in[58]    ; No valid clock domain found ;
+; Plaintext[48] ; No valid clock domain found ;
+; Plaintext[60] ; No valid clock domain found ;
+; Plaintext[52] ; No valid clock domain found ;
+; Plaintext[44] ; No valid clock domain found ;
+; Plaintext[2]  ; No valid clock domain found ;
+; Key_in[12]    ; No valid clock domain found ;
+; Plaintext[14] ; No valid clock domain found ;
+; Key_in[21]    ; No valid clock domain found ;
+; Plaintext[18] ; No valid clock domain found ;
+; Key_in[18]    ; No valid clock domain found ;
+; Plaintext[10] ; No valid clock domain found ;
+; Plaintext[16] ; No valid clock domain found ;
+; Key_in[57]    ; No valid clock domain found ;
+; Key_in[52]    ; No valid clock domain found ;
+; Plaintext[8]  ; No valid clock domain found ;
+; Start         ; No valid clock domain found ;
++---------------+-----------------------------+
+
+
++-------------------------------------------------------------------------+
+; Operating Conditions Used                                               ;
++---------------------------------------------+---------------------------+
+; Setting                                     ; Value                     ;
++---------------------------------------------+---------------------------+
+; Device power characteristics                ; Typical                   ;
+;                                             ;                           ;
+; Voltages                                    ;                           ;
+;     VCCINT                                  ; 1.20 V                    ;
+;     3.3-V LVTTL I/O Standard                ; 3.3 V                     ;
+;                                             ;                           ;
+; Auto computed junction temperature          ; 25.8 degrees Celsius      ;
+;     Ambient temperature                     ; 25.0 degrees Celsius      ;
+;     Junction-to-Case thermal resistance     ; 3.10 degrees Celsius/Watt ;
+;     Case-to-Heat Sink thermal resistance    ; 0.10 degrees Celsius/Watt ;
+;     Heat Sink-to-Ambient thermal resistance ; 2.80 degrees Celsius/Watt ;
+;                                             ;                           ;
+; Board model used                            ; None                      ;
++---------------------------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block                                                                                                           ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+; Block Name ; Block Type ; Total Thermal Power ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+(1) The "Thermal Power Dissipation by Block" Table has been hidden. To show this table, please select the "Write power dissipation by block to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block Type                                                                                                                                                                            ;
++---------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; Block Type          ; Total Thermal Power by Block Type ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ; Block Average Toggle Rate (millions of transitions / sec) ;
++---------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; I/O                 ; 23.50 mW                          ; 0.00 mW                     ; 23.50 mW                       ; 0.00 mW                       ;    0.000                                                  ;
+; Combinational cell  ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
+; Register cell       ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
+; Clock control block ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
++---------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+(1) The "Block Thermal Static Power" for all block types except Pins and the Voltage Regulator, if one exists, is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Hierarchy                                                                                                                                                                                                          ;
++-------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+----------------------------------------------------------+
+; Compilation Hierarchy Node          ; Total Thermal Power by Hierarchy (1) ; Block Thermal Dynamic Power (1) ; Block Thermal Static Power (1)(2) ; Routing Thermal Dynamic Power (1) ; Full Hierarchy Name                                      ;
++-------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+----------------------------------------------------------+
+; |DES_ALGORITHM                      ; 23.50 mW (23.50 mW)                  ; 0.00 mW (0.00 mW)               ; 23.50 mW (23.50 mW)               ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM                                           ;
+;     |hard_block:auto_generated_inst ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|hard_block:auto_generated_inst            ;
+;     |F_FUNCTION:f_block_1           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_1                      ;
+;         |E_XOR_KEY:e_xor_key        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_1|E_XOR_KEY:e_xor_key  ;
+;         |S_BOX:s_box                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_1|S_BOX:s_box          ;
+;     |F_FUNCTION:f_block_2           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_2                      ;
+;         |E_XOR_KEY:e_xor_key        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_2|E_XOR_KEY:e_xor_key  ;
+;         |S_BOX:s_box                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_2|S_BOX:s_box          ;
+;     |F_FUNCTION:f_block_3           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_3                      ;
+;         |E_XOR_KEY:e_xor_key        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_3|E_XOR_KEY:e_xor_key  ;
+;         |S_BOX:s_box                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_3|S_BOX:s_box          ;
+;     |F_FUNCTION:f_block_4           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_4                      ;
+;         |E_XOR_KEY:e_xor_key        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_4|E_XOR_KEY:e_xor_key  ;
+;         |S_BOX:s_box                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_4|S_BOX:s_box          ;
+;     |F_FUNCTION:f_block_5           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_5                      ;
+;         |E_XOR_KEY:e_xor_key        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_5|E_XOR_KEY:e_xor_key  ;
+;         |S_BOX:s_box                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_5|S_BOX:s_box          ;
+;     |F_FUNCTION:f_block_6           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_6                      ;
+;         |E_XOR_KEY:e_xor_key        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_6|E_XOR_KEY:e_xor_key  ;
+;         |S_BOX:s_box                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_6|S_BOX:s_box          ;
+;     |F_FUNCTION:f_block_7           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_7                      ;
+;         |E_XOR_KEY:e_xor_key        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_7|E_XOR_KEY:e_xor_key  ;
+;         |S_BOX:s_box                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_7|S_BOX:s_box          ;
+;     |F_FUNCTION:f_block_8           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_8                      ;
+;         |E_XOR_KEY:e_xor_key        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_8|E_XOR_KEY:e_xor_key  ;
+;         |S_BOX:s_box                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_8|S_BOX:s_box          ;
+;     |F_FUNCTION:f_block_9           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_9                      ;
+;         |E_XOR_KEY:e_xor_key        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_9|E_XOR_KEY:e_xor_key  ;
+;         |S_BOX:s_box                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_9|S_BOX:s_box          ;
+;     |F_FUNCTION:f_block_10          ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_10                     ;
+;         |E_XOR_KEY:e_xor_key        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_10|E_XOR_KEY:e_xor_key ;
+;         |S_BOX:s_box                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_10|S_BOX:s_box         ;
+;     |F_FUNCTION:f_block_11          ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_11                     ;
+;         |E_XOR_KEY:e_xor_key        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_11|E_XOR_KEY:e_xor_key ;
+;         |S_BOX:s_box                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_11|S_BOX:s_box         ;
+;     |F_FUNCTION:f_block_12          ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_12                     ;
+;         |E_XOR_KEY:e_xor_key        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_12|E_XOR_KEY:e_xor_key ;
+;         |S_BOX:s_box                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_12|S_BOX:s_box         ;
+;     |F_FUNCTION:f_block_13          ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_13                     ;
+;         |E_XOR_KEY:e_xor_key        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_13|E_XOR_KEY:e_xor_key ;
+;         |S_BOX:s_box                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_13|S_BOX:s_box         ;
+;     |F_FUNCTION:f_block_14          ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_14                     ;
+;         |E_XOR_KEY:e_xor_key        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_14|E_XOR_KEY:e_xor_key ;
+;         |S_BOX:s_box                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_14|S_BOX:s_box         ;
+;     |F_FUNCTION:f_block_15          ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_15                     ;
+;         |E_XOR_KEY:e_xor_key        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_15|E_XOR_KEY:e_xor_key ;
+;         |S_BOX:s_box                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_15|S_BOX:s_box         ;
+;     |F_FUNCTION:f_block_16          ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_16                     ;
+;         |E_XOR_KEY:e_xor_key        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_16|E_XOR_KEY:e_xor_key ;
+;         |S_BOX:s_box                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DES_ALGORITHM|F_FUNCTION:f_block_16|S_BOX:s_box         ;
++-------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+----------------------------------------------------------+
+(1) Value in parentheses is the power consumed at that level of hierarchy. Value not in parentheses is the power consumed at that level of hierarchy plus the power consumed by all levels of hierarchy below it.
+
+(2) The "Block Thermal Static Power" for all levels of hierarchy except the top-level hierarchy is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++--------------------------------------------------------------------+
+; Core Dynamic Thermal Power Dissipation by Clock Domain             ;
++-----------------+-----------------------+--------------------------+
+; Clock Domain    ; Clock Frequency (MHz) ; Total Core Dynamic Power ;
++-----------------+-----------------------+--------------------------+
+; No clock domain ; 0.00                  ; 0.00                     ;
++-----------------+-----------------------+--------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Current Drawn from Voltage Supplies Summary                                                                                        ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; Voltage Supply ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCINT         ; 79.07 mA                ; 0.00 mA                   ; 79.07 mA                 ; 79.07 mA                         ;
+; VCCIO          ; 11.57 mA                ; 0.00 mA                   ; 11.57 mA                 ; 11.57 mA                         ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++-----------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by I/O Bank                                                        ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; I/O Bank ; VCCIO Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; 1        ; 3.3V          ; 1.54 mA             ; 0.00 mA               ; 1.54 mA              ;
+; 2        ; 3.3V          ; 1.82 mA             ; 0.00 mA               ; 1.82 mA              ;
+; 3        ; 3.3V          ; 1.65 mA             ; 0.00 mA               ; 1.65 mA              ;
+; 4        ; 3.3V          ; 1.57 mA             ; 0.00 mA               ; 1.57 mA              ;
+; 5        ; 3.3V          ; 1.55 mA             ; 0.00 mA               ; 1.55 mA              ;
+; 6        ; 3.3V          ; 1.13 mA             ; 0.00 mA               ; 1.13 mA              ;
+; 7        ; 3.3V          ; 1.15 mA             ; 0.00 mA               ; 1.15 mA              ;
+; 8        ; 3.3V          ; 1.17 mA             ; 0.00 mA               ; 1.17 mA              ;
++----------+---------------+---------------------+-----------------------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by Voltage                                                                                             ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCIO Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; 3.3V          ; 11.57 mA                ; 0.00 mA                   ; 11.57 mA                 ; 11.57 mA                         ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Confidence Metric Details                                                                                                                           ;
++----------------------------------------------------------------------------------------+--------------+-------------+---------------+---------------+
+; Data Source                                                                            ; Total        ; Pin         ; Registered    ; Combinational ;
++----------------------------------------------------------------------------------------+--------------+-------------+---------------+---------------+
+; Simulation (from file)                                                                 ;              ;             ;               ;               ;
+;     -- Number of signals with Toggle Rate from Simulation                              ; 0 (0.0%)     ; 0 (0.0%)    ; 0 (0.0%)      ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Simulation                       ; 0 (0.0%)     ; 0 (0.0%)    ; 0 (0.0%)      ; 0 (0.0%)      ;
+;                                                                                        ;              ;             ;               ;               ;
+; Node, entity or clock assignment                                                       ;              ;             ;               ;               ;
+;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 0 (0.0%)     ; 0 (0.0%)    ; 0 (0.0%)      ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 0 (0.0%)     ; 0 (0.0%)    ; 0 (0.0%)      ; 0 (0.0%)      ;
+;                                                                                        ;              ;             ;               ;               ;
+; Vectorless estimation                                                                  ;              ;             ;               ;               ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 6476 (98.0%) ; 66 (33.2%)  ; 1993 (100.0%) ; 4417 (100.0%) ;
+;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 6475 (98.0%) ; 66 (33.2%)  ; 1993 (100.0%) ; 4416 (100.0%) ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 6476 (98.0%) ; 66 (33.2%)  ; 1993 (100.0%) ; 4417 (100.0%) ;
+;                                                                                        ;              ;             ;               ;               ;
+; Default assignment                                                                     ;              ;             ;               ;               ;
+;     -- Number of signals with Toggle Rate from Default assignment                      ; 0 (0.0%)     ; 0 (0.0%)    ; 0 (0.0%)      ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Default assignment               ; 133 (2.0%)   ; 133 (66.8%) ; 0 (0.0%)      ; 0 (0.0%)      ;
+;                                                                                        ;              ;             ;               ;               ;
+; Assumed 0                                                                              ;              ;             ;               ;               ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 133 (2.0%)   ; 133 (66.8%) ; 0 (0.0%)      ; 0 (0.0%)      ;
++----------------------------------------------------------------------------------------+--------------+-------------+---------------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Activities                                                                                                                           ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+; Signal ; Type ; Toggle Rate (millions of transitions / sec) ; Toggle Rate Data Source ; Static Probability ; Static Probability Data Source ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+(1) The "Signal Activity" Table has been hidden. To show this table, please select the "Write signal activities to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++-----------------------------------+
+; PowerPlay Power Analyzer Messages ;
++-----------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit PowerPlay Power Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sat May 02 22:34:40 2026
+Info: Command: quartus_pow --read_settings_files=on --write_settings_files=off DES_ALGORITHM -c DES_ALGORITHM
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (332104): Reading SDC File: 'TIMING.sdc'
+Warning (332174): Ignored filter at TIMING.sdc(1): CLOCK_50 could not be matched with a port
+Warning (332049): Ignored create_clock at TIMING.sdc(1): Argument <targets> is an empty collection
+    Info (332050): create_clock -name "CLOCK_50" -period 20.000 [get_ports {CLOCK_50}]
+Warning (332060): Node: Clk was determined to be a clock but was found without an associated clock assignment.
+Warning (332068): No clocks defined in design.
+Info (223000): Starting Vectorless Power Activity Estimation
+Warning (222013): Relative toggle rates could not be calculated because no clock domain could be identified for some nodes
+Info (223001): Completed Vectorless Power Activity Estimation
+Warning (218001): Found 65 output pins without output pin load capacitance assignment
+    Warning (218002): Pin "Ciphertext[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[7]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[8]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[9]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[10]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[11]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[12]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[13]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[14]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[15]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[16]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[17]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[18]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[19]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[20]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[21]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[22]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[23]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[24]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[25]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[26]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[27]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[28]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[29]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[30]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[31]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[32]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[33]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[34]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[35]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[36]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[37]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[38]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[39]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[40]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[41]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[42]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[43]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[44]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[45]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[46]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[47]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[48]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[49]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[50]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[51]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[52]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[53]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[54]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[55]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[56]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[57]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[58]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[59]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[60]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[61]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[62]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Ciphertext[63]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "Done" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+Info (215049): Average toggle rate for this design is 0.000 millions of transitions / sec
+Info (215031): Total thermal power estimate for the design is 133.08 mW
+Info: Quartus II 64-Bit PowerPlay Power Analyzer was successful. 0 errors, 71 warnings
+    Info: Peak virtual memory: 4627 megabytes
+    Info: Processing ended: Sat May 02 22:34:42 2026
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

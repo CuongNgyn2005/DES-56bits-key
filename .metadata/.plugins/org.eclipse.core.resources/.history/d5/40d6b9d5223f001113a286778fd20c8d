@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <stdint.h>
+#include <system.h>
+#include <io.h>
+
+#define DES_CTRL_STATUS_REG  0
+#define DES_PT_LOW_REG       1
+#define DES_PT_HIGH_REG      2
+#define DES_KEY_LOW_REG      3
+#define DES_KEY_HIGH_REG     4
+#define DES_CT_LOW_REG       5
+#define DES_CT_HIGH_REG      6
+
+#ifndef DES_IP_0_BASE
+#define DES_IP_0_BASE DES_0_BASE
+#endif
+
+// Hàm giao tiếp phần cứng (Giữ nguyên vì đây là logic điều khiển)
+void hardware_des_encrypt(uint32_t pt_high, uint32_t pt_low,
+                          uint32_t key_high, uint32_t key_low,
+                          uint32_t *ct_high, uint32_t *ct_low)
+{
+    IOWR(DES_IP_0_BASE, DES_PT_LOW_REG, pt_low);
+    IOWR(DES_IP_0_BASE, DES_PT_HIGH_REG, pt_high);
+    IOWR(DES_IP_0_BASE, DES_KEY_LOW_REG, key_low);
+    IOWR(DES_IP_0_BASE, DES_KEY_HIGH_REG, key_high);
+
+    IOWR(DES_IP_0_BASE, DES_CTRL_STATUS_REG, 1);
+
+    // Vòng lặp chờ tối giản (Polling)
+    while ((IORD(DES_IP_0_BASE, DES_CTRL_STATUS_REG) & 0x01) == 0);
+
+    IOWR(DES_IP_0_BASE, DES_CTRL_STATUS_REG, 0);
+
+    *ct_low  = IORD(DES_IP_0_BASE, DES_CT_LOW_REG);
+    *ct_high = IORD(DES_IP_0_BASE, DES_CT_HIGH_REG);
+}
+
+int main()
+{
+    // Test Vector
+    uint32_t test_pt_high = 0x01234567, test_pt_low  = 0x89ABCDEF;
+    uint32_t test_key_high = 0x13345779, test_key_low  = 0x9BBCDFF;
+    uint32_t expected_ct_high = 0x1abff69d, expected_ct_low  = 0x5a93e80b;
+    uint32_t hw_ct_high = 0, hw_ct_low  = 0;
+
+    // Chạy phần cứng (Không có bất kỳ lệnh in nào can thiệp ở giữa)
+    hardware_des_encrypt(test_pt_high, test_pt_low, test_key_high, test_key_low, &hw_ct_high, &hw_ct_low);
+
+    // Chỉ in đúng 1 dòng duy nhất để kiểm tra tính đúng đắn
+    if ((hw_ct_high == expected_ct_high) && (hw_ct_low == expected_ct_low)) {
+        printf("PASS\n");
+    } else {
+        printf("FAIL\n");
+    }
+
+    return 0;
+}

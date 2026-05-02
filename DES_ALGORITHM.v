@@ -8,6 +8,11 @@ module DES_ALGORITHM(Clk, Reset_n, Start, Plaintext, Key_in, Ciphertext, Done);
     output [63:0] Ciphertext;
     output Done;
 
+	 // Consolidated wire declarations for Rounds 1 to 16
+    wire [27:0] C1_next, C2_next, C3_next, C4_next, C5_next, C6_next, C7_next, C8_next, C9_next, C10_next, C11_next, C12_next, C13_next, C14_next, C15_next, C16_next;
+    wire [27:0] D1_next, D2_next, D3_next, D4_next, D5_next, D6_next, D7_next, D8_next, D9_next, D10_next, D11_next, D12_next, D13_next, D14_next, D15_next, D16_next;
+    wire [47:0] SubKey_1, SubKey_2, SubKey_3, SubKey_4, SubKey_5, SubKey_6, SubKey_7, SubKey_8, SubKey_9, SubKey_10, SubKey_11, SubKey_12, SubKey_13, SubKey_14, SubKey_15, SubKey_16;
+    wire [31:0] f_result_1, f_result_2, f_result_3, f_result_4, f_result_5, f_result_6, f_result_7, f_result_8, f_result_9, f_result_10, f_result_11, f_result_12, f_result_13, f_result_14, f_result_15, f_result_16;
     // Initial permutation
     wire [31:0] L0_w, R0_w;
     IP ip_inst(.Data_in(Plaintext), .R0(R0_w), .L0(L0_w));
@@ -40,10 +45,6 @@ module DES_ALGORITHM(Clk, Reset_n, Start, Plaintext, Key_in, Ciphertext, Done);
     end
 
     // ------------ Round 1 ------------
-    wire [27:0] C1_next, D1_next;
-    wire [47:0] SubKey_1;
-    wire [31:0] f_result_1;
-
     SHIFT_LEFT_1 sl1_c_1 (.C_in(C_reg[0]), .C_out(C1_next));
     SHIFT_LEFT_1 sl1_d_1 (.C_in(D_reg[0]), .C_out(D1_next));
     PC_2 pc2_inst_1 (.In({C1_next, D1_next}), .Round_key(SubKey_1));
@@ -66,10 +67,6 @@ module DES_ALGORITHM(Clk, Reset_n, Start, Plaintext, Key_in, Ciphertext, Done);
     end
 
     // ------------ Round 2 ------------
-    wire [27:0] C2_next, D2_next;
-    wire [47:0] SubKey_2;
-    wire [31:0] f_result_2;
-
     SHIFT_LEFT_1 sl1_c_2 (.C_in(C_reg[1]), .C_out(C2_next));
     SHIFT_LEFT_1 sl1_d_2 (.C_in(D_reg[1]), .C_out(D2_next));
     PC_2 pc2_inst_2 (.In({C2_next, D2_next}), .Round_key(SubKey_2));
@@ -92,10 +89,6 @@ module DES_ALGORITHM(Clk, Reset_n, Start, Plaintext, Key_in, Ciphertext, Done);
     end
 
     // ------------ Round 3 ------------
-    wire [27:0] C3_next, D3_next;
-    wire [47:0] SubKey_3;
-    wire [31:0] f_result_3;
-
     SHIFT_LEFT_2 sl2_c_3 (.C_in(C_reg[2]), .C_out(C3_next));
     SHIFT_LEFT_2 sl2_d_3 (.C_in(D_reg[2]), .C_out(D3_next));
     PC_2 pc2_inst_3 (.In({C3_next, D3_next}), .Round_key(SubKey_3));
@@ -118,10 +111,6 @@ module DES_ALGORITHM(Clk, Reset_n, Start, Plaintext, Key_in, Ciphertext, Done);
     end
 
     // ------------ Round 4 ------------
-    wire [27:0] C4_next, D4_next;
-    wire [47:0] SubKey_4;
-    wire [31:0] f_result_4;
-
     SHIFT_LEFT_2 sl2_c_4 (.C_in(C_reg[3]), .C_out(C4_next));
     SHIFT_LEFT_2 sl2_d_4 (.C_in(D_reg[3]), .C_out(D4_next));
     PC_2 pc2_inst_4 (.In({C4_next, D4_next}), .Round_key(SubKey_4));
@@ -144,10 +133,6 @@ module DES_ALGORITHM(Clk, Reset_n, Start, Plaintext, Key_in, Ciphertext, Done);
     end
 
     // ------------ Round 5 ------------
-    wire [27:0] C5_next, D5_next;
-    wire [47:0] SubKey_5;
-    wire [31:0] f_result_5;
-
     SHIFT_LEFT_2 sl2_c_5 (.C_in(C_reg[4]), .C_out(C5_next));
     SHIFT_LEFT_2 sl2_d_5 (.C_in(D_reg[4]), .C_out(D5_next));
     PC_2 pc2_inst_5 (.In({C5_next, D5_next}), .Round_key(SubKey_5));
@@ -170,10 +155,6 @@ module DES_ALGORITHM(Clk, Reset_n, Start, Plaintext, Key_in, Ciphertext, Done);
     end
 
     // ------------ Round 6 ------------
-    wire [27:0] C6_next, D6_next;
-    wire [47:0] SubKey_6;
-    wire [31:0] f_result_6;
-
     SHIFT_LEFT_2 sl2_c_6 (.C_in(C_reg[5]), .C_out(C6_next));
     SHIFT_LEFT_2 sl2_d_6 (.C_in(D_reg[5]), .C_out(D6_next));
     PC_2 pc2_inst_6 (.In({C6_next, D6_next}), .Round_key(SubKey_6));
@@ -196,10 +177,6 @@ module DES_ALGORITHM(Clk, Reset_n, Start, Plaintext, Key_in, Ciphertext, Done);
     end
 
     // ------------ Round 7 ------------
-    wire [27:0] C7_next, D7_next;
-    wire [47:0] SubKey_7;
-    wire [31:0] f_result_7;
-
     SHIFT_LEFT_2 sl2_c_7 (.C_in(C_reg[6]), .C_out(C7_next));
     SHIFT_LEFT_2 sl2_d_7 (.C_in(D_reg[6]), .C_out(D7_next));
     PC_2 pc2_inst_7 (.In({C7_next, D7_next}), .Round_key(SubKey_7));
@@ -222,10 +199,6 @@ module DES_ALGORITHM(Clk, Reset_n, Start, Plaintext, Key_in, Ciphertext, Done);
     end
 
     // ------------ Round 8 ------------
-    wire [27:0] C8_next, D8_next;
-    wire [47:0] SubKey_8;
-    wire [31:0] f_result_8;
-
     SHIFT_LEFT_2 sl2_c_8 (.C_in(C_reg[7]), .C_out(C8_next));
     SHIFT_LEFT_2 sl2_d_8 (.C_in(D_reg[7]), .C_out(D8_next));
     PC_2 pc2_inst_8 (.In({C8_next, D8_next}), .Round_key(SubKey_8));
@@ -248,10 +221,6 @@ module DES_ALGORITHM(Clk, Reset_n, Start, Plaintext, Key_in, Ciphertext, Done);
     end
 
     // ------------ Round 9 ------------
-    wire [27:0] C9_next, D9_next;
-    wire [47:0] SubKey_9;
-    wire [31:0] f_result_9;
-
     SHIFT_LEFT_1 sl1_c_9 (.C_in(C_reg[8]), .C_out(C9_next));
     SHIFT_LEFT_1 sl1_d_9 (.C_in(D_reg[8]), .C_out(D9_next));
     PC_2 pc2_inst_9 (.In({C9_next, D9_next}), .Round_key(SubKey_9));
@@ -274,10 +243,6 @@ module DES_ALGORITHM(Clk, Reset_n, Start, Plaintext, Key_in, Ciphertext, Done);
     end
 
     // ------------ Round 10 ------------
-    wire [27:0] C10_next, D10_next;
-    wire [47:0] SubKey_10;
-    wire [31:0] f_result_10;
-
     SHIFT_LEFT_2 sl2_c_10 (.C_in(C_reg[9]), .C_out(C10_next));
     SHIFT_LEFT_2 sl2_d_10 (.C_in(D_reg[9]), .C_out(D10_next));
     PC_2 pc2_inst_10 (.In({C10_next, D10_next}), .Round_key(SubKey_10));
@@ -300,10 +265,6 @@ module DES_ALGORITHM(Clk, Reset_n, Start, Plaintext, Key_in, Ciphertext, Done);
     end
 
     // ------------ Round 11 ------------
-    wire [27:0] C11_next, D11_next;
-    wire [47:0] SubKey_11;
-    wire [31:0] f_result_11;
-
     SHIFT_LEFT_2 sl2_c_11 (.C_in(C_reg[10]), .C_out(C11_next));
     SHIFT_LEFT_2 sl2_d_11 (.C_in(D_reg[10]), .C_out(D11_next));
     PC_2 pc2_inst_11 (.In({C11_next, D11_next}), .Round_key(SubKey_11));
@@ -326,10 +287,6 @@ module DES_ALGORITHM(Clk, Reset_n, Start, Plaintext, Key_in, Ciphertext, Done);
     end
 
     // ------------ Round 12 ------------
-    wire [27:0] C12_next, D12_next;
-    wire [47:0] SubKey_12;
-    wire [31:0] f_result_12;
-
     SHIFT_LEFT_2 sl2_c_12 (.C_in(C_reg[11]), .C_out(C12_next));
     SHIFT_LEFT_2 sl2_d_12 (.C_in(D_reg[11]), .C_out(D12_next));
     PC_2 pc2_inst_12 (.In({C12_next, D12_next}), .Round_key(SubKey_12));
@@ -352,10 +309,6 @@ module DES_ALGORITHM(Clk, Reset_n, Start, Plaintext, Key_in, Ciphertext, Done);
     end
 
     // ------------ Round 13 ------------
-    wire [27:0] C13_next, D13_next;
-    wire [47:0] SubKey_13;
-    wire [31:0] f_result_13;
-
     SHIFT_LEFT_2 sl2_c_13 (.C_in(C_reg[12]), .C_out(C13_next));
     SHIFT_LEFT_2 sl2_d_13 (.C_in(D_reg[12]), .C_out(D13_next));
     PC_2 pc2_inst_13 (.In({C13_next, D13_next}), .Round_key(SubKey_13));
@@ -378,10 +331,6 @@ module DES_ALGORITHM(Clk, Reset_n, Start, Plaintext, Key_in, Ciphertext, Done);
     end
 
     // ------------ Round 14 ------------
-    wire [27:0] C14_next, D14_next;
-    wire [47:0] SubKey_14;
-    wire [31:0] f_result_14;
-
     SHIFT_LEFT_2 sl2_c_14 (.C_in(C_reg[13]), .C_out(C14_next));
     SHIFT_LEFT_2 sl2_d_14 (.C_in(D_reg[13]), .C_out(D14_next));
     PC_2 pc2_inst_14 (.In({C14_next, D14_next}), .Round_key(SubKey_14));
@@ -404,10 +353,6 @@ module DES_ALGORITHM(Clk, Reset_n, Start, Plaintext, Key_in, Ciphertext, Done);
     end
 
     // ------------ Round 15 ------------
-    wire [27:0] C15_next, D15_next;
-    wire [47:0] SubKey_15;
-    wire [31:0] f_result_15;
-
     SHIFT_LEFT_2 sl2_c_15 (.C_in(C_reg[14]), .C_out(C15_next));
     SHIFT_LEFT_2 sl2_d_15 (.C_in(D_reg[14]), .C_out(D15_next));
     PC_2 pc2_inst_15 (.In({C15_next, D15_next}), .Round_key(SubKey_15));
@@ -430,10 +375,6 @@ module DES_ALGORITHM(Clk, Reset_n, Start, Plaintext, Key_in, Ciphertext, Done);
     end
 
     // ------------ Round 16 ------------
-    wire [27:0] C16_next, D16_next;
-    wire [47:0] SubKey_16;
-    wire [31:0] f_result_16;
-
     SHIFT_LEFT_1 sl1_c_16 (.C_in(C_reg[15]), .C_out(C16_next));
     SHIFT_LEFT_1 sl1_d_16 (.C_in(D_reg[15]), .C_out(D16_next));
     PC_2 pc2_inst_16 (.In({C16_next, D16_next}), .Round_key(SubKey_16));

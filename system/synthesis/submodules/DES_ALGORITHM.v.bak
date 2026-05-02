@@ -1,0 +1,55 @@
+module DES_ALGORITHM(
+    input Clk, Reset_n, Start,
+    input [63:0] Plaintext, Key_in,
+    output [63:0] Ciphertext,
+    output Done
+);
+    // Dây tín hiệu điều khiển
+    wire mux_sel, reg_en, load_key, shift_en;
+    wire [3:0] round_count;
+    wire sub_cycle;
+
+    // Dây tín hiệu Datapath
+    wire [31:0] L_out, R_out, L_next, R_next;
+    wire [31:0] L_initial, R_initial;
+    wire [47:0] current_subkey;
+    wire [31:0] f_out;
+
+    // 1. Bộ não điều khiển
+    DES_CONTROL control (
+        .Clk(Clk), .Reset_n(Reset_n), .Start(Start),
+        .Mux_sel(mux_sel), .Reg_en(reg_en), .Done(Done),
+        .Load_key(load_key), .Shift_en(shift_en),
+        .Counter(round_count), .Sub_cycle(sub_cycle)
+    );
+
+    // 2. IP Permutation
+    IP ip_inst(.Data_in(Plaintext), .L0(L_initial), .R0(R_initial));
+
+    // 3. Mux và Thanh ghi lưu trạng thái vòng
+    assign L_next = (mux_sel == 0) ? L_initial : R_out;
+    assign R_next = (mux_sel == 0) ? R_initial : (L_out ^ f_out);
+
+    REGISTER_TOP data_reg (
+        .C0(L_next), .D0(R_next), 
+        .Clk(Clk), .Reset_n(Reset_n), 
+        .C0_out(L_out), .D0_out(R_out)
+    );
+
+    // 4. Sinh khóa động
+    ROUND_KEY key_gen (
+        .Clk(Clk), .Reset_n(Reset_n), .Key_in(Key_in),
+        .Load_key(load_key), .Shift_en(shift_en),
+        .Round_idx(round_count), .Subkey_out(current_subkey)
+    );
+
+    // 5. Hàm F (Có Pipeline bên trong)
+    F_FUNCTION f_block (
+        .Clk(Clk), .R(R_out), 
+        .Key(current_subkey), .F_out(f_out)
+    );
+
+    // 6. Final Permutation
+    IP_1 fp_inst (.In({R_out, L_out}), .Cipertext(Ciphertext));
+
+endmodule

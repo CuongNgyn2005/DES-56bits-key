@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "04/17/2026 18:22:44"
+// DATE "05/02/2026 22:30:28"
 
 // 
 // Device: Altera EP2C35F672C6 Package FBGA672
@@ -6011,8 +6011,8 @@ wire [5:0] \f_block_1|e_xor_key|S4 ;
 wire [5:0] \f_block_1|e_xor_key|S3 ;
 wire [5:0] \f_block_1|e_xor_key|S2 ;
 wire [5:0] \f_block_1|e_xor_key|S1 ;
-wire [63:0] \Key_in~combout ;
 wire [63:0] \Plaintext~combout ;
+wire [63:0] \Key_in~combout ;
 
 
 // Location: LCFF_X48_Y26_N21
